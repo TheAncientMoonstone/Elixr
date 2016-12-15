@@ -1,0 +1,22 @@
+{	BuildMachineOSBuild = "15G1108";
+	CFBundleDevelopmentRegion = "en";
+	CFBundleExecutable = "AWSMobileHubHelper";
+	CFBundleIdentifier = "com.amazonaws.sdk.ios.AWSMobileHubHelper";
+	CFBundleInfoDictionaryVersion = "6.0";
+	CFBundleName = "AWSMobileHubHelper";
+	CFBundlePackageType = "FMWK";
+	CFBundleShortVersionString = "2.4.12";
+	CFBundleSignature = "????";
+	CFBundleSupportedPlatforms = ( "iPhoneOS" );
+	CFBundleVersion = "1";
+	DTCompiler = "com.apple.compilers.llvm.clang.1_0";
+	DTPlatformBuild = "13B137";
+	DTPlatformName = "iphoneos";
+	DTPlatformVersion = "9.1";
+	DTSDKBuild = "13B137";
+	DTSDKName = "iphoneos9.1";
+	DTXcode = "0711";
+	DTXcodeBuild = "7B1005";
+	MinimumOSVersion = "8.0";
+	UIDeviceFamily = ( 1, 2 );
+}
