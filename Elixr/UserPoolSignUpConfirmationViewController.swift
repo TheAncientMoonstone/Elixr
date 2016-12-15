@@ -21,7 +21,6 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
     @IBOutlet weak var confirmationCode: UITextField!
 
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

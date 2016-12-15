@@ -28,7 +28,7 @@
         <!--Main View Controller-->
         <scene sceneID="hcp-Ib-8du">
             <objects>
-                <viewController id="hhw-RQ-dMt" customClass="MainViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hhw-RQ-dMt" customClass="MainViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nEB-u6-KWJ"/>
                         <viewControllerLayoutGuide type="bottom" id="9ww-uY-7Bv"/>
