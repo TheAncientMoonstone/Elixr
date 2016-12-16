@@ -103,6 +103,7 @@
 		2EF81F081DF66EAD0013E1CA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA581DEBD8BE006D1B4D /* AddressBook.framework */; };
 		2EF81F091DF66EB80013E1CA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA561DEBD8B7006D1B4D /* MediaPlayer.framework */; };
 		2EF81F0A1DF66EC40013E1CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA541DEBD8AF006D1B4D /* Foundation.framework */; };
+		6DDA5AD0AF5158D0F18C33EE /* Pods_Elixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E347A730942C52CEB5C735 /* Pods_Elixr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -199,6 +200,9 @@
 		2EF235481DFD74DF00B27AE7 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
 		2EF235491DFD74DF00B27AE7 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
 		2EF2354A1DFD74DF00B27AE7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		59E347A730942C52CEB5C735 /* Pods_Elixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80D4694EAFFDB415725291B /* Pods-Elixr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.release.xcconfig"; sourceTree = "<group>"; };
+		D9B030DF89C58C97925A3E18 /* Pods-Elixr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +267,7 @@
 				2E43AA451DEBD7EB006D1B4D /* AWSSES.framework in Frameworks */,
 				2E43AA221DEBD7E0006D1B4D /* AWSS3.framework in Frameworks */,
 				2E43AA351DEBD7EB006D1B4D /* AWSEC2.framework in Frameworks */,
+				6DDA5AD0AF5158D0F18C33EE /* Pods_Elixr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +290,7 @@
 				2E43A9ED1DEBD762006D1B4D /* Elixr */,
 				2E43A9EC1DEBD762006D1B4D /* Products */,
 				2E43AA4F1DEBD878006D1B4D /* Frameworks */,
+				753935B54390C8B0304A2802 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -364,6 +370,7 @@
 				2E43AA541DEBD8AF006D1B4D /* Foundation.framework */,
 				2E43AA521DEBD89E006D1B4D /* libsqlite3.tbd */,
 				2E43AA501DEBD878006D1B4D /* libz.tbd */,
+				59E347A730942C52CEB5C735 /* Pods_Elixr.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -398,6 +405,15 @@
 			name = UserPools;
 			sourceTree = "<group>";
 		};
+		753935B54390C8B0304A2802 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9B030DF89C58C97925A3E18 /* Pods-Elixr.debug.xcconfig */,
+				B80D4694EAFFDB415725291B /* Pods-Elixr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,11 +421,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E43A9FD1DEBD762006D1B4D /* Build configuration list for PBXNativeTarget "Elixr" */;
 			buildPhases = (
+				AC9AE639A236F2F0B627910C /* [CP] Check Pods Manifest.lock */,
 				2E43A9E71DEBD762006D1B4D /* Sources */,
 				2E43A9E81DEBD762006D1B4D /* Frameworks */,
 				2E43A9E91DEBD762006D1B4D /* Resources */,
 				2E43AA4D1DEBD7EB006D1B4D /* Embed Frameworks */,
 				2E43AA4E1DEBD815006D1B4D /* ShellScript */,
+				247D2DD512340DAFAC484659 /* [CP] Embed Pods Frameworks */,
+				FFDFD95C20312E66AE797F30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -474,6 +493,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		247D2DD512340DAFAC484659 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixr/Pods-Elixr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2E43AA4E1DEBD815006D1B4D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -486,6 +520,36 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+		AC9AE639A236F2F0B627910C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDFD95C20312E66AE797F30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixr/Pods-Elixr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -615,6 +679,7 @@
 		};
 		2E43A9FE1DEBD762006D1B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B030DF89C58C97925A3E18 /* Pods-Elixr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -636,6 +701,7 @@
 		};
 		2E43A9FF1DEBD762006D1B4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80D4694EAFFDB415725291B /* Pods-Elixr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
