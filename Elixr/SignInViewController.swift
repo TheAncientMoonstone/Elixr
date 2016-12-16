@@ -111,10 +111,11 @@ class SignInViewController: UIViewController {
         })
     }
     
-    // Allows the user to exit.
+    // The user has logged out with their facebook account.
     func handleFacebookLogOut() {
         print("User has logged out...")
     }
+    
     
     // Allows the user to return to the previous view controller.
     func dismissViewController() {
