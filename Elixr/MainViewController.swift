@@ -21,14 +21,20 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // Present the Sign In View Controller.
-        presentSignInViewController()
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+//Vivek : Present the controller from viewDidAppear: and not from viewDidLoad.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Present the Sign In View Controller.
+        presentSignInViewController()
+
     }
     
     // MARK:- Sign In View Controller.

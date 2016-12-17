@@ -51,6 +51,12 @@ extension SignInViewController: AWSCognitoIdentityInteractiveAuthenticationDeleg
                                  delegate: nil,
                                  cancelButtonTitle: "Ok").show()
                 
+                //Vivek : UIAlertView is deprecated after Swift 3, so we need to use UIAlertController
+                let alert = UIAlertController(title: error.userInfo["__type"] as? String, message: error.userInfo["message"] as? String, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+
+                
+                self.present(alert, animated: true, completion: nil)
             })
         }
     }
@@ -101,6 +107,7 @@ extension SignInViewController: AWSCognitoUserPoolsSignInHandler {
         guard let username = self.customUserIdField.text, !username.isEmpty,
             let password = self.customPasswordField.text, !password.isEmpty else {
                 DispatchQueue.main.async(execute: {
+                    
                     UIAlertView(title: "Missing username / password", message: "Please enter a valid username / or password", delegate: nil, cancelButtonTitle: "Ok").show()
                 })
                 return
