@@ -81,6 +81,8 @@ class SignInViewController: UIViewController {
         AWSFacebookSignInProvider.sharedInstance().setPermissions(["public_profile", "email", "user_friends"]);
         handleLoginWithSignInProvider(signInProvider: AWSFacebookSignInProvider.sharedInstance())
         // If user has been successfully authenticated they can now move on to the app.
+        
+        
     }
  
     // MARK: - Utility Methods
