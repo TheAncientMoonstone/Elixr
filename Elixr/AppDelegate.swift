@@ -24,18 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-<<<<<<< Updated upstream
         
-
-//Before :
-//        AWSMobileClient.sharedInstance.withApplication(application: application, withURL: url as NSURL, withSourceApplication: sourceApplication, withAnnotation: annotation as AnyObject)
-
-//Vivek : After Xcode 8, its mandatory to catch Results of all the calls
         _ = AWSMobileClient.sharedInstance.withApplication(application: application, withURL: url as NSURL, withSourceApplication: sourceApplication, withAnnotation: annotation as AnyObject)
 
-=======
-        _ = AWSMobileClient.sharedInstance.withApplication(application: application, withURL: url as NSURL, withSourceApplication: sourceApplication, withAnnotation: annotation as AnyObject)
->>>>>>> Stashed changes
         return FBSDKApplicationDelegate.sharedInstance().application(application, open: (url as NSURL) as URL!, sourceApplication: sourceApplication, annotation: annotation)
     }
 

@@ -46,15 +46,8 @@ class SignInViewController: UIViewController {
         // Custom UI Setup.
         // These selectors will move to different view controllers, depending on the button pressed.
         // Allows the user to sign in with their facebook account.
-<<<<<<< Updated upstream
-      
-//Vivek : In storyboard you've already changed the class for facebook button to FBSDKLoginButton, it has inbuilt onClick method. So, there's no need to add custom code for log in.
-        
-        //facebookLoginButton.addTarget(self, action: #selector(self.handleFacebookLogin), for: .touchUpInside)
-      
-=======
         // facebookLoginButton.addTarget(self, action: #selector(self.handleFacebookLogin), for: .touchUpInside)
->>>>>>> Stashed changes
+
         // Signs the user in.
         customSignInProviderButton.addTarget(self, action: #selector(self.handleCustomSignIn), for: .touchUpInside)
         // This allows the user to recover their password to their account.
