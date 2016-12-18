@@ -41,7 +41,7 @@ extension SignInViewController: AWSCognitoIdentityInteractiveAuthenticationDeleg
         return self 
     }
     
-    
+    /*
     func didCompletePasswordAuthenticationSetepWithError(error: NSError?) {
         if let error = error {
             DispatchQueue.main.async(execute: {
@@ -60,7 +60,7 @@ extension SignInViewController: AWSCognitoIdentityInteractiveAuthenticationDeleg
             })
         }
     }
- 
+ */
 }
 /*
 extension SignInViewController: AWSCognitoIdentityPasswordAuthentication {
