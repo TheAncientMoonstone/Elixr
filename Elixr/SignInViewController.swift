@@ -49,7 +49,7 @@ class SignInViewController: UIViewController {
       
 //Vivek : In storyboard you've already changed the class for facebook button to FBSDKLoginButton, it has inbuilt onClick method. So, there's no need to add custom code for log in.
         
-        //facebookLoginButton.addTarget(self, action: #selector(self.handleFacebookLogin), for: .touchUpInside)
+        facebookLoginButton.addTarget(self, action: #selector(self.handleFacebookLogin), for: .touchUpInside)
       
         // Signs the user in.
         customSignInProviderButton.addTarget(self, action: #selector(self.handleCustomSignIn), for: .touchUpInside)
@@ -85,6 +85,8 @@ class SignInViewController: UIViewController {
         AWSFacebookSignInProvider.sharedInstance().setPermissions(["public_profile", "email", "user_friends"]);
         handleLoginWithSignInProvider(signInProvider: AWSFacebookSignInProvider.sharedInstance())
         // If user has been successfully authenticated they can now move on to the app.
+        
+        
     }
  
     // MARK: - Utility Methods
