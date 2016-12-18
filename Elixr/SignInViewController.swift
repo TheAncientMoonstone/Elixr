@@ -47,7 +47,6 @@ class SignInViewController: UIViewController {
         // These selectors will move to different view controllers, depending on the button pressed.
         // Allows the user to sign in with their facebook account.
         // facebookLoginButton.addTarget(self, action: #selector(self.handleFacebookLogin), for: .touchUpInside)
-
         // Signs the user in.
         customSignInProviderButton.addTarget(self, action: #selector(self.handleCustomSignIn), for: .touchUpInside)
         // This allows the user to recover their password to their account.
