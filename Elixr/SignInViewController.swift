@@ -25,7 +25,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var customForgotUserPasswordButton: UIButton!
     @IBOutlet weak var customSignInProviderButton: UIButton!
     // Third party provider login buttons.
-    @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
+    @IBOutlet weak var facebookLoginButton: UIButton!
 
 
     

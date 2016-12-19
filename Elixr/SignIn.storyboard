@@ -73,7 +73,7 @@
                         <outlet property="customPasswordField" destination="51m-FB-66h" id="I7X-iE-SY8"/>
                         <outlet property="customSignInProviderButton" destination="Ui9-iy-ted" id="ep7-UW-8uu"/>
                         <outlet property="customUserIdField" destination="Mxg-PA-Qgj" id="DLm-Ne-fhp"/>
-                        <outlet property="facebookLoginButton" destination="lDb-ZW-rLD" id="DJu-9B-to5"/>
+                        <outlet property="facebookLoginButton" destination="lDb-ZW-rLD" id="5W7-RD-jbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeE-K5-kby" userLabel="First Responder" sceneMemberID="firstResponder"/>
