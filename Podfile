@@ -5,5 +5,5 @@ xcodeproj 'Elixr'
 target :Elixr
 
 	source 'https://github.com/CocoaPods/Specs.git'
-		pod 'IGListKit', '~> 2.0.0'
+		pod 'AsyncDisplayKit'
 	use_frameworks!	

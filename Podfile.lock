@@ -1,12 +1,32 @@
 PODS:
-  - IGListKit (2.0.0)
+  - AsyncDisplayKit (2.0.1):
+    - AsyncDisplayKit/PINRemoteImage (= 2.0.1)
+  - AsyncDisplayKit/Core (2.0.1)
+  - AsyncDisplayKit/PINRemoteImage (2.0.1):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (= 3.0.0-beta.7)
+    - PINRemoteImage/PINCache
+  - PINCache (3.0.1-beta.2):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.2)
+    - PINCache/Core (= 3.0.1-beta.2)
+  - PINCache/Arc-exception-safe (3.0.1-beta.2):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.2)
+  - PINRemoteImage/Core (3.0.0-beta.7)
+  - PINRemoteImage/iOS (3.0.0-beta.7):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.7):
+    - PINCache (= 3.0.1-beta.2)
+    - PINRemoteImage/Core
 
 DEPENDENCIES:
-  - IGListKit (~> 2.0.0)
+  - AsyncDisplayKit
 
 SPEC CHECKSUMS:
-  IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
+  AsyncDisplayKit: 6c5a21d9ab30f3f48e877a67d44e3e19c1724f91
+  PINCache: 6d273a6e0754bd26e3f12a38a90dde73cc6a42b2
+  PINRemoteImage: ff63baf185088530db6cfa41cb665e2b5126b5c3
 
-PODFILE CHECKSUM: ea03e1463700362714e9f95750413f4e5bc741bc
+PODFILE CHECKSUM: 37006ec49d4e1ab1800c90e8286be35afe676cbd
 
 COCOAPODS: 1.2.0.beta.1

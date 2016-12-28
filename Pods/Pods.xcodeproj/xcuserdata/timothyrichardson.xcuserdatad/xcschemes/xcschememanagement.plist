@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>IGListKit.xcscheme</key>
+		<key>AsyncDisplayKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINRemoteImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9D781EB30AA915DF5F4DD7F2BB2A2CA3</key>
+		<key>9FE6CCC19D626B60868FC107BBDF2ACF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F42EAE8B2C3CE27C9BA487F203139D88</key>
+		<key>A5AF076398730A8A5DCB05C3C6B619C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAF879A2C707CA6287FB47B9101D0D79</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8A6ED1E1D74D0FB24871FA40B12F21E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
