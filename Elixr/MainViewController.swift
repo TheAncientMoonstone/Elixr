@@ -8,6 +8,8 @@
 
 import UIKit
 import AWSMobileHubHelper
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class MainViewController: UIViewController {
     
