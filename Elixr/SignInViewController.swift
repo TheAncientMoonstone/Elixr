@@ -27,10 +27,6 @@ class SignInViewController: UIViewController {
     // Third party provider login buttons.
     @IBOutlet weak var facebookLoginButton: UIButton!
 
-
-    
-
-
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
