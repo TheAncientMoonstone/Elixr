@@ -63,7 +63,9 @@
 		2E6CA3271DF3C41500056897 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6CA3261DF3C41500056897 /* CFNetwork.framework */; };
 		2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */; };
 		2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7336931DFE28BD00DA33A7 /* Utility.swift */; };
-		2E9AF3781E076A09007075BE /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9AF3771E076A09007075BE /* IGListKit.framework */; };
+		2E8A1B4C1E13E88D0019CC82 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */; };
+		2E8A1B4D1E13E88D0019CC82 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B4A1E13E88D0019CC82 /* PINCache.framework */; };
+		2E8A1B4E1E13E88D0019CC82 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B4B1E13E88D0019CC82 /* PINRemoteImage.framework */; };
 		2E9AF3791E076A10007075BE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA5A1DEBD8CB006D1B4D /* SafariServices.framework */; };
 		2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */; };
 		2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */; };
@@ -168,7 +170,9 @@
 		2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSMobileClient.swift; sourceTree = "<group>"; };
 		2E6CA32C1DF3E2BA00056897 /* Elixr.Entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Elixr.Entitlements; sourceTree = SOURCE_ROOT; };
 		2E7336931DFE28BD00DA33A7 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		2E9AF3771E076A09007075BE /* IGListKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphoneos/IGListKit/IGListKit.framework"; sourceTree = "<group>"; };
+		2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphoneos/AsyncDisplayKit/AsyncDisplayKit.framework"; sourceTree = "<group>"; };
+		2E8A1B4A1E13E88D0019CC82 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphoneos/PINCache/PINCache.framework"; sourceTree = "<group>"; };
+		2E8A1B4B1E13E88D0019CC82 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphoneos/PINRemoteImage/PINRemoteImage.framework"; sourceTree = "<group>"; };
 		2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewControllerExtensions.swift; sourceTree = "<group>"; };
 		2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
@@ -193,8 +197,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8A1B4C1E13E88D0019CC82 /* AsyncDisplayKit.framework in Frameworks */,
+				2E8A1B4D1E13E88D0019CC82 /* PINCache.framework in Frameworks */,
+				2E8A1B4E1E13E88D0019CC82 /* PINRemoteImage.framework in Frameworks */,
 				2E9AF3791E076A10007075BE /* SafariServices.framework in Frameworks */,
-				2E9AF3781E076A09007075BE /* IGListKit.framework in Frameworks */,
 				2EF81F0A1DF66EC40013E1CA /* Foundation.framework in Frameworks */,
 				2EF81F091DF66EB80013E1CA /* MediaPlayer.framework in Frameworks */,
 				2EF2354B1DFD74DF00B27AE7 /* AccountKit.framework in Frameworks */,
@@ -325,7 +331,9 @@
 		2E43AA4F1DEBD878006D1B4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E9AF3771E076A09007075BE /* IGListKit.framework */,
+				2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */,
+				2E8A1B4A1E13E88D0019CC82 /* PINCache.framework */,
+				2E8A1B4B1E13E88D0019CC82 /* PINRemoteImage.framework */,
 				2E6CA3261DF3C41500056897 /* CFNetwork.framework */,
 				2E6CA3241DF3C3FC00056897 /* Security.framework */,
 				2E6CA3221DF3C3F400056897 /* SystemConfiguration.framework */,
