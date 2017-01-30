@@ -56,7 +56,8 @@ class UserPoolSignUpViewController: UIViewController {
     // MARK: - IBActions
     @IBAction func SignUpButton(_ sender: Any) {
         guard let usernameValue = self.Username.text, !usernameValue.isEmpty,
-            let passwordValue = self.Password.text, !passwordValue.isEmpty else {
+            let passwordValue = self.Password.text, !passwordValue.isEmpty
+            else {
                 showAlertBad(title: "Missing required fields", message: "Please enter a username or password.")
                 return
         }
@@ -69,6 +70,7 @@ class UserPoolSignUpViewController: UIViewController {
             email?.value = emailValue
             attributes.append(email!)
         }
+        
         
         // Sign up the user
         self.pool?.signUp(usernameValue, password: passwordValue, userAttributes: attributes, validationData: nil).continue ({[weak self] (task: AWSTask) -> AnyObject? in
