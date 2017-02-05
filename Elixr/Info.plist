@@ -31,9 +31,9 @@
 				<key>Default</key>
 				<dict>
 					<key>PoolId</key>
-					<string>ap-northeast-1:a40a2b7f-e3cb-49a0-95bf-9d201cbca5b4</string>
+					<string>ap-southeast-2:594a4522-2a2f-4bf1-adfb-8bfe4690f413</string>
 					<key>Region</key>
-					<string>ap-northeast-1</string>
+					<string>ap-southeast-2</string>
 				</dict>
 			</dict>
 		</dict>
@@ -41,11 +41,6 @@
 		<dict>
 			<key>Default</key>
 			<dict/>
-		</dict>
-		<key>MobileHub</key>
-		<dict>
-			<key>ProjectClientId</key>
-			<string>MobileHub ae8831b6-c4da-4f12-a7d8-79a34cfe7e9e Elixr</string>
 		</dict>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>

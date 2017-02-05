@@ -8,17 +8,18 @@
 
 import Foundation
 import AWSCore
+import AWSCognitoIdentityProvider
 
 
 // Cognito User Pools Identity Id
-let AWSCognitoUserPoolId: String = "ap-northeast-1_AKIQqzvh5"
+let AWSCognitoUserPoolId: String = "ap-southeast-2_MxN2wQ6Qk"
 
 // Cognito User Pools App Client Id
-let AWSCognitoUserPoolAppClientId: String = "6o9q1ljoffd2a6v3e1j4pvafql"
+let AWSCognitoUserPoolAppClientId: String = "5l2v2q1tkam7u8isb6l164qacp"
 
 // Cognito User Pools Region
-let AWSCognitoUserPoolRegion: AWSRegionType = .apNortheast1
+let AWSCognitoUserPoolRegion: AWSRegionType = .apSoutheast2
 
 // Cognito User Pools Client Secret
-let AWSCognitoUserPoolClientSecret: String = "16f4ojshm8u70o206egvhqaa8dqcjjqdvima0b147hpr03s1njmj"
+let AWSCognitoUserPoolClientSecret: String = "ag7nin0eg8kn3lvih7mndos2elks9sov0bm3ta84h9tvrpdppbd"
 

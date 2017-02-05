@@ -40,7 +40,7 @@
  *      </html>
  *
  *   customSchemeRedirectURI = @"com.amazon.mysampleapp://zendesk/oauth2";
- *   httpsEndpoint = @"ttps://awsmobilehub.s3-us-west-2.amazonaws.com/zendesk";
+ *   httpsEndpoint = @"https://awsmobilehub.s3-us-west-2.amazonaws.com/zendesk";
  *
  * @param clientID The client ID that you signed up for in Zendesk
  * @param customSchemeRedirectURI The redirectURI that has the custom app scheme
