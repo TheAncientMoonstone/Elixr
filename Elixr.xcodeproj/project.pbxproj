@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2A6CE91E48425E00660F4A /* AppMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A6CE81E48425E00660F4A /* AppMain.storyboard */; };
 		2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */; };
 		2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */; };
 		2E41AF471DEC04470043C021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E41AF461DEC04470043C021 /* Main.storyboard */; };
@@ -19,14 +20,11 @@
 		2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */; };
 		2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */; };
 		2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7336931DFE28BD00DA33A7 /* Utility.swift */; };
-		2E849B591E45B1A2004AD2C6 /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B571E45B1A2004AD2C6 /* AWSCognitoIdentityProvider.framework */; };
-		2E849B5A1E45B1A2004AD2C6 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B581E45B1A2004AD2C6 /* AWSCore.framework */; };
 		2E849B5B1E45B1AF004AD2C6 /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B571E45B1A2004AD2C6 /* AWSCognitoIdentityProvider.framework */; };
 		2E849B5C1E45B1AF004AD2C6 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B571E45B1A2004AD2C6 /* AWSCognitoIdentityProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E849B5D1E45B1AF004AD2C6 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B581E45B1A2004AD2C6 /* AWSCore.framework */; };
 		2E849B5E1E45B1AF004AD2C6 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B581E45B1A2004AD2C6 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E849B631E45B1C2004AD2C6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B611E45B1C2004AD2C6 /* FBSDKLoginKit.framework */; };
-		2E849B651E45B23E004AD2C6 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */; };
 		2E849B661E45B247004AD2C6 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */; };
 		2E849B671E45B247004AD2C6 /* AWSMobileHubHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E849B681E45B247004AD2C6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B601E45B1C2004AD2C6 /* FBSDKCoreKit.framework */; };
@@ -66,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E2A6CE81E48425E00660F4A /* AppMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppMain.storyboard; sourceTree = "<group>"; };
 		2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpViewController.swift; sourceTree = "<group>"; };
 		2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpConfirmationViewController.swift; sourceTree = "<group>"; };
 		2E41AF461DEC04470043C021 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -129,11 +128,8 @@
 				2E8A1B4D1E13E88D0019CC82 /* PINCache.framework in Frameworks */,
 				2E8A1B4E1E13E88D0019CC82 /* PINRemoteImage.framework in Frameworks */,
 				2E849B5B1E45B1AF004AD2C6 /* AWSCognitoIdentityProvider.framework in Frameworks */,
-				2E849B591E45B1A2004AD2C6 /* AWSCognitoIdentityProvider.framework in Frameworks */,
 				2E849B681E45B247004AD2C6 /* FBSDKCoreKit.framework in Frameworks */,
 				6DDA5AD0AF5158D0F18C33EE /* Pods_Elixr.framework in Frameworks */,
-				2E849B651E45B23E004AD2C6 /* AWSMobileHubHelper.framework in Frameworks */,
-				2E849B5A1E45B1A2004AD2C6 /* AWSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +172,7 @@
 				2E43AA001DEBD7CE006D1B4D /* UserImportedFrameworks */,
 				2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */,
 				2E41AF461DEC04470043C021 /* Main.storyboard */,
+				2E2A6CE81E48425E00660F4A /* AppMain.storyboard */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
 				2E43A9F51DEBD762006D1B4D /* Assets.xcassets */,
 				2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */,
@@ -329,6 +326,7 @@
 				2E43A9F91DEBD762006D1B4D /* LaunchScreen.storyboard in Resources */,
 				2E43A9F61DEBD762006D1B4D /* Assets.xcassets in Resources */,
 				2E41AF471DEC04470043C021 /* Main.storyboard in Resources */,
+				2E2A6CE91E48425E00660F4A /* AppMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

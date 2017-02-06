@@ -15,10 +15,8 @@ extension SignInViewController {
     func handleCustomSignIn() {
         AWSCognitoUserPoolsSignInProvider.sharedInstance().setInteractiveAuthDelegate(self)
         self.handleLoginWithSignInProvider(signInProvider: AWSCognitoUserPoolsSignInProvider.sharedInstance())
-        // Moves to the next view controller; however throws a warning
-        // Attempt to present <Elixr.SignInViewController: 0x10386a080> on <Elixr.MainViewController: 0x10386ae40> whose view is not in the window hierarchy!
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "Main")
+        let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
         self.present(viewController, animated: true, completion: nil);
     }
     
