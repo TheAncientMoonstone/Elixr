@@ -36,6 +36,7 @@
 		2EBE46AD1DED53B400D6A476 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */; };
 		2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */; };
 		2EC277481E4AC1D600F6328E /* AppMainTabOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */; };
+		2EC2774A1E4ACDB000F6328E /* AppMainTabTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */; };
 		2EF3204D1E46E2D300820572 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA501DEBD878006D1B4D /* libz.tbd */; };
 		2EF3204E1E46E2DC00820572 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA521DEBD89E006D1B4D /* libsqlite3.tbd */; };
 		2EF3204F1E46E2E900820572 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6CA3201DF3C3CB00056897 /* UIKit.framework */; };
@@ -104,6 +105,7 @@
 		2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
 		2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolNewPasswordViewController.swift; sourceTree = "<group>"; };
 		2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainTabOneViewController.swift; sourceTree = "<group>"; };
+		2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainTabTwoViewController.swift; sourceTree = "<group>"; };
 		59E347A730942C52CEB5C735 /* Pods_Elixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80D4694EAFFDB415725291B /* Pods-Elixr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.release.xcconfig"; sourceTree = "<group>"; };
 		D9B030DF89C58C97925A3E18 /* Pods-Elixr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */,
 				2E41AF461DEC04470043C021 /* Main.storyboard */,
 				2E2A6CE81E48425E00660F4A /* AppMain.storyboard */,
+				2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
 				2E43A9F51DEBD762006D1B4D /* Assets.xcassets */,
@@ -404,6 +407,7 @@
 				2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */,
 				2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */,
 				2E43A9EF1DEBD762006D1B4D /* AppDelegate.swift in Sources */,
+				2EC2774A1E4ACDB000F6328E /* AppMainTabTwoViewController.swift in Sources */,
 				2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */,
 				2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */,
 				2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */,

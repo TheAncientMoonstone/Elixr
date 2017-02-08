@@ -29,7 +29,7 @@
         <!--TabItemTwo-->
         <scene sceneID="D6t-sX-ERa">
             <objects>
-                <viewController storyboardIdentifier="TabItemTwo" title="TabItemTwo" id="Lb4-gn-Nn8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabItemTwo" title="TabItemTwo" id="Lb4-gn-Nn8" customClass="AppMainTabTwoViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qe0-Xr-0bg"/>
                         <viewControllerLayoutGuide type="bottom" id="3V5-kE-eaD"/>
@@ -40,7 +40,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" id="slL-M7-VCg"/>
-                    <navigationItem key="navigationItem" id="8K3-Va-mep"/>
+                    <navigationItem key="navigationItem" title="Beta" id="8K3-Va-mep"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBh-EO-Sdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +78,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" id="tW5-Zw-buk"/>
-                    <navigationItem key="navigationItem" id="3Im-19-xg2"/>
+                    <navigationItem key="navigationItem" title="Alpha" id="3Im-19-xg2"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="798" y="-842"/>
