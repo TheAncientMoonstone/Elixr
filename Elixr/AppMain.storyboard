@@ -66,7 +66,6 @@
         <!--TabItemOne-->
         <scene sceneID="brk-37-dx7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Vh-TD-4S2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="TabItemOne" title="TabItemOne" id="qYE-N3-0M7" customClass="AppMainTabOneViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="soC-2X-UcB"/>
@@ -75,13 +74,52 @@
                     <view key="view" contentMode="scaleToFill" id="ajv-oV-8cH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiC-jk-U7j">
+                                <rect key="frame" x="0.0" y="72" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Randomise"/>
+                                <connections>
+                                    <segue destination="Fmk-P1-xdr" kind="show" id="dhg-xR-85m"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" id="tW5-Zw-buk"/>
                     <navigationItem key="navigationItem" title="Alpha" id="3Im-19-xg2"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Vh-TD-4S2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="-842"/>
+            <point key="canvasLocation" x="797.60000000000002" y="-842.42878560719646"/>
+        </scene>
+        <!--Randomise-->
+        <scene sceneID="gBP-7Z-93X">
+            <objects>
+                <viewController id="Fmk-P1-xdr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="30l-dV-XC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="SpC-O9-fXi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l8y-JV-JGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lr-Hi-tpI">
+                                <rect key="frame" x="0.0" y="20" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Randomise" id="Xul-lx-1eK"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxR-w7-ABo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616.8" y="-842.42878560719646"/>
         </scene>
         <!--TabBarController-->
         <scene sceneID="6D1-0k-0Ba">
