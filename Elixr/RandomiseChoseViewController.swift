@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreMotion
 
 class RandomiseChoseViewController: UIViewController {
 
