@@ -31,13 +31,13 @@
 		2E8A1B4C1E13E88D0019CC82 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */; };
 		2E8A1B4D1E13E88D0019CC82 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B4A1E13E88D0019CC82 /* PINCache.framework */; };
 		2E8A1B4E1E13E88D0019CC82 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B4B1E13E88D0019CC82 /* PINRemoteImage.framework */; };
+		2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */; };
 		2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */; };
 		2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */; };
 		2EBE46AD1DED53B400D6A476 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */; };
 		2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */; };
 		2EC277481E4AC1D600F6328E /* AppMainTabOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */; };
 		2EC2774A1E4ACDB000F6328E /* AppMainTabTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */; };
-		2ED48B061E4D64F0001FF8A0 /* RandomiseChoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED48B051E4D64F0001FF8A0 /* RandomiseChoseViewController.swift */; };
 		2ED48B081E4D65E0001FF8A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B071E4D65E0001FF8A0 /* MapKit.framework */; };
 		2ED48B0A1E4D6736001FF8A0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */; };
 		2EF3204D1E46E2D300820572 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA501DEBD878006D1B4D /* libz.tbd */; };
@@ -103,13 +103,13 @@
 		2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphoneos/AsyncDisplayKit/AsyncDisplayKit.framework"; sourceTree = "<group>"; };
 		2E8A1B4A1E13E88D0019CC82 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphoneos/PINCache/PINCache.framework"; sourceTree = "<group>"; };
 		2E8A1B4B1E13E88D0019CC82 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphoneos/PINRemoteImage/PINRemoteImage.framework"; sourceTree = "<group>"; };
+		2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomiseChoseViewController.swift; sourceTree = "<group>"; };
 		2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewControllerExtensions.swift; sourceTree = "<group>"; };
 		2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
 		2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolNewPasswordViewController.swift; sourceTree = "<group>"; };
 		2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainTabOneViewController.swift; sourceTree = "<group>"; };
 		2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainTabTwoViewController.swift; sourceTree = "<group>"; };
-		2ED48B051E4D64F0001FF8A0 /* RandomiseChoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomiseChoseViewController.swift; sourceTree = "<group>"; };
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		59E347A730942C52CEB5C735 /* Pods_Elixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,7 +185,7 @@
 				2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */,
 				2E41AF461DEC04470043C021 /* Main.storyboard */,
 				2E2A6CE81E48425E00660F4A /* AppMain.storyboard */,
-				2ED48B051E4D64F0001FF8A0 /* RandomiseChoseViewController.swift */,
+				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
 				2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
@@ -417,7 +417,7 @@
 			files = (
 				2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */,
 				2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */,
-				2ED48B061E4D64F0001FF8A0 /* RandomiseChoseViewController.swift in Sources */,
+				2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */,
 				2E43A9EF1DEBD762006D1B4D /* AppDelegate.swift in Sources */,
 				2EC2774A1E4ACDB000F6328E /* AppMainTabTwoViewController.swift in Sources */,
 				2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */,

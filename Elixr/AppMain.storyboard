@@ -110,7 +110,7 @@
         <!--Randomise-->
         <scene sceneID="gBP-7Z-93X">
             <objects>
-                <viewController id="Fmk-P1-xdr" customClass="RandomiseChoseViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fmk-P1-xdr" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="30l-dV-XC0"/>
                         <viewControllerLayoutGuide type="bottom" id="SpC-O9-fXi"/>

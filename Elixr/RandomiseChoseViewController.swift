@@ -2,12 +2,11 @@
 //  RandomiseChoseViewController.swift
 //  Elixr
 //
-//  Created by Timothy Richardson on 10/2/17.
+//  Created by Timothy Richardson on 11/2/17.
 //  Copyright © 2017 Timothy Richardson. All rights reserved.
 //
 
 import UIKit
-import CoreMotion
 
 class RandomiseChoseViewController: UIViewController {
 
