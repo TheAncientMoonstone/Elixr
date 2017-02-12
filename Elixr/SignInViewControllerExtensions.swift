@@ -52,8 +52,6 @@ extension SignInViewController: AWSCognitoIdentityInteractiveAuthenticationDeleg
                 //Vivek : UIAlertView is deprecated after Swift 3, so we need to use UIAlertController
                 let alert = UIAlertController(title: error.userInfo["__type"] as? String, message: error.userInfo["message"] as? String, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-
-                
                 self.present(alert, animated: true, completion: nil)
             })
         }

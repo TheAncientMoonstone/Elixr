@@ -90,14 +90,10 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
 
     // MARK: - Utility Methods
     func showAlert(title : String, message : String){
-        
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
-            
         }))
         self.present(alert, animated: true, completion: nil)
-        
     }
     
     func doneClicked() {
