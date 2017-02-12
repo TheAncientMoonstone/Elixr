@@ -18,6 +18,7 @@
 		2E43A9F61DEBD762006D1B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E43A9F51DEBD762006D1B4D /* Assets.xcassets */; };
 		2E43A9F91DEBD762006D1B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */; };
 		2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */; };
+		2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69E1CE1E51235500334450 /* ElixrTests.swift */; };
 		2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */; };
 		2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7336931DFE28BD00DA33A7 /* Utility.swift */; };
 		2E849B5B1E45B1AF004AD2C6 /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B571E45B1A2004AD2C6 /* AWSCognitoIdentityProvider.framework */; };
@@ -51,6 +52,16 @@
 		2EF320551E46E33700820572 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA5A1DEBD8CB006D1B4D /* SafariServices.framework */; };
 		6DDA5AD0AF5158D0F18C33EE /* Pods_Elixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E347A730942C52CEB5C735 /* Pods_Elixr.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E69E1D11E51235500334450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E43A9E31DEBD762006D1B4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E43A9EA1DEBD762006D1B4D;
+			remoteInfo = Elixr;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2E849B5F1E45B1B0004AD2C6 /* Embed Frameworks */ = {
@@ -88,6 +99,9 @@
 		2E43AA581DEBD8BE006D1B4D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2E43AA5A1DEBD8CB006D1B4D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSConfiguration.swift; sourceTree = "<group>"; };
+		2E69E1CC1E51235500334450 /* ElixrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElixrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E69E1CE1E51235500334450 /* ElixrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixrTests.swift; sourceTree = "<group>"; };
+		2E69E1D01E51235500334450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6CA3201DF3C3CB00056897 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E6CA3221DF3C3F400056897 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2E6CA3241DF3C3FC00056897 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -145,6 +159,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E69E1C91E51235500334450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -162,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				2E43A9ED1DEBD762006D1B4D /* Elixr */,
+				2E69E1CD1E51235500334450 /* ElixrTests */,
 				2E43A9EC1DEBD762006D1B4D /* Products */,
 				2E43AA4F1DEBD878006D1B4D /* Frameworks */,
 				753935B54390C8B0304A2802 /* Pods */,
@@ -172,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				2E43A9EB1DEBD762006D1B4D /* Elixr.app */,
+				2E69E1CC1E51235500334450 /* ElixrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,6 +265,15 @@
 			name = AmazonAWS;
 			sourceTree = "<group>";
 		};
+		2E69E1CD1E51235500334450 /* ElixrTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E69E1CE1E51235500334450 /* ElixrTests.swift */,
+				2E69E1D01E51235500334450 /* Info.plist */,
+			);
+			path = ElixrTests;
+			sourceTree = "<group>";
+		};
 		2E7336921DFE28AF00DA33A7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,13 +329,31 @@
 			productReference = 2E43A9EB1DEBD762006D1B4D /* Elixr.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2E69E1CB1E51235500334450 /* ElixrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E69E1D51E51235500334450 /* Build configuration list for PBXNativeTarget "ElixrTests" */;
+			buildPhases = (
+				2E69E1C81E51235500334450 /* Sources */,
+				2E69E1C91E51235500334450 /* Frameworks */,
+				2E69E1CA1E51235500334450 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E69E1D21E51235500334450 /* PBXTargetDependency */,
+			);
+			name = ElixrTests;
+			productName = ElixrTests;
+			productReference = 2E69E1CC1E51235500334450 /* ElixrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2E43A9E31DEBD762006D1B4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Timothy Richardson";
 				TargetAttributes = {
@@ -312,6 +362,11 @@
 						DevelopmentTeam = YV663DGEUZ;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+					};
+					2E69E1CB1E51235500334450 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E43A9EA1DEBD762006D1B4D;
 					};
 				};
 			};
@@ -329,6 +384,7 @@
 			projectRoot = "";
 			targets = (
 				2E43A9EA1DEBD762006D1B4D /* Elixr */,
+				2E69E1CB1E51235500334450 /* ElixrTests */,
 			);
 		};
 /* End PBXProject section */
@@ -344,6 +400,13 @@
 				2E43A9F61DEBD762006D1B4D /* Assets.xcassets in Resources */,
 				2E41AF471DEC04470043C021 /* Main.storyboard in Resources */,
 				2E2A6CE91E48425E00660F4A /* AppMain.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E69E1CA1E51235500334450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +495,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E69E1C81E51235500334450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E69E1D21E51235500334450 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E43A9EA1DEBD762006D1B4D /* Elixr */;
+			targetProxy = 2E69E1D11E51235500334450 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */ = {
@@ -584,6 +663,34 @@
 			};
 			name = Release;
 		};
+		2E69E1D31E51235500334450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ElixrTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LyfeForceSoftware.ElixrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elixr.app/Elixr";
+			};
+			name = Debug;
+		};
+		2E69E1D41E51235500334450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ElixrTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LyfeForceSoftware.ElixrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elixr.app/Elixr";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -604,6 +711,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2E69E1D51E51235500334450 /* Build configuration list for PBXNativeTarget "ElixrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E69E1D31E51235500334450 /* Debug */,
+				2E69E1D41E51235500334450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
