@@ -8,7 +8,7 @@
 
 import Foundation
 import AWSCognitoIdentityProvider
-import AWSMobileHubHelper
+
 
 class UserPoolNewPasswordViewController: UIViewController {
     

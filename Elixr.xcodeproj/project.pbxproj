@@ -359,7 +359,7 @@
 				TargetAttributes = {
 					2E43A9EA1DEBD762006D1B4D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = YV663DGEUZ;
+						DevelopmentTeam = PV4GATF4BV;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -626,7 +626,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = YV663DGEUZ;
+				DEVELOPMENT_TEAM = PV4GATF4BV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
@@ -648,7 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = YV663DGEUZ;
+				DEVELOPMENT_TEAM = PV4GATF4BV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
@@ -719,6 +719,7 @@
 				2E69E1D41E51235500334450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

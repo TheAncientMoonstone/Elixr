@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -64,10 +64,19 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="Login with Facebook"/>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tyC-Sn-JhS">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tyC-Sn-JhS" firstAttribute="centerX" secondItem="ryw-RO-7dh" secondAttribute="centerX" id="LyR-fD-9x3"/>
+                            <constraint firstItem="tyC-Sn-JhS" firstAttribute="centerY" secondItem="ryw-RO-7dh" secondAttribute="centerY" id="kwv-nj-gQj"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="tyC-Sn-JhS" id="HgX-6Y-sJ1"/>
                         <outlet property="customCreateNewAccountButton" destination="48l-Fr-Y40" id="25I-fp-ckj"/>
                         <outlet property="customForgotUserPasswordButton" destination="F4A-IH-bQM" id="iua-eu-mu6"/>
                         <outlet property="customPasswordField" destination="51m-FB-66h" id="I7X-iE-SY8"/>

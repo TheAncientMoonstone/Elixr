@@ -15,6 +15,12 @@ extension SignInViewController {
     func handleCustomSignIn() {
         AWSCognitoUserPoolsSignInProvider.sharedInstance().setInteractiveAuthDelegate(self)
         self.handleLoginWithSignInProvider(signInProvider: AWSCognitoUserPoolsSignInProvider.sharedInstance())
+        
+        //Set the key isLoggedIn to true so when the user opens the app,
+        //they are directly redirected to AppMain Storyboard
+        UserDefaults.standard.set(true, forKey: "isLoggedIn")
+        UserDefaults.standard.synchronize()
+        
         let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
         self.present(viewController, animated: true, completion: nil);
