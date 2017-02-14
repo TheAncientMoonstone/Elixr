@@ -27,11 +27,17 @@ class SignInViewController: UIViewController {
     // Third party provider login buttons.
     @IBOutlet weak var facebookLoginButton: UIButton!
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Hide activity indicator on load
+        self.activityIndicator.isHidden = true
+        
+        
         // Do any additional setup after loading the view.
         print("Sign in loading")
         
@@ -82,10 +88,6 @@ class SignInViewController: UIViewController {
         // before the user can authenticate.
         AWSFacebookSignInProvider.sharedInstance().setPermissions(["public_profile", "email", "user_friends"]);
         handleLoginWithSignInProvider(signInProvider: AWSFacebookSignInProvider.sharedInstance())
-        // If user has been successfully authenticated they can now move on to the app.
-        let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
-        self.present(viewController, animated: true, completion: nil);
         
     }
  
@@ -105,12 +107,27 @@ class SignInViewController: UIViewController {
         }
         */
         
+        activityIndicatorStart()
+        
         // After Editing
         AWSIdentityManager.defaultIdentityManager().loginWithSign(signInProvider, completionHandler: {(result, error) -> Void in
+            self.activityIndicatorStop()
+            
             if error == nil {
                 /* If no error reported by the Sign in provider, discard the sign in view controller */
                 DispatchQueue.main.async(execute: {
-                    self.presentingViewController?.dismiss(animated: true, completion: nil)
+//                    self.presentingViewController?.dismiss(animated: true, completion: nil)
+  
+                    //Set the key isLoggedIn to true so when the user opens the app,
+                    //they are directly redirected to AppMain Storyboard
+                    UserDefaults.standard.set(true, forKey: "isLoggedIn")
+                    UserDefaults.standard.synchronize()
+                    
+                    // If user has been successfully authenticated they can now move on to the app.
+                    let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
+                    let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+                    self.present(viewController, animated: true, completion: nil);
+
                 })
             }
             print("Login with sign in provider result = \(result), error =\(error)")
@@ -130,5 +147,25 @@ class SignInViewController: UIViewController {
     // Adds function to the 'Done' button.
     func doneClicked() {
         view.endEditing(true)
+    
     }
+    
+    
+    //Method to unhide the activity indicator and start animating
+    func activityIndicatorStart(){
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+    }
+    
+    
+    //Method to stop and hide the activity indicator
+    func activityIndicatorStop(){
+        
+        self.activityIndicator.stopAnimating()
+        self.activityIndicator.isHidden = true
+    }
+    
+
+    
+    
 }

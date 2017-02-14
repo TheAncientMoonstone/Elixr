@@ -20,6 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        
+        
+        if UserDefaults.standard.bool(forKey: "isLoggedIn") {
+            // If user has been successfully authenticated they can now move on to the app.
+            let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+            window?.rootViewController = viewController
+        }
+        
+        
         return AWSMobileClient.sharedInstance.didFinishLaunching(application: application, withOptions: launchOptions as [NSObject : AnyObject]?)
     }
     
