@@ -16,8 +16,12 @@ class MainViewController: UIViewController {
     var signInObserver: AnyObject!
     var signOutObserver: AnyObject!
     
-    
     // MARK: - View lifecycle
+    
+    struct Static {
+        static let onceToken = 0
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,14 +51,9 @@ class MainViewController: UIViewController {
     }
     
     func setupRightBarButtonItem() {
-        struct Static {
-            static let onceToken: dispatch_once_t = 0
-        }
         
-        dispatch_once(&Static.onceToken, {
-            let loginButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .Done, target: self, action: nil)
-            self.navigationItem.rightBarButtonItem = loginButton
-        })
+        let loginButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .done, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = loginButton
         
         if (AWSIdentityManager.defaultIdentityManager().isLoggedIn) {
             navigationItem.rightBarButtonItem!.title = NSLocalizedString("Sign-Out", comment: "Label for the logout button.")
@@ -71,7 +70,6 @@ class MainViewController: UIViewController {
         super.viewDidAppear(animated)
         
     }
-
     
 
     // MARK:- Sign In View Controller.
