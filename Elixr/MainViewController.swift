@@ -13,9 +13,8 @@ import FBSDKLoginKit
 
 class MainViewController: UIViewController {
     
-    
-    var signInObserver: AnyObject!
-    var signOutObserver: AnyObject!
+    var signInObserver: Any?
+    var signOutObserver: Any?
     
     struct Static {
         static let onceToken = 0
@@ -46,15 +45,17 @@ class MainViewController: UIViewController {
     
     deinit {
         // signInObserver throws "Thread 1: EXC_BAD_INSTRUCTION" error.
-        NotificationCenter.default.removeObserver(signInObserver)
-        NotificationCenter.default.removeObserver(signOutObserver)
+        NotificationCenter.default.removeObserver(signInObserver as Any)
+        NotificationCenter.default.removeObserver(signOutObserver as Any)
     }
     
     func setupRightBarButtonItem() {
+        
         let loginButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .done, target: self, action: nil)
         self.navigationItem.rightBarButtonItem = loginButton
         
         if (AWSIdentityManager.defaultIdentityManager().isLoggedIn) {
+            
             navigationItem.rightBarButtonItem!.title = NSLocalizedString("Sign Out", comment: "Label for hte logout button.")
             navigationItem.rightBarButtonItem!.action = #selector(MainViewController.handleLogout)
         }
