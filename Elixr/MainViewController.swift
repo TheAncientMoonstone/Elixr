@@ -14,7 +14,6 @@ import FBSDKLoginKit
 class MainViewController: UIViewController {
     
     // MARK: - View lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

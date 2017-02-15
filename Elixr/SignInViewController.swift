@@ -118,8 +118,8 @@ class SignInViewController: UIViewController {
                 DispatchQueue.main.async(execute: {
 //                    self.presentingViewController?.dismiss(animated: true, completion: nil)
   
-                    //Set the key isLoggedIn to true so when the user opens the app,
-                    //they are directly redirected to AppMain Storyboard
+                    // Set the key isLoggedIn to true so when the user opens the app,
+                    // they are directly redirected to AppMain Storyboard
                     UserDefaults.standard.set(true, forKey: "isLoggedIn")
                     UserDefaults.standard.synchronize()
                     
