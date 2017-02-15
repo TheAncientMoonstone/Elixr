@@ -16,12 +16,9 @@ class AppMainTabOneViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        //Adding a sign out button programmatically
-     
-        print("Singout button")
+        // Adding a sign out button programmatically
+        print("Signout button")
         navigationItem.rightBarButtonItem  = UIBarButtonItem(title: "Sign Out", style: .plain, target: self, action: #selector(actionSignOut))
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,23 +30,19 @@ class AppMainTabOneViewController: UIViewController {
         
         if (AWSIdentityManager.defaultIdentityManager().isLoggedIn) {
             AWSIdentityManager.defaultIdentityManager().logout(completionHandler: { (result, error) in
-                
                 if result == nil {
                     self.actionNavigateToSignInView()
                 }
-                
             })
-        }else{
+        } else {
             self.actionNavigateToSignInView()
         }
         
     }
     
     func actionNavigateToSignInView(){
-        
         UserDefaults.standard.set(false, forKey: "isLoggedIn")
         UserDefaults.standard.synchronize()
-        
         let storyboard = UIStoryboard(name: "SignIn", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "Sign In")
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
