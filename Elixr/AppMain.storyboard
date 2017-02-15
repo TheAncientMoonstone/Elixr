@@ -104,6 +104,9 @@
                     <navigationItem key="navigationItem" title="Alpha" id="3Im-19-xg2">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="sg1-6c-iFw"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="logoutButton" destination="sg1-6c-iFw" id="yeF-mx-JKb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vh-TD-4S2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
