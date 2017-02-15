@@ -101,7 +101,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" id="tW5-Zw-buk"/>
-                    <navigationItem key="navigationItem" title="Alpha" id="3Im-19-xg2"/>
+                    <navigationItem key="navigationItem" title="Alpha" id="3Im-19-xg2">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="sg1-6c-iFw"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vh-TD-4S2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
