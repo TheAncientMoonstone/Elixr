@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E2A6CE91E48425E00660F4A /* AppMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A6CE81E48425E00660F4A /* AppMain.storyboard */; };
+		2E3079231E5565A300EB1739 /* JeevesChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3079221E5565A300EB1739 /* JeevesChatViewController.swift */; };
+		2E3079241E5565A300EB1739 /* JeevesChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3079221E5565A300EB1739 /* JeevesChatViewController.swift */; };
 		2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */; };
 		2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */; };
 		2E41AF471DEC04470043C021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E41AF461DEC04470043C021 /* Main.storyboard */; };
@@ -37,8 +39,7 @@
 		2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */; };
 		2EBE46AD1DED53B400D6A476 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */; };
 		2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */; };
-		2EC277481E4AC1D600F6328E /* AppMainTabOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */; };
-		2EC2774A1E4ACDB000F6328E /* AppMainTabTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */; };
+		2EC277481E4AC1D600F6328E /* AppMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277471E4AC1D600F6328E /* AppMainViewController.swift */; };
 		2ED48B081E4D65E0001FF8A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B071E4D65E0001FF8A0 /* MapKit.framework */; };
 		2ED48B0A1E4D6736001FF8A0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */; };
 		2EF3204D1E46E2D300820572 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA501DEBD878006D1B4D /* libz.tbd */; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		2E2A6CE81E48425E00660F4A /* AppMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppMain.storyboard; sourceTree = "<group>"; };
+		2E3079221E5565A300EB1739 /* JeevesChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeevesChatViewController.swift; sourceTree = "<group>"; };
 		2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpViewController.swift; sourceTree = "<group>"; };
 		2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpConfirmationViewController.swift; sourceTree = "<group>"; };
 		2E41AF461DEC04470043C021 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -122,8 +124,7 @@
 		2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
 		2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolNewPasswordViewController.swift; sourceTree = "<group>"; };
-		2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainTabOneViewController.swift; sourceTree = "<group>"; };
-		2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainTabTwoViewController.swift; sourceTree = "<group>"; };
+		2EC277471E4AC1D600F6328E /* AppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		59E347A730942C52CEB5C735 /* Pods_Elixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,9 +209,9 @@
 				2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */,
 				2E41AF461DEC04470043C021 /* Main.storyboard */,
 				2E2A6CE81E48425E00660F4A /* AppMain.storyboard */,
+				2E3079221E5565A300EB1739 /* JeevesChatViewController.swift */,
 				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
-				2EC277491E4ACDB000F6328E /* AppMainTabTwoViewController.swift */,
-				2EC277471E4AC1D600F6328E /* AppMainTabOneViewController.swift */,
+				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
 				2E43A9F51DEBD762006D1B4D /* Assets.xcassets */,
 				2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */,
@@ -483,15 +484,15 @@
 				2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */,
 				2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */,
 				2E43A9EF1DEBD762006D1B4D /* AppDelegate.swift in Sources */,
-				2EC2774A1E4ACDB000F6328E /* AppMainTabTwoViewController.swift in Sources */,
 				2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */,
 				2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */,
 				2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */,
 				2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */,
+				2E3079231E5565A300EB1739 /* JeevesChatViewController.swift in Sources */,
 				2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */,
 				2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */,
 				2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */,
-				2EC277481E4AC1D600F6328E /* AppMainTabOneViewController.swift in Sources */,
+				2EC277481E4AC1D600F6328E /* AppMainViewController.swift in Sources */,
 				2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3079241E5565A300EB1739 /* JeevesChatViewController.swift in Sources */,
 				2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

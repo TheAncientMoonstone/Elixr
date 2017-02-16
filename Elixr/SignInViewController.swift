@@ -125,7 +125,7 @@ class SignInViewController: UIViewController {
                     
                     // If user has been successfully authenticated they can now move on to the app.
                     let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
-                    let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+                    let viewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
                     let appDelegate = UIApplication.shared.delegate as! AppDelegate
                     appDelegate.window?.rootViewController = viewController
 

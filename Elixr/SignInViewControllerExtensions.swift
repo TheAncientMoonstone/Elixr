@@ -22,7 +22,7 @@ extension SignInViewController {
         UserDefaults.standard.synchronize()
         
         let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+        let viewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
         self.present(viewController, animated: true, completion: nil);
     }
     

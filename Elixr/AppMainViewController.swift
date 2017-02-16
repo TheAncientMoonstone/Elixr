@@ -11,7 +11,7 @@ import AWSMobileHubHelper
 import AWSCognito
 import AWSCognitoIdentityProvider
 
-class AppMainTabOneViewController: UIViewController {
+class AppMainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
