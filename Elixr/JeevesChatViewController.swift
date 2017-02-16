@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class JeevesChatViewController: UIViewController, UITableViewDelegate,
     UITableViewDataSource, UITextViewDelegate, UIGestureRecognizerDelegate {
@@ -19,7 +20,7 @@ class JeevesChatViewController: UIViewController, UITableViewDelegate,
     
     let nickname = String()
     let chatMessages = [[String: AnyObject]]()
-    var bannerLabelTimer = Timer()
+    var bannerLabelTimer : Timer? = Timer()
     
     
     
@@ -80,8 +81,8 @@ class JeevesChatViewController: UIViewController, UITableViewDelegate,
     func configureTableView() {
         tblChat.delegate = self
         tblChat.dataSource = self
-        tblChat.register(UINib(nibName: "ChatCell", bundle: nil),
-                         forCellReuseIdentifier: "idCellChat")
+//        tblChat.register(UINib(nibName: "ChatCell", bundle: nil),
+//                         forCellReuseIdentifier: "idCellChat")
         tblChat.estimatedRowHeight = 90.0
         tblChat.rowHeight = UITableViewAutomaticDimension
         tblChat.tableFooterView = UIView(frame: CGRect.zero)
@@ -116,12 +117,19 @@ class JeevesChatViewController: UIViewController, UITableViewDelegate,
     func scrollToBottom() {
         let delay = 0.1 * Double(NSEC_PER_SEC)
         
-        dispatch_after(DispatchTime.now(dispatch_time_t(DISPATCH_TIME_NOW), Int64(delay)), DispatchQueue.main) { () -> Void in
+        //dispatch_after(<#T##when: dispatch_time_t##dispatch_time_t#>, <#T##queue: DispatchQueue##DispatchQueue#>, <#T##block: () -> Void##() -> Void#>)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                // your code here
             if self.chatMessages.count > 0 {
-                let lastRowIndexPath = NSIndexPath(forRow: self.chatMessages.count - 1, inSection: 0)
-                self.tblChat.scrollToRowAtIndexPath(lastRowIndexPath, atScrollPosition: UITableViewScrollPosition.Bottom, animated: true)
+                let lastRowIndexPath = NSIndexPath(row: self.chatMessages.count - 1, section: 0)
+                
+                self.tblChat.scrollToRow(at: lastRowIndexPath as IndexPath, at: UITableViewScrollPosition.bottom, animated: true)
             }
+            
         }
+        
+        
     }
     
     func showBannerLabelAnimated() {
@@ -133,8 +141,16 @@ class JeevesChatViewController: UIViewController, UITableViewDelegate,
     }
     
     func hideBannerLabel() {
+        
+//        if let aTimer = bannerLabelTimer {
+//            aTimer.invalidate()
+//            timer = nil
+//        } else {
+//            //no timer to stop. Make sure you have a valid timer created
+//        }
+        
         if bannerLabelTimer != nil {
-            bannerLabelTimer.invalidate()
+            bannerLabelTimer?.invalidate()
             bannerLabelTimer = nil
         }
         
@@ -191,24 +207,28 @@ class JeevesChatViewController: UIViewController, UITableViewDelegate,
         return 1
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chatMessages.count
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "idCellChat", forIndexPath: indexPath) as! ChatCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "idCellChat", for: indexPath) as! ChartCell
+
         let currentChatMessage = chatMessages[indexPath.row]
         let senderNickname = currentChatMessage["nickname"] as! String
         let message = currentChatMessage["message"] as! String
         let messageDate = currentChatMessage["date"] as! String
         
-        if senderNickname == nickname {
-            cell.lblChatMessage.textAlignment = NSTextAlignment.right
-            cell.lblMessageDetails.textAlignment = NSTextAlignment.right
-            cell.lblChatMessage.textColor = lblNewsBanner.backgroundColor
-        }
-        
-        cell.lblChatMessage.text = message
-        cell.lblMessageDetails.text = "by \(senderNickname.uppercased()) @ \(messageDate)"
-        
-        cell.lblChatMessage.textColor() = UIColor.darkGray
+//        if senderNickname == nickname {
+//            cell.lblChatMessage.textAlignment = NSTextAlignment.right
+//            cell.lblMessageDetails.textAlignment = NSTextAlignment.right
+//            cell.lblChatMessage.textColor = lblNewsBanner.backgroundColor
+//        }
+//        
+//        cell.lblChatMessage.text = message
+//        cell.lblMessageDetails.text = "by \(senderNickname.uppercased()) @ \(messageDate)"
+//        
+//        cell.lblChatMessage.textColor() = UIColor.darkGray
         
         return cell
     }
@@ -222,7 +242,7 @@ class JeevesChatViewController: UIViewController, UITableViewDelegate,
     }
     
     // UIGestureRecognizerDelegate Methods
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
 }

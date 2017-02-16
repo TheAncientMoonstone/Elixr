@@ -49,6 +49,8 @@
 		2EF320531E46E31900820572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA541DEBD8AF006D1B4D /* Foundation.framework */; };
 		2EF320541E46E32300820572 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA561DEBD8B7006D1B4D /* MediaPlayer.framework */; };
 		2EF320551E46E33700820572 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA5A1DEBD8CB006D1B4D /* SafariServices.framework */; };
+		E26766931E55D99200FA3E58 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26766921E55D99200FA3E58 /* ChartCell.swift */; };
+		E26766941E55D99200FA3E58 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26766921E55D99200FA3E58 /* ChartCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +126,7 @@
 		2EC277471E4AC1D600F6328E /* AppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		59E347A730942C52CEB5C735 /* Pods_Elixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26766921E55D99200FA3E58 /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
+				E26766921E55D99200FA3E58 /* ChartCell.swift */,
 				2E43A9F51DEBD762006D1B4D /* Assets.xcassets */,
 				2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */,
 				2E43A9FA1DEBD762006D1B4D /* Info.plist */,
@@ -243,7 +246,6 @@
 				2E43AA541DEBD8AF006D1B4D /* Foundation.framework */,
 				2E43AA521DEBD89E006D1B4D /* libsqlite3.tbd */,
 				2E43AA501DEBD878006D1B4D /* libz.tbd */,
-				59E347A730942C52CEB5C735 /* Pods_Elixr.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -294,13 +296,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E43A9FD1DEBD762006D1B4D /* Build configuration list for PBXNativeTarget "Elixr" */;
 			buildPhases = (
-				AC9AE639A236F2F0B627910C /* [CP] Check Pods Manifest.lock */,
 				2E43A9E71DEBD762006D1B4D /* Sources */,
 				2E43A9E81DEBD762006D1B4D /* Frameworks */,
 				2E43A9E91DEBD762006D1B4D /* Resources */,
 				2E43AA4E1DEBD815006D1B4D /* ShellScript */,
-				247D2DD512340DAFAC484659 /* [CP] Embed Pods Frameworks */,
-				FFDFD95C20312E66AE797F30 /* [CP] Copy Pods Resources */,
 				2E849B5F1E45B1B0004AD2C6 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -342,7 +341,7 @@
 				TargetAttributes = {
 					2E43A9EA1DEBD762006D1B4D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = YV663DGEUZ;
+						DevelopmentTeam = PV4GATF4BV;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -397,21 +396,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		247D2DD512340DAFAC484659 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixr/Pods-Elixr-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2E43AA4E1DEBD815006D1B4D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -424,36 +408,6 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
-		};
-		AC9AE639A236F2F0B627910C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FFDFD95C20312E66AE797F30 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixr/Pods-Elixr-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -473,6 +427,7 @@
 				2E3079231E5565A300EB1739 /* JeevesChatViewController.swift in Sources */,
 				2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */,
 				2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */,
+				E26766931E55D99200FA3E58 /* ChartCell.swift in Sources */,
 				2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */,
 				2EC277481E4AC1D600F6328E /* AppMainViewController.swift in Sources */,
 				2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */,
@@ -483,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26766941E55D99200FA3E58 /* ChartCell.swift in Sources */,
 				2E3079241E5565A300EB1739 /* JeevesChatViewController.swift in Sources */,
 				2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */,
 			);
@@ -610,7 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = YV663DGEUZ;
+				DEVELOPMENT_TEAM = PV4GATF4BV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
@@ -631,7 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = YV663DGEUZ;
+				DEVELOPMENT_TEAM = PV4GATF4BV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
