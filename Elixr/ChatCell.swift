@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChartCell: UITableViewCell {
+class ChatCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

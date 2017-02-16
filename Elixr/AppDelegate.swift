@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if UserDefaults.standard.bool(forKey: "isLoggedIn") {
             // If user has been successfully authenticated they can now move on to the app.
             let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+            let viewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
             window?.rootViewController = viewController
         }
         

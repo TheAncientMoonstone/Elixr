@@ -48,8 +48,8 @@
 		2EF320531E46E31900820572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA541DEBD8AF006D1B4D /* Foundation.framework */; };
 		2EF320541E46E32300820572 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA561DEBD8B7006D1B4D /* MediaPlayer.framework */; };
 		2EF320551E46E33700820572 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA5A1DEBD8CB006D1B4D /* SafariServices.framework */; };
-		E26766931E55D99200FA3E58 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26766921E55D99200FA3E58 /* ChartCell.swift */; };
-		E26766941E55D99200FA3E58 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26766921E55D99200FA3E58 /* ChartCell.swift */; };
+		E26766931E55D99200FA3E58 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26766921E55D99200FA3E58 /* ChatCell.swift */; };
+		E26766941E55D99200FA3E58 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26766921E55D99200FA3E58 /* ChatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,7 +125,7 @@
 		2EC277471E4AC1D600F6328E /* AppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		E26766921E55D99200FA3E58 /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		E26766921E55D99200FA3E58 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +204,7 @@
 				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
-				E26766921E55D99200FA3E58 /* ChartCell.swift */,
+				E26766921E55D99200FA3E58 /* ChatCell.swift */,
 				2E43A9F51DEBD762006D1B4D /* Assets.xcassets */,
 				2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */,
 				2E43A9FA1DEBD762006D1B4D /* Info.plist */,
@@ -425,7 +425,7 @@
 				2E3079231E5565A300EB1739 /* JeevesChatViewController.swift in Sources */,
 				2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */,
 				2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */,
-				E26766931E55D99200FA3E58 /* ChartCell.swift in Sources */,
+				E26766931E55D99200FA3E58 /* ChatCell.swift in Sources */,
 				2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */,
 				2EC277481E4AC1D600F6328E /* AppMainViewController.swift in Sources */,
 				2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */,
@@ -436,7 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26766941E55D99200FA3E58 /* ChartCell.swift in Sources */,
+				E26766941E55D99200FA3E58 /* ChatCell.swift in Sources */,
 				2E3079241E5565A300EB1739 /* JeevesChatViewController.swift in Sources */,
 				2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */,
 			);
