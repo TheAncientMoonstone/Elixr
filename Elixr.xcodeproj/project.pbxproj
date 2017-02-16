@@ -31,7 +31,6 @@
 		2E849B661E45B247004AD2C6 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */; };
 		2E849B671E45B247004AD2C6 /* AWSMobileHubHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E849B681E45B247004AD2C6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B601E45B1C2004AD2C6 /* FBSDKCoreKit.framework */; };
-		2E8A1B4C1E13E88D0019CC82 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */; };
 		2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */; };
 		2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */; };
 		2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */; };
@@ -145,7 +144,6 @@
 				2EF3204F1E46E2E900820572 /* UIKit.framework in Frameworks */,
 				2EF3204E1E46E2DC00820572 /* libsqlite3.tbd in Frameworks */,
 				2EF3204D1E46E2D300820572 /* libz.tbd in Frameworks */,
-				2E8A1B4C1E13E88D0019CC82 /* AsyncDisplayKit.framework in Frameworks */,
 				2E849B5D1E45B1AF004AD2C6 /* AWSCore.framework in Frameworks */,
 				2E849B661E45B247004AD2C6 /* AWSMobileHubHelper.framework in Frameworks */,
 				2E849B631E45B1C2004AD2C6 /* FBSDKLoginKit.framework in Frameworks */,
@@ -491,6 +489,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -542,6 +541,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -567,6 +567,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PV4GATF4BV;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
@@ -588,6 +589,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PV4GATF4BV;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
