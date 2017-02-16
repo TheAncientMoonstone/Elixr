@@ -1,1 +1,0 @@
-workspace '~/Desktop/Xcode Projects/Elixr/Elixr.workspace'
