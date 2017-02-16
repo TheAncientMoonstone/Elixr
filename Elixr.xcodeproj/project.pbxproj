@@ -31,7 +31,6 @@
 		2E849B661E45B247004AD2C6 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */; };
 		2E849B671E45B247004AD2C6 /* AWSMobileHubHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E849B681E45B247004AD2C6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B601E45B1C2004AD2C6 /* FBSDKCoreKit.framework */; };
-		2E8A1B4C1E13E88D0019CC82 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */; };
 		2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */; };
 		2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */; };
 		2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */; };
@@ -143,7 +142,6 @@
 				2EF3204F1E46E2E900820572 /* UIKit.framework in Frameworks */,
 				2EF3204E1E46E2DC00820572 /* libsqlite3.tbd in Frameworks */,
 				2EF3204D1E46E2D300820572 /* libz.tbd in Frameworks */,
-				2E8A1B4C1E13E88D0019CC82 /* AsyncDisplayKit.framework in Frameworks */,
 				2E849B5D1E45B1AF004AD2C6 /* AWSCore.framework in Frameworks */,
 				2E849B661E45B247004AD2C6 /* AWSMobileHubHelper.framework in Frameworks */,
 				2E849B631E45B1C2004AD2C6 /* FBSDKLoginKit.framework in Frameworks */,
@@ -294,13 +292,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E43A9FD1DEBD762006D1B4D /* Build configuration list for PBXNativeTarget "Elixr" */;
 			buildPhases = (
-				AC9AE639A236F2F0B627910C /* [CP] Check Pods Manifest.lock */,
 				2E43A9E71DEBD762006D1B4D /* Sources */,
 				2E43A9E81DEBD762006D1B4D /* Frameworks */,
 				2E43A9E91DEBD762006D1B4D /* Resources */,
 				2E43AA4E1DEBD815006D1B4D /* ShellScript */,
-				247D2DD512340DAFAC484659 /* [CP] Embed Pods Frameworks */,
-				FFDFD95C20312E66AE797F30 /* [CP] Copy Pods Resources */,
 				2E849B5F1E45B1B0004AD2C6 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -397,21 +392,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		247D2DD512340DAFAC484659 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixr/Pods-Elixr-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2E43AA4E1DEBD815006D1B4D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -424,36 +404,6 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
-		};
-		AC9AE639A236F2F0B627910C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FFDFD95C20312E66AE797F30 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixr/Pods-Elixr-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
