@@ -32,8 +32,6 @@
 		2E849B671E45B247004AD2C6 /* AWSMobileHubHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E849B681E45B247004AD2C6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E849B601E45B1C2004AD2C6 /* FBSDKCoreKit.framework */; };
 		2E8A1B4C1E13E88D0019CC82 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */; };
-		2E8A1B4D1E13E88D0019CC82 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B4A1E13E88D0019CC82 /* PINCache.framework */; };
-		2E8A1B4E1E13E88D0019CC82 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8A1B4B1E13E88D0019CC82 /* PINRemoteImage.framework */; };
 		2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */; };
 		2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */; };
 		2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */; };
@@ -51,7 +49,6 @@
 		2EF320531E46E31900820572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA541DEBD8AF006D1B4D /* Foundation.framework */; };
 		2EF320541E46E32300820572 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA561DEBD8B7006D1B4D /* MediaPlayer.framework */; };
 		2EF320551E46E33700820572 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA5A1DEBD8CB006D1B4D /* SafariServices.framework */; };
-		6DDA5AD0AF5158D0F18C33EE /* Pods_Elixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E347A730942C52CEB5C735 /* Pods_Elixr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,8 +125,6 @@
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		59E347A730942C52CEB5C735 /* Pods_Elixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B80D4694EAFFDB415725291B /* Pods-Elixr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.release.xcconfig"; sourceTree = "<group>"; };
-		D9B030DF89C58C97925A3E18 /* Pods-Elixr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +147,8 @@
 				2E849B5D1E45B1AF004AD2C6 /* AWSCore.framework in Frameworks */,
 				2E849B661E45B247004AD2C6 /* AWSMobileHubHelper.framework in Frameworks */,
 				2E849B631E45B1C2004AD2C6 /* FBSDKLoginKit.framework in Frameworks */,
-				2E8A1B4D1E13E88D0019CC82 /* PINCache.framework in Frameworks */,
-				2E8A1B4E1E13E88D0019CC82 /* PINRemoteImage.framework in Frameworks */,
 				2E849B5B1E45B1AF004AD2C6 /* AWSCognitoIdentityProvider.framework in Frameworks */,
 				2E849B681E45B247004AD2C6 /* FBSDKCoreKit.framework in Frameworks */,
-				6DDA5AD0AF5158D0F18C33EE /* Pods_Elixr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +179,6 @@
 				2E69E1CD1E51235500334450 /* ElixrTests */,
 				2E43A9EC1DEBD762006D1B4D /* Products */,
 				2E43AA4F1DEBD878006D1B4D /* Frameworks */,
-				753935B54390C8B0304A2802 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -294,15 +285,6 @@
 				2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */,
 			);
 			name = UserPools;
-			sourceTree = "<group>";
-		};
-		753935B54390C8B0304A2802 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D9B030DF89C58C97925A3E18 /* Pods-Elixr.debug.xcconfig */,
-				B80D4694EAFFDB415725291B /* Pods-Elixr.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -625,7 +607,6 @@
 		};
 		2E43A9FE1DEBD762006D1B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9B030DF89C58C97925A3E18 /* Pods-Elixr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -647,7 +628,6 @@
 		};
 		2E43A9FF1DEBD762006D1B4D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B80D4694EAFFDB415725291B /* Pods-Elixr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
