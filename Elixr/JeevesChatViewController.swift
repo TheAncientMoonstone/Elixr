@@ -191,6 +191,10 @@ class JeevesChatViewController: UIViewController, UITableViewDelegate,
         return 1
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chatMessages.count
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "idCellChat", forIndexPath: indexPath) as! ChatCell
         
@@ -222,7 +226,7 @@ class JeevesChatViewController: UIViewController, UITableViewDelegate,
     }
     
     // UIGestureRecognizerDelegate Methods
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
 }
