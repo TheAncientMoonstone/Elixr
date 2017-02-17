@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24DBEC237E8E7925A487FD03 /* Pods_Elixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B2AFE2F27FDCFB2490AD7E /* Pods_Elixr.framework */; };
 		2E2A6CE91E48425E00660F4A /* AppMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A6CE81E48425E00660F4A /* AppMain.storyboard */; };
-		2E3079231E5565A300EB1739 /* JeevesChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3079221E5565A300EB1739 /* JeevesChatViewController.swift */; };
-		2E3079241E5565A300EB1739 /* JeevesChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3079221E5565A300EB1739 /* JeevesChatViewController.swift */; };
 		2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */; };
 		2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */; };
+		2E39E2CC1E56F89200C456B1 /* JeevesChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39E2CB1E56F89200C456B1 /* JeevesChatViewController.swift */; };
+		2E39E2CF1E56F8BB00C456B1 /* JSQMessagesViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2CD1E56F8BB00C456B1 /* JSQMessagesViewController.framework */; };
+		2E39E2D01E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2CE1E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework */; };
+		2E39E2D21E57112C00C456B1 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2D11E57112C00C456B1 /* Photos.framework */; };
 		2E41AF471DEC04470043C021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E41AF461DEC04470043C021 /* Main.storyboard */; };
 		2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E41AF481DEC045D0043C021 /* MainViewController.swift */; };
 		2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4271A81DEBE45A00738557 /* SignInViewController.swift */; };
@@ -80,9 +83,12 @@
 
 /* Begin PBXFileReference section */
 		2E2A6CE81E48425E00660F4A /* AppMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppMain.storyboard; sourceTree = "<group>"; };
-		2E3079221E5565A300EB1739 /* JeevesChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeevesChatViewController.swift; sourceTree = "<group>"; };
 		2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpViewController.swift; sourceTree = "<group>"; };
 		2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpConfirmationViewController.swift; sourceTree = "<group>"; };
+		2E39E2CB1E56F89200C456B1 /* JeevesChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeevesChatViewController.swift; sourceTree = "<group>"; };
+		2E39E2CD1E56F8BB00C456B1 /* JSQMessagesViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQMessagesViewController.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/JSQMessagesViewController/JSQMessagesViewController.framework"; sourceTree = "<group>"; };
+		2E39E2CE1E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQSystemSoundPlayer.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"; sourceTree = "<group>"; };
+		2E39E2D11E57112C00C456B1 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		2E41AF461DEC04470043C021 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2E41AF481DEC045D0043C021 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2E4271A81DEBE45A00738557 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 		2EC277471E4AC1D600F6328E /* AppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5FDFD086D87D5E3C5040B99B /* Pods-Elixr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.release.xcconfig"; sourceTree = "<group>"; };
+		80F1DEA41AED806C61EC0714 /* Pods-Elixr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.debug.xcconfig"; sourceTree = "<group>"; };
+		C1B2AFE2F27FDCFB2490AD7E /* Pods_Elixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26766921E55D99200FA3E58 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +142,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E39E2D21E57112C00C456B1 /* Photos.framework in Frameworks */,
+				2E39E2CF1E56F8BB00C456B1 /* JSQMessagesViewController.framework in Frameworks */,
+				2E39E2D01E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework in Frameworks */,
 				2ED48B0A1E4D6736001FF8A0 /* CoreMotion.framework in Frameworks */,
 				2ED48B081E4D65E0001FF8A0 /* MapKit.framework in Frameworks */,
 				2EF320551E46E33700820572 /* SafariServices.framework in Frameworks */,
@@ -149,6 +161,7 @@
 				2E849B631E45B1C2004AD2C6 /* FBSDKLoginKit.framework in Frameworks */,
 				2E849B5B1E45B1AF004AD2C6 /* AWSCognitoIdentityProvider.framework in Frameworks */,
 				2E849B681E45B247004AD2C6 /* FBSDKCoreKit.framework in Frameworks */,
+				24DBEC237E8E7925A487FD03 /* Pods_Elixr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +192,7 @@
 				2E69E1CD1E51235500334450 /* ElixrTests */,
 				2E43A9EC1DEBD762006D1B4D /* Products */,
 				2E43AA4F1DEBD878006D1B4D /* Frameworks */,
+				86C5D68547D0468AC11BB6AC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,7 +214,7 @@
 				2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */,
 				2E41AF461DEC04470043C021 /* Main.storyboard */,
 				2E2A6CE81E48425E00660F4A /* AppMain.storyboard */,
-				2E3079221E5565A300EB1739 /* JeevesChatViewController.swift */,
+				2E39E2CB1E56F89200C456B1 /* JeevesChatViewController.swift */,
 				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
@@ -229,6 +243,9 @@
 		2E43AA4F1DEBD878006D1B4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E39E2D11E57112C00C456B1 /* Photos.framework */,
+				2E39E2CD1E56F8BB00C456B1 /* JSQMessagesViewController.framework */,
+				2E39E2CE1E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework */,
 				2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */,
 				2ED48B071E4D65E0001FF8A0 /* MapKit.framework */,
 				2E8A1B491E13E88D0019CC82 /* AsyncDisplayKit.framework */,
@@ -244,6 +261,7 @@
 				2E43AA541DEBD8AF006D1B4D /* Foundation.framework */,
 				2E43AA521DEBD89E006D1B4D /* libsqlite3.tbd */,
 				2E43AA501DEBD878006D1B4D /* libz.tbd */,
+				C1B2AFE2F27FDCFB2490AD7E /* Pods_Elixr.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,6 +305,15 @@
 			name = UserPools;
 			sourceTree = "<group>";
 		};
+		86C5D68547D0468AC11BB6AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80F1DEA41AED806C61EC0714 /* Pods-Elixr.debug.xcconfig */,
+				5FDFD086D87D5E3C5040B99B /* Pods-Elixr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,11 +321,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E43A9FD1DEBD762006D1B4D /* Build configuration list for PBXNativeTarget "Elixr" */;
 			buildPhases = (
+				8BB859D498AEA7A5321A6B08 /* [CP] Check Pods Manifest.lock */,
 				2E43A9E71DEBD762006D1B4D /* Sources */,
 				2E43A9E81DEBD762006D1B4D /* Frameworks */,
 				2E43A9E91DEBD762006D1B4D /* Resources */,
 				2E43AA4E1DEBD815006D1B4D /* ShellScript */,
 				2E849B5F1E45B1B0004AD2C6 /* Embed Frameworks */,
+				A6B7BCDF08FE65B1CE7A6493 /* [CP] Embed Pods Frameworks */,
+				FCACDD35D151772FAC5441DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,7 +369,7 @@
 				TargetAttributes = {
 					2E43A9EA1DEBD762006D1B4D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = PV4GATF4BV;
+						DevelopmentTeam = YV663DGEUZ;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -407,6 +437,51 @@
 			shellPath = /bin/sh;
 			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
 		};
+		8BB859D498AEA7A5321A6B08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B7BCDF08FE65B1CE7A6493 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixr/Pods-Elixr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCACDD35D151772FAC5441DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixr/Pods-Elixr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -422,8 +497,8 @@
 				2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */,
 				2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */,
 				2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */,
-				2E3079231E5565A300EB1739 /* JeevesChatViewController.swift in Sources */,
 				2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */,
+				2E39E2CC1E56F89200C456B1 /* JeevesChatViewController.swift in Sources */,
 				2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */,
 				E26766931E55D99200FA3E58 /* ChatCell.swift in Sources */,
 				2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */,
@@ -437,7 +512,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26766941E55D99200FA3E58 /* ChatCell.swift in Sources */,
-				2E3079241E5565A300EB1739 /* JeevesChatViewController.swift in Sources */,
 				2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,10 +637,11 @@
 		};
 		2E43A9FE1DEBD762006D1B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F1DEA41AED806C61EC0714 /* Pods-Elixr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = PV4GATF4BV;
+				DEVELOPMENT_TEAM = YV663DGEUZ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,10 +660,11 @@
 		};
 		2E43A9FF1DEBD762006D1B4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDFD086D87D5E3C5040B99B /* Pods-Elixr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = PV4GATF4BV;
+				DEVELOPMENT_TEAM = YV663DGEUZ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

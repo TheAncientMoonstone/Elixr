@@ -2,247 +2,65 @@
 //  JeevesChatViewController.swift
 //  Elixr
 //
-//  Created by Timothy Richardson on 16/2/17.
+//  Created by Timothy Richardson on 17/2/17.
 //  Copyright © 2017 Timothy Richardson. All rights reserved.
 //
 
 import UIKit
-import Foundation
+import Photos
+import JSQMessagesViewController
 
-class JeevesChatViewController: UIViewController, UITableViewDelegate,
-    UITableViewDataSource, UITextViewDelegate, UIGestureRecognizerDelegate {
-
-    @IBOutlet weak var tblChat: UITableView!
-    @IBOutlet weak var lblNewsBanner: UILabel!
-    @IBOutlet weak var lblOtherUserActivitiy: UILabel!
-    @IBOutlet weak var tvMessageEditor: UITextView!
-    @IBOutlet weak var conBottomEditor: NSLayoutConstraint!
+class JeevesChatViewController: JSQMessagesViewController {
     
-    let nickname = String()
-    let chatMessages = [[String: AnyObject]]()
-    var bannerLabelTimer : Timer? = Timer()
+    // MARK:- Properties
     
+    // Code for Ejabberd backend properties
+    // XMPP Framework to be implemented
     
+    private let imageURLNotSetKey = "NOTSET"
     
+    private var messages: [JSQMessage] = []
+    private var photoMessageMap = [String: JSQPhotoMediaItem]()
+    
+    private var localTyping = false
+    
+    var isTypeing: Bool {
+        get {
+            return localTyping
+        }
+        set {
+            localTyping = newValue
+        }
+    }
+    
+    lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
+    lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
+    
+    // MARK:- View Lifecylce.
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        
-        NotificationCenter.default.addObserver(self, selector: Selector(("handlekeyboardDidShowNotification:")), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: Selector(("handleKeyboardDidHideNotifcation:")), name: NSNotification.Name.UIKeyboardDidHide, object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: Selector(("handleConnectedUserUpdateNotification:")), name: NSNotification.Name(rawValue: "userWasConnectedNotification"), object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: Selector(("handleDisconnectedUserUpdatenotification")), name: NSNotification.Name(rawValue: "userWasDisconnectedNotification"), object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: Selector(("handleUserTypingNotification")), name: NSNotification.Name(rawValue: "userTypingNotification"), object: nil)
-        
-        let swipeGestureRecogniser =
-            UISwipeGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        swipeGestureRecogniser.direction = UISwipeGestureRecognizerDirection.down
-        swipeGestureRecogniser.delegate = self
-        view.addGestureRecognizer(swipeGestureRecogniser)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        /*
-         configureTableView()
-         configureNewsBannerLabel()
-         configureOtherUserActivityLabel()
-         
-         tvMessageEditor.delegate = self
-        */
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
+    override func viewDidAppear(_ animated:Bool) {
+        super.viewDidAppear(animated)
     }
     
-    // MARK:- Send button action.
-    @IBAction func sendMessage(_ sender: Any) {
-        
+    // MARK: UI and User Interaction
+    // Bubble methods so far...
+    private func setupOutgoingBubble() -> JSQMessagesBubbleImage {
+        let bubbleImageFactory = JSQMessagesBubbleImageFactory()
+        return bubbleImageFactory!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
     }
     
-    // Mark:- Custom UI methods.
-    
-    func configureTableView() {
-        tblChat.delegate = self
-        tblChat.dataSource = self
-//        tblChat.register(UINib(nibName: "ChatCell", bundle: nil),
-//                         forCellReuseIdentifier: "idCellChat")
-        tblChat.estimatedRowHeight = 90.0
-        tblChat.rowHeight = UITableViewAutomaticDimension
-        tblChat.tableFooterView = UIView(frame: CGRect.zero)
-    }
-    
-    func configureNewsBannerLabel() {
-        lblNewsBanner.layer.cornerRadius = 15.0
-        lblNewsBanner.clipsToBounds = true
-        lblNewsBanner.alpha = 0.0
-    }
-    
-    func configureOtherUserActivityLabel() {
-        lblOtherUserActivitiy.isHidden = true
-        lblOtherUserActivitiy.text = ""
-    }
-    
-    func handleKeyboardDidShowNotification(notfication: Notification) {
-        if let userInfo = notfication.userInfo {
-            if let keyboardFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as?
-                NSValue)?.cgRectValue {
-                conBottomEditor.constant = keyboardFrame.size.height
-                view.layoutIfNeeded()
-            }
-        }
-    }
-    
-    func handleKeyboardDidHideNotification(notification: Notification) {
-        conBottomEditor.constant = 0
-        view.layoutIfNeeded()
-    }
-    
-    func scrollToBottom() {
-        let delay = 0.1 * Double(NSEC_PER_SEC)
-        
-        //dispatch_after(<#T##when: dispatch_time_t##dispatch_time_t#>, <#T##queue: DispatchQueue##DispatchQueue#>, <#T##block: () -> Void##() -> Void#>)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-                // your code here
-            if self.chatMessages.count > 0 {
-                let lastRowIndexPath = NSIndexPath(row: self.chatMessages.count - 1, section: 0)
-                
-                self.tblChat.scrollToRow(at: lastRowIndexPath as IndexPath, at: UITableViewScrollPosition.bottom, animated: true)
-            }
-            
-        }
-        
-        
-    }
-    
-    func showBannerLabelAnimated() {
-        UIView.animate(withDuration: 0.75, animations: { () -> Void in
-            self.lblNewsBanner.alpha = 1.0
-        }) { (finished) -> Void in
-            self.bannerLabelTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: Selector(("hiddenBannerLabel")), userInfo: nil, repeats: false)
-        }
-    }
-    
-    func hideBannerLabel() {
-        
-//        if let aTimer = bannerLabelTimer {
-//            aTimer.invalidate()
-//            timer = nil
-//        } else {
-//            //no timer to stop. Make sure you have a valid timer created
-//        }
-        
-        if bannerLabelTimer != nil {
-            bannerLabelTimer?.invalidate()
-            bannerLabelTimer = nil
-        }
-        
-        UIView.animate(withDuration: 0.75, animations: { () -> Void in
-            self.lblNewsBanner.alpha = 0.0
-            
-            }) { (finished) -> Void in
-        }
-    }
-    
-    func dismissKeyboard() {
-        if tvMessageEditor.isFirstResponder {
-            tvMessageEditor.resignFirstResponder()
-        }
-    }
-    
-    func handleConnectedUserUpdateNotification(notification: Notification) {
-        let connectedUserInfo = notification.object as! [String: AnyObject]
-        let connectedUserNickname = connectedUserInfo["nickname"] as? String
-        lblNewsBanner.text = "User \(connectedUserNickname!.uppercased()) has now connected.)"
-        showBannerLabelAnimated()
-    }
-    
-    func handleDisconnectedUserUpdateNotification(notification: Notification) {
-        let disconnectedUserNickname = notification.object as! String
-        lblNewsBanner.text = "User \(disconnectedUserNickname.uppercased()) has now left the chat."
-        showBannerLabelAnimated()
-    }
-    
-    func handleUserTypingNotification(notification: Notification) {
-        if let typingUsersDicitionary = notification.object as? [String: AnyObject] {
-            var names = ""
-            var totalTypingUsers = 0
-            for (typingUser, _) in typingUsersDicitionary {
-                if typingUser != nickname {
-                    names = (names == "") ? typingUser : "\(names), \(typingUser)"
-                    totalTypingUsers += 1
-                }
-            }
-            
-            if totalTypingUsers > 0 {
-                let verb = (totalTypingUsers == 1) ? "is" : "are"
-                lblOtherUserActivitiy.text = "\(names) \(verb) now typing a message..."
-                lblOtherUserActivitiy.isHidden = false
-            }
-            else {
-                lblOtherUserActivitiy.isHidden = true
-            }
-        }
-    }
-    
-    // MARK:- UITableView Delegate and Datasource Methods.
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chatMessages.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "idCellChat", for: indexPath) as! ChatCell
-
-        let currentChatMessage = chatMessages[indexPath.row]
-        let senderNickname = currentChatMessage["nickname"] as! String
-        let message = currentChatMessage["message"] as! String
-        let messageDate = currentChatMessage["date"] as! String
-        
-//        if senderNickname == nickname {
-//            cell.lblChatMessage.textAlignment = NSTextAlignment.right
-//            cell.lblMessageDetails.textAlignment = NSTextAlignment.right
-//            cell.lblChatMessage.textColor = lblNewsBanner.backgroundColor
-//        }
-//        
-//        cell.lblChatMessage.text = message
-//        cell.lblMessageDetails.text = "by \(senderNickname.uppercased()) @ \(messageDate)"
-//        
-//        cell.lblChatMessage.textColor() = UIColor.darkGray
-        
-        return cell
-    }
-    
-    // Mark: - UITextViewDelegate Methods
-    
-    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-        // Code goes here
-        
-        return true
-    }
-    
-    // UIGestureRecognizerDelegate Methods
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
+    private func setupIncomingBubble() -> JSQMessagesBubbleImage {
+        let bubbleImageFactory = JSQMessagesBubbleImageFactory()
+        return bubbleImageFactory!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
     }
 }
