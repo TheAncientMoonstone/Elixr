@@ -14,27 +14,6 @@ class JeevesChatViewController: JSQMessagesViewController {
     
     // MARK:- Properties
     
-    // Code for Ejabberd backend properties
-    // XMPP Framework to be implemented
-    
-    private let imageURLNotSetKey = "NOTSET"
-    
-    private var messages: [JSQMessage] = []
-    private var photoMessageMap = [String: JSQPhotoMediaItem]()
-    
-    private var localTyping = false
-    
-    var isTypeing: Bool {
-        get {
-            return localTyping
-        }
-        set {
-            localTyping = newValue
-        }
-    }
-    
-    lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
-    lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
     
     // MARK:- View Lifecylce.
     override func viewDidLoad() {
@@ -52,15 +31,4 @@ class JeevesChatViewController: JSQMessagesViewController {
         super.viewDidAppear(animated)
     }
     
-    // MARK: UI and User Interaction
-    // Bubble methods so far...
-    private func setupOutgoingBubble() -> JSQMessagesBubbleImage {
-        let bubbleImageFactory = JSQMessagesBubbleImageFactory()
-        return bubbleImageFactory!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
-    }
-    
-    private func setupIncomingBubble() -> JSQMessagesBubbleImage {
-        let bubbleImageFactory = JSQMessagesBubbleImageFactory()
-        return bubbleImageFactory!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
-    }
 }
