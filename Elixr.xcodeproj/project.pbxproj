@@ -40,6 +40,8 @@
 		2EBE46AD1DED53B400D6A476 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */; };
 		2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */; };
 		2EC277481E4AC1D600F6328E /* AppMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277471E4AC1D600F6328E /* AppMainViewController.swift */; };
+		2EC3AAD31E6838B4001DB983 /* HotPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */; };
+		2EC3AAD41E6838B4001DB983 /* HotPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */; };
 		2ED48B081E4D65E0001FF8A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B071E4D65E0001FF8A0 /* MapKit.framework */; };
 		2ED48B0A1E4D6736001FF8A0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */; };
 		2EF3204D1E46E2D300820572 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA501DEBD878006D1B4D /* libz.tbd */; };
@@ -129,6 +131,7 @@
 		2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
 		2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolNewPasswordViewController.swift; sourceTree = "<group>"; };
 		2EC277471E4AC1D600F6328E /* AppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
+		2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotPlacesViewController.swift; sourceTree = "<group>"; };
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5FDFD086D87D5E3C5040B99B /* Pods-Elixr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +217,7 @@
 				2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */,
 				2E41AF461DEC04470043C021 /* Main.storyboard */,
 				2E2A6CE81E48425E00660F4A /* AppMain.storyboard */,
+				2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */,
 				2E39E2CB1E56F89200C456B1 /* JeevesChatViewController.swift */,
 				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
@@ -499,6 +503,7 @@
 				2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */,
 				2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */,
 				2E39E2CC1E56F89200C456B1 /* JeevesChatViewController.swift in Sources */,
+				2EC3AAD31E6838B4001DB983 /* HotPlacesViewController.swift in Sources */,
 				2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */,
 				E26766931E55D99200FA3E58 /* ChatCell.swift in Sources */,
 				2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */,
@@ -511,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC3AAD41E6838B4001DB983 /* HotPlacesViewController.swift in Sources */,
 				E26766941E55D99200FA3E58 /* ChatCell.swift in Sources */,
 				2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */,
 			);

@@ -46,18 +46,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you feeling lucky?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-y6-fuj">
-                                <rect key="frame" x="86" y="168" width="202" height="21"/>
+                                <rect key="frame" x="90" y="168" width="202" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiC-jk-U7j">
-                                <rect key="frame" x="118" y="263" width="138" height="30"/>
+                                <rect key="frame" x="118" y="197" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick one for me! "/>
                                 <connections>
                                     <segue destination="Fmk-P1-xdr" kind="show" id="xKV-iT-oh4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpT-Wk-ucX">
+                                <rect key="frame" x="90" y="533" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chat with Jeeves"/>
+                                <connections>
+                                    <segue destination="njP-mY-IGv" kind="show" id="ZjQ-Xd-tj4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you want us to take the guess work out?" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFb-sv-bog">
@@ -67,12 +75,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpT-Wk-ucX">
-                                <rect key="frame" x="90" y="533" width="195" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's hot near you right now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kR5-EJ-pAL">
+                                <rect key="frame" x="55" y="265" width="265" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Chat with Jeeves"/>
+                                <fontDescription key="fontDescription" name="Arial-Black" family="Arial Black" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fP-0n-1Or">
+                                <rect key="frame" x="90" y="361" width="230" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show me"/>
                                 <connections>
-                                    <segue destination="njP-mY-IGv" kind="show" id="ZjQ-Xd-tj4"/>
+                                    <segue destination="iAO-o9-xK0" kind="show" id="svd-eX-hYH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,6 +99,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vh-TD-4S2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="797.60000000000002" y="-842.42878560719646"/>
+        </scene>
+        <!--Hot places right now-->
+        <scene sceneID="Z52-XI-miU">
+            <objects>
+                <viewController storyboardIdentifier="Hot Places right now" title="Hot places right now" id="iAO-o9-xK0" customClass="HotPlacesViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aYW-Qs-lgy"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ag-c1-0oI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iic-SD-XgN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2y-KZ-RUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="-543"/>
         </scene>
         <!--Jeeves-->
         <scene sceneID="ZOA-YP-c1R">
@@ -102,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEJ-be-LbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="-487"/>
+            <point key="canvasLocation" x="798" y="-112"/>
         </scene>
         <!--Randomise-->
         <scene sceneID="gBP-7Z-93X">
