@@ -152,14 +152,14 @@ class SignInViewController: UIViewController {
     }
     
     
-    //Method to unhide the activity indicator and start animating
+    // Method to unhide the activity indicator and start animating
     func activityIndicatorStart(){
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
     }
     
     
-    //Method to stop and hide the activity indicator
+    // Method to stop and hide the activity indicator
     func activityIndicatorStop(){
         
         self.activityIndicator.stopAnimating()
