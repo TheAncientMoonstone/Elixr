@@ -60,14 +60,6 @@
                                     <segue destination="Fmk-P1-xdr" kind="show" id="xKV-iT-oh4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpT-Wk-ucX">
-                                <rect key="frame" x="90" y="533" width="195" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Chat with Jeeves"/>
-                                <connections>
-                                    <segue destination="njP-mY-IGv" kind="show" id="ZjQ-Xd-tj4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you want us to take the guess work out?" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFb-sv-bog">
                                 <rect key="frame" x="16" y="421" width="343" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -83,11 +75,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fP-0n-1Or">
-                                <rect key="frame" x="90" y="361" width="230" height="52"/>
+                                <rect key="frame" x="76" y="332" width="230" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show me"/>
                                 <connections>
                                     <segue destination="iAO-o9-xK0" kind="show" id="svd-eX-hYH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpT-Wk-ucX">
+                                <rect key="frame" x="90" y="500" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chat with Jeeves"/>
+                                <connections>
+                                    <segue destination="njP-mY-IGv" kind="show" id="ZjQ-Xd-tj4"/>
                                 </connections>
                             </button>
                         </subviews>
