@@ -1,15 +1,18 @@
 PODS:
+  - DZNEmptyDataSet (1.8.1)
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
 
 DEPENDENCIES:
+  - DZNEmptyDataSet
   - JSQMessagesViewController
 
 SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
 
-PODFILE CHECKSUM: 8faab6fd261dc19cf47017a00c2df84f8469aea5
+PODFILE CHECKSUM: 0fe24025b9256ba1786ccf304718f97de3840f08
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.0
