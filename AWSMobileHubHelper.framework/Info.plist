@@ -1,0 +1,28 @@
+// !!! BINARY PROPERTY LIST WARNING !!!
+//
+// The pretty-printed property list below has been created
+// from a binary version on disk and should not be saved as
+// the ASCII format is a subset of the binary representation!
+//
+{	BuildMachineOSBuild = "15G1217";
+	CFBundleDevelopmentRegion = "en";
+	CFBundleExecutable = "AWSMobileHubHelper";
+	CFBundleIdentifier = "com.amazonaws.sdk.ios.AWSMobileHubHelper";
+	CFBundleInfoDictionaryVersion = "6.0";
+	CFBundleName = "AWSMobileHubHelper";
+	CFBundlePackageType = "FMWK";
+	CFBundleShortVersionString = "2.5.2";
+	CFBundleSignature = "????";
+	CFBundleSupportedPlatforms = ( "iPhoneOS" );
+	CFBundleVersion = "1";
+	DTCompiler = "com.apple.compilers.llvm.clang.1_0";
+	DTPlatformBuild = "14C89";
+	DTPlatformName = "iphoneos";
+	DTPlatformVersion = "10.2";
+	DTSDKBuild = "14C89";
+	DTSDKName = "iphoneos10.2";
+	DTXcode = "0821";
+	DTXcodeBuild = "8C1002";
+	MinimumOSVersion = "8.0";
+	UIDeviceFamily = ( 1, 2 );
+}

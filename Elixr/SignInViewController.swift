@@ -52,13 +52,13 @@ class SignInViewController: UIViewController {
         // Custom UI Setup.
         // These selectors will move to different view controllers, depending on the button pressed.
         // Allows the user to sign in with their facebook account.
-        facebookLoginButton?.addTarget(self, action: #selector(self.handleFacebookLogin), for: .touchUpInside)
+        facebookLoginButton?.addTarget(self, action: #selector(handleFacebookLogin), for: .touchUpInside)
         // Signs the user in.
-        customSignInProviderButton.addTarget(self, action: #selector(self.handleCustomSignIn), for: .touchUpInside)
+        customSignInProviderButton.addTarget(self, action: #selector(handleCustomSignIn), for: .touchUpInside)
         // This allows the user to recover their password to their account.
-        customForgotUserPasswordButton.addTarget(self, action: #selector(self.handleUserPoolForgotPassword), for: .touchUpInside)
+        customForgotUserPasswordButton.addTarget(self, action: #selector(handleUserPoolForgotPassword), for: .touchUpInside)
         // This allows the user to sign up for their own custom account.
-        customCreateNewAccountButton.addTarget(self, action: #selector(self.handleUserPoolSignUp), for: .touchUpInside)
+        customCreateNewAccountButton.addTarget(self, action: #selector(handleUserPoolSignUp), for: .touchUpInside)
         
         
         // This adds a done button to dismiss the Keyboard.

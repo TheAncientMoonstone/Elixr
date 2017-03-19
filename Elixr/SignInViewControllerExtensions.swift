@@ -110,8 +110,10 @@ extension SignInViewController: AWSCognitoUserPoolsSignInHandler {
         guard let username = self.customUserIdField.text, !username.isEmpty,
             let password = self.customPasswordField.text, !password.isEmpty else {
                 DispatchQueue.main.async(execute: {
-                    
-                    UIAlertView(title: "Missing username / password", message: "Please enter a valid username / or password", delegate: nil, cancelButtonTitle: "Ok").show()
+                    UIAlertView(title: "Missing UserName / Password",
+                                message: "Please enter a valid user name / password.",
+                                delegate: nil,
+                                cancelButtonTitle: "Ok").show()
                 })
                 return
         }
