@@ -47,10 +47,10 @@ class AWSMobileClient: NSObject {
         setupUserPool()
         
         let didFinishLaunching = AWSIdentityManager.defaultIdentityManager().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
-        
-        AWSIdentityManager.defaultIdentityManager().resumeSession {result, error in
+        if (!isInitialized) {
+        AWSIdentityManager.defaultIdentityManager().resumeSession (completionHandler: { (result, error) in
             print("result = \(result), error = \(error)")
-            
+            })
             self.isInitialized = true
         }
         

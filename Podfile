@@ -6,5 +6,4 @@ target :Elixr
 
 	source 'https://github.com/CocoaPods/Specs.git'
 			pod 'JSQMessagesViewController'
-			pod 'DZNEmptyDataSet'
 	use_frameworks!
