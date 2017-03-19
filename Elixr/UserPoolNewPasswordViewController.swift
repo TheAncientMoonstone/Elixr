@@ -40,7 +40,7 @@ class UserPoolNewPasswordViewController: UIViewController {
         }
         
         // Confirm forgot password with input from UI.
-        self.user?.confirmForgotPassword(updatedPassword, password: self.updatedPassword.text!).continue({[weak self] (task: AWSTask) -> AnyObject? in
+        self.user?.confirmForgotPassword(updatedPassword, password: self.updatedPassword.text!).continueWith(block: {[weak self] (task: AWSTask) -> AnyObject? in
             guard let strongSelf = self else {return nil}
             DispatchQueue.main.async(execute: {
                 if let error = task.error {

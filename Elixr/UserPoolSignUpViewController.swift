@@ -73,7 +73,7 @@ class UserPoolSignUpViewController: UIViewController {
         
         
         // Sign up the user
-        self.pool?.signUp(usernameValue, password: passwordValue, userAttributes: attributes, validationData: nil).continue ({[weak self] (task: AWSTask) -> AnyObject? in
+        self.pool?.signUp(usernameValue, password: passwordValue, userAttributes: attributes, validationData: nil).continueWith (block: {[weak self] (task: AWSTask) -> AnyObject? in
             guard let strongSelf = self else { return nil }
             DispatchQueue.main.async(execute: {
                 

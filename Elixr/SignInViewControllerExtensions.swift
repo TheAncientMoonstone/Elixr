@@ -116,6 +116,6 @@ extension SignInViewController: AWSCognitoUserPoolsSignInHandler {
                 return
         }
         
-        self.passwordAuthenticationCompletion?.setResult(AWSCognitoIdentityPasswordAuthenticationDetails.self)
+        self.passwordAuthenticationCompletion?.set(result: AWSCognitoIdentityPasswordAuthenticationDetails.self)
     }
 }

@@ -18,7 +18,7 @@ let AWSCognitoUserPoolId: String = "ap-southeast-2_MxN2wQ6Qk"
 let AWSCognitoUserPoolAppClientId: String = "5l2v2q1tkam7u8isb6l164qacp"
 
 // Cognito User Pools Region
-let AWSCognitoUserPoolRegion: AWSRegionType = .apSoutheast2
+let AWSCognitoUserPoolRegion: AWSRegionType = .APSoutheast2
 
 // Cognito User Pools Client Secret
 let AWSCognitoUserPoolClientSecret: String = "ag7nin0eg8kn3lvih7mndos2elks9sov0bm3ta84h9tvrpdppbd"

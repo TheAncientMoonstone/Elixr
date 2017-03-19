@@ -49,7 +49,7 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
             
             return
         }
-        self.user?.confirmSignUp(self.confirmationCode.text!, forceAliasCreation: true).continue ({[weak self] (task: AWSTask) -> AnyObject? in
+        self.user?.confirmSignUp(self.confirmationCode.text!, forceAliasCreation: true).continueWith (block: {[weak self] (task: AWSTask) -> AnyObject? in
             guard let strongSelf = self else { return nil }
             DispatchQueue.main.async(execute: {
                 if let error = task.error {
@@ -68,7 +68,7 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
     
     
     @IBAction func ResendConfirmationCode(_ sender: Any) {
-        self.user?.resendConfirmationCode().continue ({[weak self] (task: AWSTask) -> AnyObject? in
+        self.user?.resendConfirmationCode().continueWith (block: {[weak self] (task: AWSTask) -> AnyObject? in
             guard let _ = self else { return nil }
             DispatchQueue.main.async(execute: {
                 if let error = task.error {
