@@ -129,9 +129,9 @@
 		2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
 		2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolNewPasswordViewController.swift; sourceTree = "<group>"; };
-		2EBF146D1E7E765200A69174 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
-		2EBF146E1E7E765200A69174 /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognitoIdentityProvider.framework; sourceTree = "<group>"; };
-		2EBF146F1E7E765200A69174 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		2EBF146D1E7E765200A69174 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = ../AWSCognito.framework; sourceTree = "<group>"; };
+		2EBF146E1E7E765200A69174 /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognitoIdentityProvider.framework; path = ../AWSCognitoIdentityProvider.framework; sourceTree = "<group>"; };
+		2EBF146F1E7E765200A69174 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = ../AWSCore.framework; sourceTree = "<group>"; };
 		2EC277471E4AC1D600F6328E /* AppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
 		2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotPlacesViewController.swift; sourceTree = "<group>"; };
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -193,9 +193,6 @@
 		2E43A9E21DEBD762006D1B4D = {
 			isa = PBXGroup;
 			children = (
-				2EBF146D1E7E765200A69174 /* AWSCognito.framework */,
-				2EBF146E1E7E765200A69174 /* AWSCognitoIdentityProvider.framework */,
-				2EBF146F1E7E765200A69174 /* AWSCore.framework */,
 				2E43A9ED1DEBD762006D1B4D /* Elixr */,
 				2E69E1CD1E51235500334450 /* ElixrTests */,
 				2E43A9EC1DEBD762006D1B4D /* Products */,
@@ -239,6 +236,9 @@
 		2E43AA001DEBD7CE006D1B4D /* UserImportedFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EBF146D1E7E765200A69174 /* AWSCognito.framework */,
+				2EBF146E1E7E765200A69174 /* AWSCognitoIdentityProvider.framework */,
+				2EBF146F1E7E765200A69174 /* AWSCore.framework */,
 				2E849B641E45B23E004AD2C6 /* AWSMobileHubHelper.framework */,
 				2E849B601E45B1C2004AD2C6 /* FBSDKCoreKit.framework */,
 				2E849B611E45B1C2004AD2C6 /* FBSDKLoginKit.framework */,
