@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
     // MARK:- Sign In View Controller.
     // Present the Sign In View Controller.
     func presentSignInViewController() {
-        if !AWSIdentityManager.defaultIdentityManager().isLoggedIn {
+        if !AWSIdentityManager.default().isLoggedIn {
             let storyboard = UIStoryboard(name: "SignIn", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "Sign In")
             self.present(viewController, animated: true, completion: nil)

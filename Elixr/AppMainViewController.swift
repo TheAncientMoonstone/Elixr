@@ -28,8 +28,8 @@ class AppMainViewController: UIViewController {
     
     func actionSignOut() {
         
-        if (AWSIdentityManager.defaultIdentityManager().isLoggedIn) {
-            AWSIdentityManager.defaultIdentityManager().logout(completionHandler: { (result, error) in
+        if (AWSIdentityManager.default().isLoggedIn) {
+            AWSIdentityManager.default().logout(completionHandler: { (result, error) in
                 if result == nil {
                     self.actionNavigateToSignInView()
                 }

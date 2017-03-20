@@ -42,7 +42,7 @@ class SignInViewController: UIViewController {
         print("Sign in loading")
         
         didSignInObserver =  NotificationCenter.default.addObserver(forName: NSNotification.Name.AWSIdentityManagerDidSignIn,
-        object: AWSIdentityManager.defaultIdentityManager(),
+        object: AWSIdentityManager.default(),
         queue: OperationQueue.main,
         using: {(note: Notification) -> Void in
         // perform successful login actions here
@@ -94,7 +94,6 @@ class SignInViewController: UIViewController {
     // MARK: - Utility Methods
     func handleLoginWithSignInProvider(signInProvider: AWSSignInProvider) {
         /*
-        Before Editing
         AWSIdentityManager.defaultIdentityManager().loginWithSign(signInProvider, completionHandler:
             {(result, error) -> Void in
                 if error == nil {
@@ -104,13 +103,13 @@ class SignInViewController: UIViewController {
                     })
                 }
                 print("Login with signin provider result = \(result), error = \(error)")
-        }
-        */
+        })
+         */
         
         activityIndicatorStart()
         
         // After Editing
-        AWSIdentityManager.defaultIdentityManager().loginWithSign(signInProvider, completionHandler: {(result, error) -> Void in
+        AWSIdentityManager.default().login(signInProvider: signInProvider, completionHandler: {(result: Any?, error: Error?) in
             self.activityIndicatorStop()
             
             if error == nil {
@@ -133,6 +132,7 @@ class SignInViewController: UIViewController {
             }
             print("Login with sign in provider result = \(result), error =\(error)")
         })
+
     }
     
     // The user has logged out with their facebook account.

@@ -28,7 +28,7 @@ class AWSMobileClient: NSObject {
     
     func withApplication(application: UIApplication, withURL url: NSURL, withSourceApplication sourceApplication: String?, withAnnotation annotation: AnyObject) -> Bool {
         print("withApplication:withURL")
-        AWSIdentityManager.defaultIdentityManager().interceptApplication(application, open: url as URL, sourceApplication: sourceApplication, annotation: annotation)
+        AWSIdentityManager.default().interceptApplication(application, open: url as URL, sourceApplication: sourceApplication, annotation: annotation)
         
         if (!isInitialized) {
             isInitialized = true
@@ -46,9 +46,9 @@ class AWSMobileClient: NSObject {
         
         setupUserPool()
         
-        let didFinishLaunching = AWSIdentityManager.defaultIdentityManager().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
+        let didFinishLaunching = AWSIdentityManager.default().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
         if (!isInitialized) {
-        AWSIdentityManager.defaultIdentityManager().resumeSession (completionHandler: { (result, error) in
+        AWSIdentityManager.default().resumeSession (completionHandler: { (result, error) in
             print("result = \(result), error = \(error)")
             })
             self.isInitialized = true
@@ -61,6 +61,6 @@ class AWSMobileClient: NSObject {
         // Register your user pool configuration
         AWSCognitoUserPoolsSignInProvider.setupUserPool(withId: AWSCognitoUserPoolId, cognitoIdentityUserPoolAppClientId: AWSCognitoUserPoolAppClientId, cognitoIdentityUserPoolAppClientSecret: AWSCognitoUserPoolClientSecret, region: AWSCognitoUserPoolRegion)
         
-        AWSSignInProviderFactory.sharedInstance().registerAWSSign(AWSCognitoUserPoolsSignInProvider.sharedInstance(), forKey: AWSCognitoUserPoolsSignInProviderKey)
+        AWSSignInProviderFactory.sharedInstance().register(signInProvider: AWSCognitoUserPoolsSignInProvider.sharedInstance(), forKey: AWSCognitoUserPoolsSignInProviderKey)
     }
 }
