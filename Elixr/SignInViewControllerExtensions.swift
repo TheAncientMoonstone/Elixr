@@ -16,8 +16,8 @@ extension SignInViewController {
         AWSCognitoUserPoolsSignInProvider.sharedInstance().setInteractiveAuthDelegate(self)
         self.handleLoginWithSignInProvider(signInProvider: AWSCognitoUserPoolsSignInProvider.sharedInstance())
         
-        //Set the key isLoggedIn to true so when the user opens the app,
-        //they are directly redirected to AppMain Storyboard
+        // Set the key isLoggedIn to true so when the user opens the app,
+        // they are directly redirected to AppMain Storyboard
         UserDefaults.standard.set(true, forKey: "isLoggedIn")
         UserDefaults.standard.synchronize()
         
