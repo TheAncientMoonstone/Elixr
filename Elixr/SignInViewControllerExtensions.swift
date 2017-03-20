@@ -64,46 +64,7 @@ extension SignInViewController: AWSCognitoIdentityInteractiveAuthenticationDeleg
     }
  
 }
-/*
-extension SignInViewController: AWSCognitoIdentityPasswordAuthentication {
 
-    /*
-    func getDetails(_ authenticationInput: AWSCognitoIdentityPasswordAuthenticationInput, passwordAuthenticationCompletionSource: AWSTaskCompletionSource<AnyObject>) {
-        self.passwordAuthenticationCompletion = passwordAuthenticationCompletionSource
-    }
-    */
-    
-    func getPasswordAuthenticationDetails(authenticationInput: AWSCognitoIdentityPasswordAuthenticationInput,
-                                          passwordAuthenticationCompletionSource: AWSTaskCompletionSource<AnyObject>) {
-        self.passwordAuthenticationCompletion = passwordAuthenticationCompletionSource
-    }
-    
-    /*
-    func didCompleteStepWithError(_ error: NSError?) {
-        if let error = error {
-            DispatchQueue.main.async(execute: {
-                
-                UIAlertView(title: error.userInfo["__type"] as? String,
-                            message: error.userInfo["message"] as? String,
-                            delegate: nil,
-                            cancelButtonTitle: "Ok").show()
-            })
-        }
-    }
-    */
-    
-    func didCompletePasswordAuthenticationStepWithError(error: NSError?) {
-        if let error = error {
-            DispatchQueue.main.async(execute: {
-                
-                UIAlertView(title: error.userInfo["__type"] as? String, message: error.userInfo["message"] as! String?, delegate: nil, cancelButtonTitle: "Ok").show()
-            })
-        }
-    }
-
-}
-*/
- 
 extension SignInViewController: AWSCognitoUserPoolsSignInHandler {
     
     func handleUserPoolSignInFlowStart() {
