@@ -29,7 +29,7 @@
         <!--TabItemOne-->
         <scene sceneID="brk-37-dx7">
             <objects>
-                <viewController storyboardIdentifier="TabItemOne" title="TabItemOne" id="qYE-N3-0M7" customClass="AppMainTabOneViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabItemOne" title="TabItemOne" id="qYE-N3-0M7" customClass="AppMainViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="soC-2X-UcB"/>
                         <viewControllerLayoutGuide type="bottom" id="0SM-VW-aG3"/>
