@@ -10,6 +10,7 @@ import UIKit
 import AWSCore
 import FBSDKCoreKit
 import FBSDKLoginKit
+import AWSCognito
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
