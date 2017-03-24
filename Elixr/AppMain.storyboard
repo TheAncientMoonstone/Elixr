@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="22" y="-842"/>
         </scene>
-        <!--TabItemOne-->
+        <!--MainApp-->
         <scene sceneID="brk-37-dx7">
             <objects>
-                <viewController storyboardIdentifier="TabItemOne" title="TabItemOne" id="qYE-N3-0M7" customClass="AppMainViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainApp" title="MainApp" id="qYE-N3-0M7" customClass="AppMainViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="soC-2X-UcB"/>
                         <viewControllerLayoutGuide type="bottom" id="0SM-VW-aG3"/>
