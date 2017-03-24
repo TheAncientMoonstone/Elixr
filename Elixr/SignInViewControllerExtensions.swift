@@ -49,13 +49,7 @@ extension SignInViewController: AWSCognitoIdentityInteractiveAuthenticationDeleg
     func didCompletePasswordAuthenticationSetepWithError(error: NSError?) {
         if let error = error {
             DispatchQueue.main.async(execute: {
-                
-                UIAlertView(title: error.userInfo["__type"] as! String?,
-                                 message: error.userInfo["message"] as? String,
-                                 delegate: nil,
-                                 cancelButtonTitle: "Ok").show()
-                
-                //Vivek : UIAlertView is deprecated after Swift 3, so we need to use UIAlertController
+
                 let alert = UIAlertController(title: error.userInfo["__type"] as? String, message: error.userInfo["message"] as? String, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
@@ -71,10 +65,10 @@ extension SignInViewController: AWSCognitoUserPoolsSignInHandler {
         guard let username = self.customUserIdField.text, !username.isEmpty,
             let password = self.customPasswordField.text, !password.isEmpty else {
                 DispatchQueue.main.async(execute: {
-                    UIAlertView(title: "Missing UserName / Password",
-                                message: "Please enter a valid user name / password.",
-                                delegate: nil,
-                                cancelButtonTitle: "Ok").show()
+                    
+                    let alert = UIAlertController(title: "Missing UserName / Password", message: "Please enter a valid user name / password", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 })
                 return
         }
