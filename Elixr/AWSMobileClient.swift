@@ -49,7 +49,7 @@ class AWSMobileClient: NSObject {
         let didFinishLaunching = AWSIdentityManager.default().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
         if (!isInitialized) {
         AWSIdentityManager.default().resumeSession (completionHandler: { (result, error) in
-            print("result = \(result), error = \(error)")
+            print("result = \(String(describing: result)), error = \(String(describing: error))")
             })
             self.isInitialized = true
         }

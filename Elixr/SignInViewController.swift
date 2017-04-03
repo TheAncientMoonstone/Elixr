@@ -130,7 +130,7 @@ class SignInViewController: UIViewController {
 
                 })
             }
-            print("Login with sign in provider result = \(result), error =\(error)")
+            print("Login with sign in provider result = \(String(describing: result)), error =\(String(describing: error))")
         })
 
     }

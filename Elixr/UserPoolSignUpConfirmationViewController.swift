@@ -77,7 +77,7 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
                     
                 } else if let result = task.result  {
                     
-                self?.showAlert(title: "Code Resent", message: "Code has been resent to \(result.codeDeliveryDetails?.destination)")
+                self?.showAlert(title: "Code Resent", message: "Code has been resent to \(String(describing: result.codeDeliveryDetails?.destination))")
                 }
             })
             return nil
