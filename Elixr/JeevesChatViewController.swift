@@ -10,7 +10,7 @@ import UIKit
 import Photos
 import JSQMessagesViewController
 import Alamofire
-import Socke
+import SocketIO
 
 class JeevesChatViewController: JSQMessagesViewController {
     
