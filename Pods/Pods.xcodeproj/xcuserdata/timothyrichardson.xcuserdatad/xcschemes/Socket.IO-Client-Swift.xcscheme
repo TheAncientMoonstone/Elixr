@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F8E6A4F25445A1378084821E9065FB7"
-               BuildableName = "Pods_Elixr.framework"
-               BlueprintName = "Pods-Elixr"
+               BlueprintIdentifier = "BA2C7E187AB370C85A7B93B194576121"
+               BuildableName = "SocketIO.framework"
+               BlueprintName = "Socket.IO-Client-Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F8E6A4F25445A1378084821E9065FB7"
-            BuildableName = "Pods_Elixr.framework"
-            BlueprintName = "Pods-Elixr"
+            BlueprintIdentifier = "BA2C7E187AB370C85A7B93B194576121"
+            BuildableName = "SocketIO.framework"
+            BlueprintName = "Socket.IO-Client-Swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
