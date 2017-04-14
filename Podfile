@@ -6,4 +6,5 @@ target :Elixr
 
 	source 'https://github.com/CocoaPods/Specs.git'
 			pod 'JSQMessagesViewController'
+			pod 'Alamofire'
 	use_frameworks!

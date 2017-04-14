@@ -17,6 +17,7 @@
 		2E39E2CF1E56F8BB00C456B1 /* JSQMessagesViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2CD1E56F8BB00C456B1 /* JSQMessagesViewController.framework */; };
 		2E39E2D01E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2CE1E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework */; };
 		2E39E2D21E57112C00C456B1 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2D11E57112C00C456B1 /* Photos.framework */; };
+		2E3D95F91EA06D06007EEBE6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3D95F81EA06D06007EEBE6 /* Alamofire.framework */; };
 		2E41AF471DEC04470043C021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E41AF461DEC04470043C021 /* Main.storyboard */; };
 		2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E41AF481DEC045D0043C021 /* MainViewController.swift */; };
 		2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4271A81DEBE45A00738557 /* SignInViewController.swift */; };
@@ -99,6 +100,7 @@
 		2E39E2CD1E56F8BB00C456B1 /* JSQMessagesViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQMessagesViewController.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/JSQMessagesViewController/JSQMessagesViewController.framework"; sourceTree = "<group>"; };
 		2E39E2CE1E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQSystemSoundPlayer.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"; sourceTree = "<group>"; };
 		2E39E2D11E57112C00C456B1 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		2E3D95F81EA06D06007EEBE6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		2E41AF461DEC04470043C021 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2E41AF481DEC045D0043C021 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2E4271A81DEBE45A00738557 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3D95F91EA06D06007EEBE6 /* Alamofire.framework in Frameworks */,
 				2EB3D85B1E9220E300F21274 /* Bolts.framework in Frameworks */,
 				2E0783FA1E921FF70091C1D0 /* FBSDKCoreKit.framework in Frameworks */,
 				2E0783FB1E921FF70091C1D0 /* FBSDKLoginKit.framework in Frameworks */,
@@ -259,6 +262,7 @@
 		2E43AA4F1DEBD878006D1B4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E3D95F81EA06D06007EEBE6 /* Alamofire.framework */,
 				2E0783F81E921FF70091C1D0 /* FBSDKCoreKit.framework */,
 				2E0783F91E921FF70091C1D0 /* FBSDKLoginKit.framework */,
 				2E0783F61E921FD00091C1D0 /* Bolts.framework */,
