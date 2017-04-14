@@ -51,6 +51,7 @@
 		2EC3AAD41E6838B4001DB983 /* HotPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */; };
 		2ED48B081E4D65E0001FF8A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B071E4D65E0001FF8A0 /* MapKit.framework */; };
 		2ED48B0A1E4D6736001FF8A0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */; };
+		2EE8C9CB1EA0FE3800D97599 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE8C9CA1EA0FE3800D97599 /* SocketIO.framework */; };
 		2EF3204D1E46E2D300820572 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA501DEBD878006D1B4D /* libz.tbd */; };
 		2EF3204E1E46E2DC00820572 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA521DEBD89E006D1B4D /* libsqlite3.tbd */; };
 		2EF3204F1E46E2E900820572 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6CA3201DF3C3CB00056897 /* UIKit.framework */; };
@@ -143,6 +144,7 @@
 		2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotPlacesViewController.swift; sourceTree = "<group>"; };
 		2ED48B071E4D65E0001FF8A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		2EE8C9CA1EA0FE3800D97599 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework"; sourceTree = "<group>"; };
 		5FDFD086D87D5E3C5040B99B /* Pods-Elixr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.release.xcconfig"; sourceTree = "<group>"; };
 		80F1DEA41AED806C61EC0714 /* Pods-Elixr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elixr/Pods-Elixr.debug.xcconfig"; sourceTree = "<group>"; };
 		C1B2AFE2F27FDCFB2490AD7E /* Pods_Elixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE8C9CB1EA0FE3800D97599 /* SocketIO.framework in Frameworks */,
 				2E3D95F91EA06D06007EEBE6 /* Alamofire.framework in Frameworks */,
 				2EB3D85B1E9220E300F21274 /* Bolts.framework in Frameworks */,
 				2E0783FA1E921FF70091C1D0 /* FBSDKCoreKit.framework in Frameworks */,
@@ -262,6 +265,7 @@
 		2E43AA4F1DEBD878006D1B4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EE8C9CA1EA0FE3800D97599 /* SocketIO.framework */,
 				2E3D95F81EA06D06007EEBE6 /* Alamofire.framework */,
 				2E0783F81E921FF70091C1D0 /* FBSDKCoreKit.framework */,
 				2E0783F91E921FF70091C1D0 /* FBSDKLoginKit.framework */,
