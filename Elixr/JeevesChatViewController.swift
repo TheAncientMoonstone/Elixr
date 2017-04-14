@@ -9,6 +9,7 @@
 import UIKit
 import Photos
 import JSQMessagesViewController
+import Alamofire
 
 class JeevesChatViewController: JSQMessagesViewController {
     
