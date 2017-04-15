@@ -39,12 +39,6 @@
 		2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */; };
 		2EBE46AD1DED53B400D6A476 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */; };
 		2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */; };
-		2EBF14701E7E765200A69174 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF146D1E7E765200A69174 /* AWSCognito.framework */; };
-		2EBF14711E7E765200A69174 /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF146D1E7E765200A69174 /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2EBF14721E7E765200A69174 /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF146E1E7E765200A69174 /* AWSCognitoIdentityProvider.framework */; };
-		2EBF14731E7E765200A69174 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF146E1E7E765200A69174 /* AWSCognitoIdentityProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2EBF14741E7E765200A69174 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF146F1E7E765200A69174 /* AWSCore.framework */; };
-		2EBF14751E7E765200A69174 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF146F1E7E765200A69174 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EBF14771E7E92A600A69174 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF14761E7E92A600A69174 /* AWSMobileHubHelper.framework */; };
 		2EBF14781E7E92A600A69174 /* AWSMobileHubHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF14761E7E92A600A69174 /* AWSMobileHubHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EC277481E4AC1D600F6328E /* AppMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC277471E4AC1D600F6328E /* AppMainViewController.swift */; };
@@ -81,10 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2EBF14711E7E765200A69174 /* AWSCognito.framework in Embed Frameworks */,
-				2EBF14751E7E765200A69174 /* AWSCore.framework in Embed Frameworks */,
 				2EBF14781E7E92A600A69174 /* AWSMobileHubHelper.framework in Embed Frameworks */,
-				2EBF14731E7E765200A69174 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +129,6 @@
 		2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
 		2EBE46AE1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolNewPasswordViewController.swift; sourceTree = "<group>"; };
-		2EBF146D1E7E765200A69174 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = ../AWSCognito.framework; sourceTree = "<group>"; };
-		2EBF146E1E7E765200A69174 /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognitoIdentityProvider.framework; path = ../AWSCognitoIdentityProvider.framework; sourceTree = "<group>"; };
-		2EBF146F1E7E765200A69174 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = ../AWSCore.framework; sourceTree = "<group>"; };
 		2EBF14761E7E92A600A69174 /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileHubHelper.framework; path = ../AWSMobileHubHelper.framework; sourceTree = "<group>"; };
 		2EC277471E4AC1D600F6328E /* AppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
 		2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotPlacesViewController.swift; sourceTree = "<group>"; };
@@ -162,17 +150,14 @@
 				2EB3D85B1E9220E300F21274 /* Bolts.framework in Frameworks */,
 				2E0783FA1E921FF70091C1D0 /* FBSDKCoreKit.framework in Frameworks */,
 				2E0783FB1E921FF70091C1D0 /* FBSDKLoginKit.framework in Frameworks */,
-				2EBF14701E7E765200A69174 /* AWSCognito.framework in Frameworks */,
 				2E39E2D21E57112C00C456B1 /* Photos.framework in Frameworks */,
 				2E39E2CF1E56F8BB00C456B1 /* JSQMessagesViewController.framework in Frameworks */,
-				2EBF14721E7E765200A69174 /* AWSCognitoIdentityProvider.framework in Frameworks */,
 				2EB3D8621E92216900F21274 /* FBSDKLoginKit.framework in Frameworks */,
 				2E39E2D01E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework in Frameworks */,
 				2EBF14771E7E92A600A69174 /* AWSMobileHubHelper.framework in Frameworks */,
 				2ED48B0A1E4D6736001FF8A0 /* CoreMotion.framework in Frameworks */,
 				2ED48B081E4D65E0001FF8A0 /* MapKit.framework in Frameworks */,
 				2EF320551E46E33700820572 /* SafariServices.framework in Frameworks */,
-				2EBF14741E7E765200A69174 /* AWSCore.framework in Frameworks */,
 				2EB3D8611E92216900F21274 /* FBSDKCoreKit.framework in Frameworks */,
 				2EF320541E46E32300820572 /* MediaPlayer.framework in Frameworks */,
 				2EF320531E46E31900820572 /* Foundation.framework in Frameworks */,
@@ -258,9 +243,6 @@
 				2EB3D85E1E92216900F21274 /* FBSDKCoreKit.framework */,
 				2EB3D85F1E92216900F21274 /* FBSDKLoginKit.framework */,
 				2EBF14761E7E92A600A69174 /* AWSMobileHubHelper.framework */,
-				2EBF146D1E7E765200A69174 /* AWSCognito.framework */,
-				2EBF146E1E7E765200A69174 /* AWSCognitoIdentityProvider.framework */,
-				2EBF146F1E7E765200A69174 /* AWSCore.framework */,
 			);
 			name = UserImportedFrameworks;
 			sourceTree = "<group>";

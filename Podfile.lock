@@ -1,5 +1,12 @@
 PODS:
   - Alamofire (4.4.0)
+  - AWSCognito (2.5.3):
+    - AWSCore (= 2.5.3)
+  - AWSCognitoIdentityProvider (2.5.3):
+    - AWSCore (= 2.5.3)
+  - AWSCognitoSync (2.5.3):
+    - AWSCognito (= 2.5.3)
+  - AWSCore (2.5.3)
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
@@ -7,15 +14,23 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AWSCognito
+  - AWSCognitoIdentityProvider
+  - AWSCognitoSync
+  - AWSCore
   - JSQMessagesViewController
   - Socket.IO-Client-Swift
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AWSCognito: 74be06e52a2a063ab932a9d457a89e003d68631d
+  AWSCognitoIdentityProvider: 1594ab95efebd3f3670bd6d2e21f0860463d672a
+  AWSCognitoSync: 9203ea07fcf550714cb9ceb78bd4d00e82ea73eb
+  AWSCore: 344e21892790650cf902246d436402257a545bde
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Socket.IO-Client-Swift: a2faffdbde89c63aebc5d631041530c1068b02b8
 
-PODFILE CHECKSUM: 2c950afb14b5289e49688cda750e48c4f2da14ca
+PODFILE CHECKSUM: 1dc16d7dd7c61704cc0d5d76a5a51087885b0f77
 
 COCOAPODS: 1.2.1

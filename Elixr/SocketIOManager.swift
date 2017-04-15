@@ -19,11 +19,19 @@ class SocketIOManager: NSObject {
         super.init()
     }
     
+    // Establishes connection to the server.
     func establishConnection() {
         socket.connect()
     }
     
+    // Closes the connection to the server.
     func closeConnection() {
         socket.disconnect()
+    }
+    
+    // Sends the nickname to the server.
+    func connectToServerWithNickname(nickname: String, completionHandler: (_ userList: [[String: AnyObject]]?) -> Void) {
+        socket.emit("connectUser", with: nickname)
+        
     }
 }
