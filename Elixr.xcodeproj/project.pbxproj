@@ -26,6 +26,7 @@
 		2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69E1CE1E51235500334450 /* ElixrTests.swift */; };
 		2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */; };
 		2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7336931DFE28BD00DA33A7 /* Utility.swift */; };
+		2E7CEB0D1EA36E900032AD57 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7CEB0C1EA36E900032AD57 /* Message.swift */; };
 		2E84BAFB1EA105EF005A4D74 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84BAFA1EA105EF005A4D74 /* SocketIOManager.swift */; };
 		2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */; };
 		2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */; };
@@ -112,6 +113,7 @@
 		2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSMobileClient.swift; sourceTree = "<group>"; };
 		2E6CA32C1DF3E2BA00056897 /* Elixr.Entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Elixr.Entitlements; sourceTree = SOURCE_ROOT; };
 		2E7336931DFE28BD00DA33A7 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		2E7CEB0C1EA36E900032AD57 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2E84BAFA1EA105EF005A4D74 /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomiseChoseViewController.swift; sourceTree = "<group>"; };
 		2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				2E2A6CE81E48425E00660F4A /* AppMain.storyboard */,
 				2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */,
 				2E39E2CB1E56F89200C456B1 /* JeevesChatViewController.swift */,
+				2E7CEB0C1EA36E900032AD57 /* Message.swift */,
 				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
@@ -479,6 +482,7 @@
 				2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */,
 				2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */,
 				2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */,
+				2E7CEB0D1EA36E900032AD57 /* Message.swift in Sources */,
 				2E43A9EF1DEBD762006D1B4D /* AppDelegate.swift in Sources */,
 				2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */,
 				2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */,
