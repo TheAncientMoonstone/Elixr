@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		24DBEC237E8E7925A487FD03 /* Pods_Elixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B2AFE2F27FDCFB2490AD7E /* Pods_Elixr.framework */; };
-		2E0783FA1E921FF70091C1D0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0783F81E921FF70091C1D0 /* FBSDKCoreKit.framework */; };
-		2E0783FB1E921FF70091C1D0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0783F91E921FF70091C1D0 /* FBSDKLoginKit.framework */; };
 		2E2A6CE91E48425E00660F4A /* AppMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A6CE81E48425E00660F4A /* AppMain.storyboard */; };
 		2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */; };
 		2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */; };
@@ -17,7 +15,6 @@
 		2E39E2CF1E56F8BB00C456B1 /* JSQMessagesViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2CD1E56F8BB00C456B1 /* JSQMessagesViewController.framework */; };
 		2E39E2D01E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2CE1E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework */; };
 		2E39E2D21E57112C00C456B1 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39E2D11E57112C00C456B1 /* Photos.framework */; };
-		2E3D95F91EA06D06007EEBE6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3D95F81EA06D06007EEBE6 /* Alamofire.framework */; };
 		2E41AF471DEC04470043C021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E41AF461DEC04470043C021 /* Main.storyboard */; };
 		2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E41AF481DEC045D0043C021 /* MainViewController.swift */; };
 		2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4271A81DEBE45A00738557 /* SignInViewController.swift */; };
@@ -31,10 +28,6 @@
 		2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7336931DFE28BD00DA33A7 /* Utility.swift */; };
 		2E84BAFB1EA105EF005A4D74 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84BAFA1EA105EF005A4D74 /* SocketIOManager.swift */; };
 		2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */; };
-		2EB3D85B1E9220E300F21274 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0783F61E921FD00091C1D0 /* Bolts.framework */; };
-		2EB3D8601E92216900F21274 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB3D85D1E92216900F21274 /* Bolts.framework */; };
-		2EB3D8611E92216900F21274 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB3D85E1E92216900F21274 /* FBSDKCoreKit.framework */; };
-		2EB3D8621E92216900F21274 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB3D85F1E92216900F21274 /* FBSDKLoginKit.framework */; };
 		2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */; };
 		2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */; };
 		2EBE46AD1DED53B400D6A476 /* UserPools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */; };
@@ -46,7 +39,6 @@
 		2EC3AAD41E6838B4001DB983 /* HotPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */; };
 		2ED48B081E4D65E0001FF8A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B071E4D65E0001FF8A0 /* MapKit.framework */; };
 		2ED48B0A1E4D6736001FF8A0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED48B091E4D6736001FF8A0 /* CoreMotion.framework */; };
-		2EE8C9CB1EA0FE3800D97599 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE8C9CA1EA0FE3800D97599 /* SocketIO.framework */; };
 		2EF3204D1E46E2D300820572 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA501DEBD878006D1B4D /* libz.tbd */; };
 		2EF3204E1E46E2DC00820572 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43AA521DEBD89E006D1B4D /* libsqlite3.tbd */; };
 		2EF3204F1E46E2E900820572 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6CA3201DF3C3CB00056897 /* UIKit.framework */; };
@@ -122,9 +114,6 @@
 		2E7336931DFE28BD00DA33A7 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		2E84BAFA1EA105EF005A4D74 /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomiseChoseViewController.swift; sourceTree = "<group>"; };
-		2EB3D85D1E92216900F21274 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		2EB3D85E1E92216900F21274 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		2EB3D85F1E92216900F21274 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		2EBE46A81DED3DB600D6A476 /* SignInViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewControllerExtensions.swift; sourceTree = "<group>"; };
 		2EBE46AA1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPools.storyboard; sourceTree = "<group>"; };
@@ -145,23 +134,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EE8C9CB1EA0FE3800D97599 /* SocketIO.framework in Frameworks */,
-				2E3D95F91EA06D06007EEBE6 /* Alamofire.framework in Frameworks */,
-				2EB3D85B1E9220E300F21274 /* Bolts.framework in Frameworks */,
-				2E0783FA1E921FF70091C1D0 /* FBSDKCoreKit.framework in Frameworks */,
-				2E0783FB1E921FF70091C1D0 /* FBSDKLoginKit.framework in Frameworks */,
 				2E39E2D21E57112C00C456B1 /* Photos.framework in Frameworks */,
 				2E39E2CF1E56F8BB00C456B1 /* JSQMessagesViewController.framework in Frameworks */,
-				2EB3D8621E92216900F21274 /* FBSDKLoginKit.framework in Frameworks */,
 				2E39E2D01E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework in Frameworks */,
 				2EBF14771E7E92A600A69174 /* AWSMobileHubHelper.framework in Frameworks */,
 				2ED48B0A1E4D6736001FF8A0 /* CoreMotion.framework in Frameworks */,
 				2ED48B081E4D65E0001FF8A0 /* MapKit.framework in Frameworks */,
 				2EF320551E46E33700820572 /* SafariServices.framework in Frameworks */,
-				2EB3D8611E92216900F21274 /* FBSDKCoreKit.framework in Frameworks */,
 				2EF320541E46E32300820572 /* MediaPlayer.framework in Frameworks */,
 				2EF320531E46E31900820572 /* Foundation.framework in Frameworks */,
-				2EB3D8601E92216900F21274 /* Bolts.framework in Frameworks */,
 				2EF320521E46E30300820572 /* CFNetwork.framework in Frameworks */,
 				2EF320511E46E2F900820572 /* Security.framework in Frameworks */,
 				2EF320501E46E2F100820572 /* SystemConfiguration.framework in Frameworks */,
@@ -239,9 +220,6 @@
 		2E43AA001DEBD7CE006D1B4D /* UserImportedFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EB3D85D1E92216900F21274 /* Bolts.framework */,
-				2EB3D85E1E92216900F21274 /* FBSDKCoreKit.framework */,
-				2EB3D85F1E92216900F21274 /* FBSDKLoginKit.framework */,
 				2EBF14761E7E92A600A69174 /* AWSMobileHubHelper.framework */,
 			);
 			name = UserImportedFrameworks;
@@ -665,6 +643,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognito",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognitoIdentityProvider",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCore",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Bolts",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
 				);
 				INFOPLIST_FILE = Elixr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
@@ -689,6 +673,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognito",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognitoIdentityProvider",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCore",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Bolts",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
 				);
 				INFOPLIST_FILE = Elixr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;

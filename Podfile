@@ -8,8 +8,9 @@ target :Elixr
 			pod 'JSQMessagesViewController'
 			pod 'Alamofire'
 			pod 'Socket.IO-Client-Swift'
-			pod 'AWSCognitoSync'
             pod 'AWSCore'
             pod 'AWSCognito'
             pod 'AWSCognitoIdentityProvider'
+			pod 'FBSDKCoreKit'
+			pod 'FBSDKLoginKit'
 	use_frameworks!
