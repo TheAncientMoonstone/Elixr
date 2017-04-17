@@ -19,8 +19,9 @@ class Message: NSObject, JSQMessageData {
     var isMediaMessage_: Bool
     var hash_: UInt = 0
     var text_: String
+    var imageUrl_: String?
     
-    init(senderID: String, senderDisplayName: String?, isMediaMessage: Bool, hash: Int, text: String) {
+    init(senderID: String, senderDisplayName: String?, isMediaMessage: Bool, hash: Int, text: String, imageUrl: String) {
         self.senderID_ = senderID
         self.senderDisplayName_ = senderDisplayName
         self.date_ = Date()
@@ -52,4 +53,10 @@ class Message: NSObject, JSQMessageData {
     func text() -> String! {
         return text_;
     }
+    
+    func imageUrl() -> String? {
+        return imageUrl_;
+    }
+    
+    
 }

@@ -82,4 +82,7 @@ class SocketIOManager: NSObject {
     func sendStopTypingMessage(_ nickname: String) {
         socket.emit("stopType", nickname)
     }
+    
+    init(url: String) {
+    }
 }
