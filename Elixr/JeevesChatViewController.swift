@@ -66,6 +66,7 @@ class JeevesChatViewController: JSQMessagesViewController {
             }
         }
         // At point in use something fucks up.... Not my problem, LOL XD!
+        // But in all seriousness - this may caused by a broken URL so don't panic.
         setupAvatarImage(name, imageUrl: imageUrl, incoming: incoming)
     }
     
@@ -85,11 +86,86 @@ class JeevesChatViewController: JSQMessagesViewController {
 
     }
     
+    // MARK:- Buttons & UI.
+    // Some shit goes here...
+    // WHIZ!, BANG, KAPOW!
     
-    // MARK:- Collection Views
-    func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageViewForItemAt indexPath: IndexPath!) -> JSQMessagesAvatarImage! {
+    // MARK:- Collection Views.
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {
+        return messages[indexPath.item]
+    }
+    
+    /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, bubbleImageViewForItemAt indexPath: IndexPath!) -> JSQMessagesBubbleImage {
         let message = messages[indexPath.item]
-            return avatars[message.senderId()]
+        
+        if message.senderId() == senderId {
+            return JSQMessagesBubbleImage(messageBubble: outgoingBubbleImageView!.messageBubbleImage, highlightedImage: outgoingBubbleImageView!.messageBubbleHighlightedImage)
         }
+        return JSQMessagesBubbleImage(messageBubble: incomingBubbleImageView!.messageBubbleHighlightedImage, highlightedImage: incomingBubbleImageView!.messageBubbleHighlightedImage)
+    }
     
+    /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageViewForItemAt indexPath: IndexPath!) -> JSQMessagesAvatarImage! {
+        let message = messages[indexPath.item]
+        return avatars[message.senderId()]
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = super.collectionView(collectionView, cellForItemAt: indexPath) as! JSQMessagesCollectionViewCell
+        
+        let message = messages[indexPath.item]
+        if message.senderId() == senderId {
+            cell.textView.textColor = UIColor.black
+        } else {
+            cell.textView.textColor = UIColor.white
+        }
+        
+        let attributes: [String:AnyObject] = [NSForegroundColorAttributeName:cell.textView.textColor!, NSUnderlineStyleAttributeName: 1 as AnyObject]
+        cell.textView.linkTextAttributes = attributes
+        
+        return cell
+    }
+    
+    // Reveal the usernames above the the bubbles.
+    /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
+        
+        let message = messages[indexPath.item];
+        
+        // Sent by the user?
+        if message.senderId() == senderId {
+            return nil;
+        }
+        
+        // Same as previous sender??
+        if indexPath.item > 0 {
+            let previousMessage = messages[indexPath.item - 1];
+            if previousMessage.senderId() == message.senderId() {
+                return nil;
+            }
+        }
+        return NSAttributedString(string: message.senderId())
+    }
+    
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!,
+                                       heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat {
+        let message = messages[indexPath.item]
+        
+        // Sent by the user?
+        if message.senderId() == senderId {
+            return CGFloat(0.0);
+        }
+        
+        // Same as the previous sender??
+        if indexPath.item > 0 {
+            let previousMessage = messages[indexPath.item - 1];
+            if previousMessage.senderId() == message.senderId() {
+                return CGFloat(0.0)
+            }
+        }
+        
+        return kJSQMessagesCollectionViewCellLabelHeightDefault
+    }
 }
