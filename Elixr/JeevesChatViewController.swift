@@ -27,11 +27,13 @@ class JeevesChatViewController: JSQMessagesViewController {
     var ChatScriptSocket: SocketIOManager!
     
     // Sets up initial properties to connect to the chatscript server instance.
+    // ChatScript Server instance declared with URL and port required.
     func setupChatScript() {
         ChatScriptSocket = SocketIOManager(url: "http://ec2-52-64-166-153.ap-southeast-2.compute.amazonaws.com:1024")
         
         // Capture the last 25 - 50 of chat bubbles in the conversation.
-        
+        // To either be declared here or elsewhere.
+        // So if it has already been declared don't worry about this! XD
         
     }
     
@@ -130,7 +132,7 @@ class JeevesChatViewController: JSQMessagesViewController {
     }
     
     // Reveal the usernames above the the bubbles.
-    /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
+     /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
         
         let message = messages[indexPath.item];
         

@@ -19,6 +19,9 @@ class SocketIOManager: NSObject {
         super.init()
     }
     
+    init(url: String) {
+    }
+    
     // Establishes connection to the server.
     func establishConnection() {
         socket.connect()
@@ -81,8 +84,5 @@ class SocketIOManager: NSObject {
     
     func sendStopTypingMessage(_ nickname: String) {
         socket.emit("stopType", nickname)
-    }
-    
-    init(url: String) {
     }
 }

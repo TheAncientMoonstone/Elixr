@@ -10,7 +10,7 @@
 import Foundation
 import JSQMessagesViewController
 
-class Message: NSObject, JSQMessageData {
+internal class Message: NSObject, JSQMessageData {
 
 
     var senderID_:String!

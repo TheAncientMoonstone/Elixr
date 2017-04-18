@@ -13,6 +13,10 @@ import AWSCognitoIdentityProvider
 
 class AppMainViewController: UIViewController {
     
+    // MARK:- Properties.
+    var senderDisplayName: String?
+    var message: [Message] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -49,5 +53,18 @@ class AppMainViewController: UIViewController {
         appDelegate.window?.rootViewController = viewController
         
     }
+    
+    // MARK:- Navigation to ChatViewController.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if let message = sender as? Message {
+            let chatVc = segue.destination as! JeevesChatViewController
+            
+            chatVc.senderDisplayName = senderDisplayName
+            chatVc.messages = [message]
+        }
+    }
+    
     
 }
