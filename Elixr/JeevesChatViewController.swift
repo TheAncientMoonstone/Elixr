@@ -103,7 +103,7 @@ class JeevesChatViewController: JSQMessagesViewController {
         return messages[indexPath.row]
     }
     
-    /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, bubbleImageViewForItemAt indexPath: IndexPath!) -> JSQMessagesBubbleImage {
+    func collectionView(_ collectionView: JSQMessagesCollectionView!, bubbleImageViewForItemAt indexPath: IndexPath!) -> JSQMessagesBubbleImage {
         let message = messages[indexPath.item]
         
         if message.senderId() == senderId {
@@ -112,7 +112,7 @@ class JeevesChatViewController: JSQMessagesViewController {
         return JSQMessagesBubbleImage(messageBubble: incomingBubbleImageView!.messageBubbleHighlightedImage, highlightedImage: incomingBubbleImageView!.messageBubbleHighlightedImage)
     }
     
-    /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageViewForItemAt indexPath: IndexPath!) -> JSQMessagesAvatarImage! {
+    func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageViewForItemAt indexPath: IndexPath!) -> JSQMessagesAvatarImage! {
         let message = messages[indexPath.item]
         return avatars[message.senderId()]
     }
@@ -139,7 +139,7 @@ class JeevesChatViewController: JSQMessagesViewController {
     
     
     // Reveal the usernames above the the bubbles.
-     /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
+     func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
         
         let message = messages[indexPath.item];
         
