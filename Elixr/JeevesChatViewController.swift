@@ -42,6 +42,12 @@ class JeevesChatViewController: JSQMessagesViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         automaticallyScrollsToMostRecentMessage = true
+        
+        
+        //Added by Vivek : Start
+        self.senderId = messages.first?.senderID_
+        self.senderDisplayName = messages.first?.senderDisplayName_
+        //Added by Vivek : End
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,7 +100,7 @@ class JeevesChatViewController: JSQMessagesViewController {
     
     // MARK:- Collection Views.
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {
-        return messages[indexPath.item]
+        return messages[indexPath.row]
     }
     
     /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, bubbleImageViewForItemAt indexPath: IndexPath!) -> JSQMessagesBubbleImage {
@@ -119,7 +125,7 @@ class JeevesChatViewController: JSQMessagesViewController {
         let cell = super.collectionView(collectionView, cellForItemAt: indexPath) as! JSQMessagesCollectionViewCell
         
         let message = messages[indexPath.item]
-        if message.senderId() == senderId {
+        if message.senderId() == self.senderId {
             cell.textView.textColor = UIColor.black
         } else {
             cell.textView.textColor = UIColor.white
@@ -130,6 +136,7 @@ class JeevesChatViewController: JSQMessagesViewController {
         
         return cell
     }
+    
     
     // Reveal the usernames above the the bubbles.
      /* override */ func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
@@ -151,23 +158,61 @@ class JeevesChatViewController: JSQMessagesViewController {
         return NSAttributedString(string: message.senderId())
     }
     
-    override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!,
-                                       heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat {
-        let message = messages[indexPath.item]
-        
-        // Sent by the user?
-        if message.senderId() == senderId {
-            return CGFloat(0.0);
+//    override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!,
+//                                       heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat {
+//        let message = messages[indexPath.item]
+//        
+//        // Sent by the user?
+//        if message.senderId() == senderId {
+//            return CGFloat(0.0);
+//        }
+//        
+//        // Same as the previous sender??
+//        if indexPath.item > 0 {
+//            let previousMessage = messages[indexPath.item - 1];
+//            if previousMessage.senderId() == message.senderId() {
+//                return CGFloat(0.0)
+//            }
+//        }
+//        
+//        return kJSQMessagesCollectionViewCellLabelHeightDefault
+//    }
+    
+    
+    
+    
+    
+    
+    
+    
+    //Added By Vivek : Start
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
+        let bubbleFactory = JSQMessagesBubbleImageFactory()
+        if self.senderId == messages[indexPath.row].senderID_ {
+            return bubbleFactory?.outgoingMessagesBubbleImage(with: .green)
+        }else{
+            return bubbleFactory?.incomingMessagesBubbleImage(with: .blue)
         }
-        
-        // Same as the previous sender??
-        if indexPath.item > 0 {
-            let previousMessage = messages[indexPath.item - 1];
-            if previousMessage.senderId() == message.senderId() {
-                return CGFloat(0.0)
-            }
-        }
-        
-        return kJSQMessagesCollectionViewCellLabelHeightDefault
     }
+    
+    
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource! {
+        return nil
+    }
+    
+    
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, attributedTextForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
+        return NSAttributedString(string: messages[indexPath.row].senderDisplayName_)
+    }
+    
+    
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat {
+        return 15
+    }
+    
+    //Added By Vivek : End
+
+    
+    
+    
 }

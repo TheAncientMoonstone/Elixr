@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,7 +87,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Chat with Jeeves"/>
                                 <connections>
-                                    <segue destination="njP-mY-IGv" kind="show" id="ZjQ-Xd-tj4"/>
+                                    <segue destination="njP-mY-IGv" kind="show" identifier="SegueChat" id="ZjQ-Xd-tj4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,7 +121,7 @@
         <!--Jeeves-->
         <scene sceneID="ZOA-YP-c1R">
             <objects>
-                <viewController id="njP-mY-IGv" sceneMemberID="viewController">
+                <viewController id="njP-mY-IGv" customClass="JeevesChatViewController" customModule="Elixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8HN-qQ-9te"/>
                         <viewControllerLayoutGuide type="bottom" id="mCZ-ce-Vg1"/>
