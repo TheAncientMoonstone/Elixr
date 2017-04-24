@@ -158,34 +158,6 @@ class JeevesChatViewController: JSQMessagesViewController {
         return NSAttributedString(string: message.senderId())
     }
     
-//    override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!,
-//                                       heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat {
-//        let message = messages[indexPath.item]
-//        
-//        // Sent by the user?
-//        if message.senderId() == senderId {
-//            return CGFloat(0.0);
-//        }
-//        
-//        // Same as the previous sender??
-//        if indexPath.item > 0 {
-//            let previousMessage = messages[indexPath.item - 1];
-//            if previousMessage.senderId() == message.senderId() {
-//                return CGFloat(0.0)
-//            }
-//        }
-//        
-//        return kJSQMessagesCollectionViewCellLabelHeightDefault
-//    }
-    
-    
-    
-    
-    
-    
-    
-    
-    //Added By Vivek : Start
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
         let bubbleFactory = JSQMessagesBubbleImageFactory()
         if self.senderId == messages[indexPath.row].senderID_ {
@@ -209,10 +181,4 @@ class JeevesChatViewController: JSQMessagesViewController {
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat {
         return 15
     }
-    
-    //Added By Vivek : End
-
-    
-    
-    
 }
