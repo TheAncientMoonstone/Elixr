@@ -58,12 +58,25 @@ class AppMainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
-        if let message = sender as? Message {
+        //Added by Vivek : Start
+        if segue.identifier == "SegueChat" {
             let chatVc = segue.destination as! JeevesChatViewController
             
+            message.append(Message(senderID: "1", senderDisplayName: "Tim", isMediaMessage: false, hash: 1, text: "Hello Vivek", imageUrl: ""))
+            message.append(Message(senderID: "2", senderDisplayName: "Vivek", isMediaMessage: false, hash: 1, text: "Hello Tim", imageUrl: ""))
+            
             chatVc.senderDisplayName = senderDisplayName
-            chatVc.messages = [message]
+            chatVc.messages = message
+
         }
+        //Added by Vivek : End
+        
+//        if let message = sender as? Message {
+//            let chatVc = segue.destination as! JeevesChatViewController
+//            
+//            chatVc.senderDisplayName = senderDisplayName
+//            chatVc.messages = [message]
+//        }
     }
     
     

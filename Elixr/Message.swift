@@ -12,7 +12,6 @@ import JSQMessagesViewController
 
 internal class Message: NSObject, JSQMessageData {
 
-
     var senderID_:String!
     var senderDisplayName_: String!
     var date_: Date
@@ -47,7 +46,8 @@ internal class Message: NSObject, JSQMessageData {
     }
     
     func messageHash() -> UInt {
-        return messageHash();
+        //return messageHash();
+        return hash_;
     }
     
     func text() -> String! {
