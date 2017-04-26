@@ -13,17 +13,26 @@ import AWSMobileHubHelper
 extension SignInViewController {
     
     func handleCustomSignIn() {
-        AWSCognitoUserPoolsSignInProvider.sharedInstance().setInteractiveAuthDelegate(self)
-        self.handleLoginWithSignInProvider(signInProvider: AWSCognitoUserPoolsSignInProvider.sharedInstance())
         
-        // Set the key isLoggedIn to true so when the user opens the app,
-        // they are directly redirected to AppMain Storyboard
-        UserDefaults.standard.set(true, forKey: "isLoggedIn")
-        UserDefaults.standard.synchronize()
+        if self.customUserIdField.text == "" || self.customPasswordField.text == ""{
+            DispatchQueue.main.async(execute: {
+                let alert = UIAlertController(title: "Missing UserName / Password", message: "Please enter a valid user name / password.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            })
+        }else{
+            AWSCognitoUserPoolsSignInProvider.sharedInstance().setInteractiveAuthDelegate(self)
+            self.handleLoginWithSignInProvider(signInProvider: AWSCognitoUserPoolsSignInProvider.sharedInstance())
+            
+            // Set the key isLoggedIn to true so when the user opens the app,
+            // they are directly redirected to AppMain Storyboard
+            UserDefaults.standard.set(true, forKey: "isLoggedIn")
+            UserDefaults.standard.synchronize()
+            let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
+            self.present(viewController, animated: true, completion: nil);
+        }
         
-        let storyboard = UIStoryboard(name: "AppMain", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
-        self.present(viewController, animated: true, completion: nil);
     }
     
     func handleUserPoolSignUp() {
@@ -62,6 +71,7 @@ extension SignInViewController: AWSCognitoIdentityInteractiveAuthenticationDeleg
 extension SignInViewController: AWSCognitoUserPoolsSignInHandler {
     
     func handleUserPoolSignInFlowStart() {
+        
         guard let username = self.customUserIdField.text, !username.isEmpty,
             let password = self.customPasswordField.text, !password.isEmpty else {
                 DispatchQueue.main.async(execute: {
