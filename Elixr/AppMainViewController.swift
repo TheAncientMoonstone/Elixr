@@ -58,7 +58,7 @@ class AppMainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
-        //Added by Vivek : Start
+
         if segue.identifier == "SegueChat" {
             let chatVc = segue.destination as! JeevesChatViewController
             
@@ -69,14 +69,7 @@ class AppMainViewController: UIViewController {
             chatVc.messages = message
 
         }
-        //Added by Vivek : End
-        
-//        if let message = sender as? Message {
-//            let chatVc = segue.destination as! JeevesChatViewController
-//            
-//            chatVc.senderDisplayName = senderDisplayName
-//            chatVc.messages = [message]
-//        }
+
     }
     
     
