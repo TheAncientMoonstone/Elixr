@@ -10,6 +10,7 @@ import UIKit
 import Photos
 import JSQMessagesViewController
 import Alamofire
+import Starscream
 
 
 class JeevesChatViewController: JSQMessagesViewController {
@@ -21,6 +22,7 @@ class JeevesChatViewController: JSQMessagesViewController {
     var outgoingBubbleImageView = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
     var senderImageUrl: String!
     var batchMessages = true
+//    var socket = WebSocket(url: URL((string: ""))
     
     // MARK:- View Lifecycle.
     override func viewDidLoad() {
@@ -80,7 +82,7 @@ class JeevesChatViewController: JSQMessagesViewController {
     // Some shit goes here...
     // WHIZ!, BANG, KAPOW!
     
-    // MARK:- Collection Views.
+    // MARK:- Collection Views -> JSQMessagesViewController.
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {
         return messages[indexPath.row]
     }
@@ -163,4 +165,6 @@ class JeevesChatViewController: JSQMessagesViewController {
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat {
         return 15
     }
+    
+    // MARK:- Starscream communication protocols.
 }
