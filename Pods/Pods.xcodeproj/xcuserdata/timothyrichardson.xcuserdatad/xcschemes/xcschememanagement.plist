@@ -54,7 +54,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Socket.IO-Client-Swift.xcscheme</key>
+		<key>Starscream.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,12 +62,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>15A8D3BC8A0EE093D6E8E8F33B89C467</key>
+		<key>162CAD95CC0F402AED98F345659DC633</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>162CAD95CC0F402AED98F345659DC633</key>
+		<key>1B4592146026957B14F559751F766516</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53C6112213829CB147F47E473C93F271</key>
+		<key>4E245D0A0C9EB0C472147D7D0404C9F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83518633A2CDDA4A5E72B238F77FC76A</key>
+		<key>53C6112213829CB147F47E473C93F271</key>
 		<dict>
 			<key>primary</key>
 			<true/>

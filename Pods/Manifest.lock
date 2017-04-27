@@ -18,7 +18,7 @@ PODS:
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
-  - Socket.IO-Client-Swift (8.3.3)
+  - Starscream (2.0.4)
 
 DEPENDENCIES:
   - Alamofire
@@ -28,7 +28,7 @@ DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - JSQMessagesViewController
-  - Socket.IO-Client-Swift
+  - Starscream
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
@@ -40,8 +40,8 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: a1a5f4b4ac445823a020fbeeaf5f03714a67ff9c
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
-  Socket.IO-Client-Swift: a2faffdbde89c63aebc5d631041530c1068b02b8
+  Starscream: df5974ee928b157c8eda8af8de7c620276b7dfcc
 
-PODFILE CHECKSUM: 995a4efd1b3b104de841df68d6ffc8c236395b05
+PODFILE CHECKSUM: 0bd589164de574dc7c62edb41947ccff0a77028d
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
