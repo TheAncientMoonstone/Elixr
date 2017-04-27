@@ -10,7 +10,7 @@ import UIKit
 import Photos
 import JSQMessagesViewController
 import Alamofire
-import SocketIO
+
 
 class JeevesChatViewController: JSQMessagesViewController {
     
@@ -21,21 +21,6 @@ class JeevesChatViewController: JSQMessagesViewController {
     var outgoingBubbleImageView = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
     var senderImageUrl: String!
     var batchMessages = true
-    var ref: SocketIOManager!
-    
-    // Set up the connection to the ChatScript server instance.
-    var ChatScriptSocket: SocketIOManager!
-    
-    // Sets up initial properties to connect to the chatscript server instance.
-    // ChatScript Server instance declared with URL and port required.
-    func setupChatScript() {
-        ChatScriptSocket = SocketIOManager(url: "http://ec2-52-64-166-153.ap-southeast-2.compute.amazonaws.com:1024")
-        
-        // Capture the last 25 - 50 of chat bubbles in the conversation.
-        // To either be declared here or elsewhere.
-        // So if it has already been declared don't worry about this! XD
-        
-    }
     
     // MARK:- View Lifecycle.
     override func viewDidLoad() {
@@ -43,11 +28,8 @@ class JeevesChatViewController: JSQMessagesViewController {
         // Do any additional setup after loading the view.
         automaticallyScrollsToMostRecentMessage = true
         
-        
-        //Added by Vivek : Start
         self.senderId = messages.first?.senderID_
         self.senderDisplayName = messages.first?.senderDisplayName_
-        //Added by Vivek : End
     }
 
     override func didReceiveMemoryWarning() {
