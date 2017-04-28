@@ -12,17 +12,18 @@ import JSQMessagesViewController
 import Alamofire
 import Starscream
 
-
 class JeevesChatViewController: JSQMessagesViewController {
     
-    // MARK:- Properties
+    // MARK:- JSQMessageViewController Properties
     var messages = [Message]()
     var avatars = [String: JSQMessagesAvatarImage]()
     var incomingBubbleImageView = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleRed())
     var outgoingBubbleImageView = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
     var senderImageUrl: String!
     var batchMessages = true
-//    var socket = WebSocket(url: URL((string: ""))
+    
+    // MARK:- Starscream Properties
+    var socket = WebSocket(url: URL(string: "ws://localhost:8080")!, protocols: ["chat"])
     
     // MARK:- View Lifecycle.
     override func viewDidLoad() {
@@ -121,7 +122,6 @@ class JeevesChatViewController: JSQMessagesViewController {
         return cell
     }
     
-    
     // Reveal the usernames above the the bubbles.
      func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
         
@@ -145,22 +145,19 @@ class JeevesChatViewController: JSQMessagesViewController {
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
         let bubbleFactory = JSQMessagesBubbleImageFactory()
         if self.senderId == messages[indexPath.row].senderID_ {
-            return bubbleFactory?.outgoingMessagesBubbleImage(with: .green)
+            return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
         }else{
-            return bubbleFactory?.incomingMessagesBubbleImage(with: .blue)
+            return bubbleFactory?.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleRed())
         }
     }
-    
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource! {
         return nil
     }
     
-    
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, attributedTextForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString! {
         return NSAttributedString(string: messages[indexPath.row].senderDisplayName_)
     }
-    
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat {
         return 15
