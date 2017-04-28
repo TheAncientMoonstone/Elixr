@@ -33,6 +33,14 @@ class JeevesChatViewController: JSQMessagesViewController {
         
         self.senderId = messages.first?.senderID_
         self.senderDisplayName = messages.first?.senderDisplayName_
+        
+        socket.delegate = self as? WebSocketDelegate
+        socket.connect()
+    }
+    
+    deinit {
+        socket.disconnect()
+        socket.delegate = self as? WebSocketDelegate
     }
 
     override func didReceiveMemoryWarning() {
@@ -146,7 +154,7 @@ class JeevesChatViewController: JSQMessagesViewController {
         let bubbleFactory = JSQMessagesBubbleImageFactory()
         if self.senderId == messages[indexPath.row].senderID_ {
             return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
-        }else{
+        } else {
             return bubbleFactory?.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleRed())
         }
     }
@@ -163,5 +171,5 @@ class JeevesChatViewController: JSQMessagesViewController {
         return 15
     }
     
-    // MARK:- Starscream communication protocols.
+    // MARK:- Starscream communication methods and protocols.
 }

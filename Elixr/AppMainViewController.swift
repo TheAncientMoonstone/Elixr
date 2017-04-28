@@ -62,8 +62,8 @@ class AppMainViewController: UIViewController {
         if segue.identifier == "SegueChat" {
             let chatVc = segue.destination as! JeevesChatViewController
             
-            message.append(Message(senderID: "1", senderDisplayName: "Tim", isMediaMessage: false, hash: 1, text: "Hello Vivek", imageUrl: ""))
-            message.append(Message(senderID: "2", senderDisplayName: "Vivek", isMediaMessage: false, hash: 1, text: "Hello Tim", imageUrl: ""))
+            message.append(Message(senderID: "1", senderDisplayName: "Tim", isMediaMessage: false, hash: 1, text: "Hello Jeeves", imageUrl: ""))
+            message.append(Message(senderID: "2", senderDisplayName: "Jeeves", isMediaMessage: false, hash: 1, text: "Hello Tim", imageUrl: ""))
             
             chatVc.senderDisplayName = senderDisplayName
             chatVc.messages = message
