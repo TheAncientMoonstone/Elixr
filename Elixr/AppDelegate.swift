@@ -11,17 +11,21 @@ import AWSCore
 import FBSDKCoreKit
 import FBSDKLoginKit
 import AWSCognito
+import CoreLocation
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var locationManager: CLLocationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        // Activates the use of Core Location Services through out the application.
+        locationManager.delegate = self as? CLLocationManagerDelegate
         
         if UserDefaults.standard.bool(forKey: "isLoggedIn") {
             // If user has been successfully authenticated they can now move on to the app.
