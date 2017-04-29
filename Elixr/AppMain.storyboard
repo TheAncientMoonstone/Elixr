@@ -124,6 +124,9 @@
                             <constraint firstItem="f0w-hW-Pok" firstAttribute="bottom" secondItem="7Ag-c1-0oI" secondAttribute="top" id="vQI-tq-CSz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="f0w-hW-Pok" id="wVx-nb-lAq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2y-KZ-RUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
