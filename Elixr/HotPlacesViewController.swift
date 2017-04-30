@@ -25,13 +25,16 @@ class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMa
         locationManager.delegate = self
         
         if CLLocationManager.authorizationStatus() == .notDetermined {
-            self.locationManager.requestWhenInUseAuthorization()
+            self.locationManager.requestAlwaysAuthorization()
+        let alert = UIAlertController(title: "You can change this option in the settings", message: "So keep calm your selection is not permanent. 🙂", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
         
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
- 
+        
     }
 
     override func didReceiveMemoryWarning() {
