@@ -52,7 +52,6 @@ class JeevesChatViewController: JSQMessagesViewController {
         super.viewDidAppear(animated)
     }
     
-    
     // MARK:- Avatar Image.
     func setupAvatarImage(_ name: String, imageUrl: String?, incoming: Bool) {
         if let stringUrl = imageUrl {

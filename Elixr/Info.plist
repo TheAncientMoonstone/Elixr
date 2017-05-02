@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>So for us to give you the most accurate data we need to keep Location Services running.</string>
+	<string>So for us to give you the most accurate data we need to keep Location Services running in the background.</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

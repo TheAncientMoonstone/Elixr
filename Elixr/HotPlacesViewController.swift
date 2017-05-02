@@ -27,8 +27,11 @@ class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMa
         // This little method requests the users permission for location services whilst in this view controller.
         if CLLocationManager.authorizationStatus() == .notDetermined {
             self.locationManager.requestAlwaysAuthorization()
-        let alert = UIAlertController(title: "You can change this option in the Settings App", message: "So keep calm your selection is not permanent. 🙂", preferredStyle: .alert)
+        let alert = UIAlertController(title: "You can change this option in the Settings App", message: "So keep calm your selection is not permanent. 🙂",
+                                      preferredStyle: .alert)
+            
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
             self.present(alert, animated: true, completion: nil)
         }
         
