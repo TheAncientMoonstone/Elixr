@@ -1,10 +1,10 @@
 PODS:
   - Alamofire (4.4.0)
-  - AWSCognito (2.5.5):
-    - AWSCore (= 2.5.5)
-  - AWSCognitoIdentityProvider (2.5.5):
-    - AWSCore (= 2.5.5)
-  - AWSCore (2.5.5)
+  - AWSCognito (2.5.6):
+    - AWSCore (= 2.5.6)
+  - AWSCognitoIdentityProvider (2.5.6):
+    - AWSCore (= 2.5.6)
+  - AWSCore (2.5.6)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -32,9 +32,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  AWSCognito: 5f1dddb8669682b1224c19c214270a942e438b06
-  AWSCognitoIdentityProvider: 673bda0bc0f77cd1e2b0ab3c02095bc0b69b7603
-  AWSCore: 665371d51ccdfe62430c586e3cb8e57eff8ce09d
+  AWSCognito: 18edcf80780d45229371dc954c77c825c617f9c4
+  AWSCognitoIdentityProvider: 44b0e11aea801bb7dbe810a7f2cf21374d8e225b
+  AWSCore: 47109d026cdbc1272624caa73114fbdd2ba3ad66
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: c693bad19feb225469eeff14452ba364522ee48b
   FBSDKLoginKit: 1fa529fc622d7b32ebeaffbecd377180833c6d30
