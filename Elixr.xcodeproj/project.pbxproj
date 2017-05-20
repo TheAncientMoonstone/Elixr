@@ -21,7 +21,6 @@
 		2E4271AE1DEBE48500738557 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4271AD1DEBE48500738557 /* SignIn.storyboard */; };
 		2E43A9EF1DEBD762006D1B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */; };
 		2E43A9F61DEBD762006D1B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E43A9F51DEBD762006D1B4D /* Assets.xcassets */; };
-		2E43A9F91DEBD762006D1B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */; };
 		2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */; };
 		2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69E1CE1E51235500334450 /* ElixrTests.swift */; };
 		2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */; };
@@ -93,7 +92,6 @@
 		2E43A9EB1DEBD762006D1B4D /* Elixr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elixr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E43A9F51DEBD762006D1B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E43A9F81DEBD762006D1B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E43A9FA1DEBD762006D1B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E43AA501DEBD878006D1B4D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2E43AA521DEBD89E006D1B4D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -208,7 +206,6 @@
 				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
 				2E43A9F51DEBD762006D1B4D /* Assets.xcassets */,
-				2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */,
 				2E43A9FA1DEBD762006D1B4D /* Info.plist */,
 				2E6CA32C1DF3E2BA00056897 /* Elixr.Entitlements */,
 				2E7336921DFE28AF00DA33A7 /* Utility */,
@@ -386,7 +383,6 @@
 			files = (
 				2E4271AE1DEBE48500738557 /* SignIn.storyboard in Resources */,
 				2EBE46AD1DED53B400D6A476 /* UserPools.storyboard in Resources */,
-				2E43A9F91DEBD762006D1B4D /* LaunchScreen.storyboard in Resources */,
 				2E43A9F61DEBD762006D1B4D /* Assets.xcassets in Resources */,
 				2E41AF471DEC04470043C021 /* Main.storyboard in Resources */,
 				2E2A6CE91E48425E00660F4A /* AppMain.storyboard in Resources */,
@@ -506,17 +502,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		2E43A9F71DEBD762006D1B4D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E43A9F81DEBD762006D1B4D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		2E43A9FB1DEBD762006D1B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -620,7 +605,7 @@
 			baseConfigurationReference = 80F1DEA41AED806C61EC0714 /* Pods-Elixr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YV663DGEUZ;
 				ENABLE_BITCODE = NO;
@@ -651,7 +636,7 @@
 			baseConfigurationReference = 5FDFD086D87D5E3C5040B99B /* Pods-Elixr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YV663DGEUZ;
 				ENABLE_BITCODE = NO;
