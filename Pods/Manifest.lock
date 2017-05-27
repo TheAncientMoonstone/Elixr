@@ -18,6 +18,7 @@ PODS:
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
+  - Pastel (0.2.0)
   - Starscream (2.0.4)
 
 DEPENDENCIES:
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - JSQMessagesViewController
+  - Pastel
   - Starscream
 
 SPEC CHECKSUMS:
@@ -40,8 +42,9 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: 1fa529fc622d7b32ebeaffbecd377180833c6d30
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Pastel: f3d9a543a8bcdc385bd432513d3dcc0476276732
   Starscream: df5974ee928b157c8eda8af8de7c620276b7dfcc
 
-PODFILE CHECKSUM: 0bd589164de574dc7c62edb41947ccff0a77028d
+PODFILE CHECKSUM: fd93272bf8731e5d313953e7619cf354d9e7f425
 
 COCOAPODS: 1.2.1

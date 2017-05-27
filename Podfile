@@ -13,4 +13,5 @@ target :Elixr
             pod 'AWSCognitoIdentityProvider'
 			pod 'FBSDKCoreKit'
 			pod 'FBSDKLoginKit'
+			pod 'Pastel'
 	use_frameworks!

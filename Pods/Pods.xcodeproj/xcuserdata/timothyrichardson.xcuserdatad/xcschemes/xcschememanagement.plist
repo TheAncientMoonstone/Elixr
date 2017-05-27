@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pastel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Elixr.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,22 +67,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0B6CAEBDA72222B34B6BFF848E18718A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>162CAD95CC0F402AED98F345659DC633</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1B4592146026957B14F559751F766516</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>44CAD6CE523055ED339E87154473A254</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4E245D0A0C9EB0C472147D7D0404C9F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -113,6 +113,16 @@
 			<true/>
 		</dict>
 		<key>D0581AF7BF4A6DA140D280B19ECC7BFF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF9D348656F56DA5871DBF487E3302C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC61D4E394B990C6603405BEC98B852F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
