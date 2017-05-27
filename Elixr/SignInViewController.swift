@@ -10,6 +10,7 @@ import UIKit
 import AWSMobileHubHelper
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Pastel
 
 class SignInViewController: UIViewController {
     
@@ -26,9 +27,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var customSignInProviderButton: UIButton!
     // Third party provider login buttons.
     @IBOutlet weak var facebookLoginButton: UIButton!
-
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -74,15 +73,33 @@ class SignInViewController: UIViewController {
         
     }
     
+    // MARK: - Custom Background
+    override func viewDidAppear(_ animated: Bool) {
+        let pastelView = PastelView(frame: view.bounds)
+        
+        // Custom Direction
+        pastelView.startPoint = .bottomLeft
+        pastelView.endPoint = .topRight
+        
+        // Custom Duration
+        pastelView.animationDuration = 3.0
+        
+        // Custom Color
+        pastelView.setColors(colors: [#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1),
+                                      #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1),
+                                      #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1),
+                                      #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1),
+                                      #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1),
+                                      #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)])
+        
+        pastelView.startAnimation()
+        view.insertSubview(pastelView, at: 0)
+    }
+    
     deinit {
         NotificationCenter.default.removeObserver(didSignInObserver)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func handleFacebookLogin() {
         // Facebook login permissions can be optionally set, but must be set
         // before the user can authenticate.

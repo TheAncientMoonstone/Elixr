@@ -22,6 +22,7 @@
 		2E43A9EF1DEBD762006D1B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */; };
 		2E43A9F61DEBD762006D1B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E43A9F51DEBD762006D1B4D /* Assets.xcassets */; };
 		2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */; };
+		2E501E311ED9CE1E003F5F2A /* Pastel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E501E301ED9CE1E003F5F2A /* Pastel.framework */; };
 		2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69E1CE1E51235500334450 /* ElixrTests.swift */; };
 		2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */; };
 		2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7336931DFE28BD00DA33A7 /* Utility.swift */; };
@@ -100,6 +101,7 @@
 		2E43AA581DEBD8BE006D1B4D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2E43AA5A1DEBD8CB006D1B4D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSConfiguration.swift; sourceTree = "<group>"; };
+		2E501E301ED9CE1E003F5F2A /* Pastel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pastel.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/Pastel/Pastel.framework"; sourceTree = "<group>"; };
 		2E69E1CC1E51235500334450 /* ElixrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElixrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E69E1CE1E51235500334450 /* ElixrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixrTests.swift; sourceTree = "<group>"; };
 		2E69E1D01E51235500334450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E501E311ED9CE1E003F5F2A /* Pastel.framework in Frameworks */,
 				2E39E2D21E57112C00C456B1 /* Photos.framework in Frameworks */,
 				2E39E2CF1E56F8BB00C456B1 /* JSQMessagesViewController.framework in Frameworks */,
 				2E39E2D01E56F8BB00C456B1 /* JSQSystemSoundPlayer.framework in Frameworks */,
@@ -216,6 +219,7 @@
 		2E43AA4F1DEBD878006D1B4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E501E301ED9CE1E003F5F2A /* Pastel.framework */,
 				2EBF14761E7E92A600A69174 /* AWSMobileHubHelper.framework */,
 				2EE8C9CA1EA0FE3800D97599 /* SocketIO.framework */,
 				2E3D95F81EA06D06007EEBE6 /* Alamofire.framework */,
