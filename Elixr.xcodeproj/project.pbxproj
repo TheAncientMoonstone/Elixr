@@ -617,12 +617,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognito",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognitoIdentityProvider",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCore",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Bolts",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
 				);
 				INFOPLIST_FILE = Elixr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
@@ -648,12 +642,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Elixr",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognito",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognitoIdentityProvider",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCore",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Bolts",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
 				);
 				INFOPLIST_FILE = Elixr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
