@@ -20,8 +20,6 @@ class JeevesChatViewController: JSQMessagesViewController {
     var senderImageUrl: String!
     var batchMessages = true
     
-    // MARK:- Starscream Properties
-    var socket = WebSocket(url: URL(string: "ws://localhost:8080")!, protocols: ["chat"])
     
     // MARK:- View Lifecycle.
     override func viewDidLoad() {
@@ -32,14 +30,9 @@ class JeevesChatViewController: JSQMessagesViewController {
         self.senderId = messages.first?.senderID_
         self.senderDisplayName = messages.first?.senderDisplayName_
         
-        socket.delegate = self as? WebSocketDelegate
-        socket.connect()
+
     }
     
-    deinit {
-        socket.disconnect()
-        socket.delegate = self as? WebSocketDelegate
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
