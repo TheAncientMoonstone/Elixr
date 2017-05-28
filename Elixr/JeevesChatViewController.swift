@@ -9,7 +9,6 @@
 import UIKit
 import Photos
 import JSQMessagesViewController
-import Starscream
 
 class JeevesChatViewController: JSQMessagesViewController {
     
