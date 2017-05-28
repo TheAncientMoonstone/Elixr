@@ -1,10 +1,11 @@
 PODS:
-  - Alamofire (4.4.0)
   - AWSCognito (2.5.7):
     - AWSCore (= 2.5.7)
   - AWSCognitoIdentityProvider (2.5.7):
     - AWSCore (= 2.5.7)
   - AWSCore (2.5.7)
+  - AWSLex (2.5.7):
+    - AWSCore (= 2.5.7)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -19,32 +20,29 @@ PODS:
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
   - Pastel (0.3.0)
-  - Starscream (2.0.4)
 
 DEPENDENCIES:
-  - Alamofire
   - AWSCognito
   - AWSCognitoIdentityProvider
   - AWSCore
+  - AWSLex
   - FBSDKCoreKit
   - FBSDKLoginKit
   - JSQMessagesViewController
   - Pastel
-  - Starscream
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AWSCognito: 833e56f35762648f551ca77f60240a5d7c615e13
   AWSCognitoIdentityProvider: 7b2ac768763bab6ea57830482267447c792f3358
   AWSCore: 716d787cde0239b3e92f9b4151c052f55a117703
+  AWSLex: 8ee02bfb53360868f46fc65ff4e03251bd052efb
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: d7829f5a69901cd7296105328e4c3c3fc7da6518
   FBSDKLoginKit: 6b92bd65f319d669d2b0730e49db495ef1660566
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
-  Starscream: df5974ee928b157c8eda8af8de7c620276b7dfcc
 
-PODFILE CHECKSUM: fd93272bf8731e5d313953e7619cf354d9e7f425
+PODFILE CHECKSUM: 5d330b92adedba774ebd19fb9c2e01c6b692859c
 
 COCOAPODS: 1.2.1

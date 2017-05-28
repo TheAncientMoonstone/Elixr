@@ -6,8 +6,7 @@ target :Elixr
 
 	source 'https://github.com/CocoaPods/Specs.git'
 			pod 'JSQMessagesViewController'
-			pod 'Alamofire'
-			pod 'Starscream'
+			pod 'AWSLex'
             pod 'AWSCore'
             pod 'AWSCognito'
             pod 'AWSCognitoIdentityProvider'
