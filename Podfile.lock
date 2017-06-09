@@ -1,11 +1,11 @@
 PODS:
-  - AWSCognito (2.5.7):
-    - AWSCore (= 2.5.7)
-  - AWSCognitoIdentityProvider (2.5.7):
-    - AWSCore (= 2.5.7)
-  - AWSCore (2.5.7)
-  - AWSLex (2.5.7):
-    - AWSCore (= 2.5.7)
+  - AWSCognito (2.5.8):
+    - AWSCore (= 2.5.8)
+  - AWSCognitoIdentityProvider (2.5.8):
+    - AWSCore (= 2.5.8)
+  - AWSCore (2.5.8)
+  - AWSLex (2.5.8):
+    - AWSCore (= 2.5.8)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -32,10 +32,10 @@ DEPENDENCIES:
   - Pastel
 
 SPEC CHECKSUMS:
-  AWSCognito: 833e56f35762648f551ca77f60240a5d7c615e13
-  AWSCognitoIdentityProvider: 7b2ac768763bab6ea57830482267447c792f3358
-  AWSCore: 716d787cde0239b3e92f9b4151c052f55a117703
-  AWSLex: 8ee02bfb53360868f46fc65ff4e03251bd052efb
+  AWSCognito: 8eb74039f4dc5f2d929999c4f531eeb4bd83e6cb
+  AWSCognitoIdentityProvider: 6c0c276a16b622914563350c64d723bcecaa9e75
+  AWSCore: cf101c44d2cc5da32abc27d5529cddc63c010415
+  AWSLex: d8b18608c1076be34034e52f69052a16acce9172
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: d7829f5a69901cd7296105328e4c3c3fc7da6518
   FBSDKLoginKit: 6b92bd65f319d669d2b0730e49db495ef1660566
