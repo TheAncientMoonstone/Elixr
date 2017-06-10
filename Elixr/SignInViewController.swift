@@ -73,8 +73,7 @@ class SignInViewController: UIViewController {
         // Creates a custom effect on the text boxes on screen.
         customUserIdField.backgroundColor = UIColor.clear
         customPasswordField.backgroundColor = UIColor.clear
-        customUserIdField.alpha = 0.3
-        customPasswordField.alpha = 0.3
+
  
     }
     
