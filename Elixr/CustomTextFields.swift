@@ -42,9 +42,10 @@ class CustomTextFields: UITextField {
             
             let textRange = NSMakeRange(0, tmpText.characters.count)
             let attributedText = NSMutableAttributedString(string: tmpText)
-            attributedText.addAttribute(NSForegroundColorAttributeName , value:UIColor(white:147.0/255.0, alpha:1.0), range: textRange)
+            attributedText.addAttribute(NSForegroundColorAttributeName , value:UIColor(white:255.0/255.0, alpha:1.0), range: textRange)
             
             self.attributedPlaceholder = attributedText
+            
         }
     }
 }
