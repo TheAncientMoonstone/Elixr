@@ -28,6 +28,7 @@ class SignInViewController: UIViewController {
     // Third party provider login buttons.
     @IBOutlet weak var facebookLoginButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -46,7 +47,6 @@ class SignInViewController: UIViewController {
         using: {(note: Notification) -> Void in
         // perform successful login actions here
         })
-        
         
         // Custom UI Setup.
         // These selectors will move to different view controllers, depending on the button pressed.
@@ -70,7 +70,12 @@ class SignInViewController: UIViewController {
         customPasswordField.inputAccessoryView = toolBar
         
 
-        
+        // Creates a custom effect on the text boxes on screen.
+        customUserIdField.backgroundColor = UIColor.clear
+        customPasswordField.backgroundColor = UIColor.clear
+        customUserIdField.alpha = 0.3
+        customPasswordField.alpha = 0.3
+ 
     }
     
     // MARK: - Custom Background
@@ -182,8 +187,4 @@ class SignInViewController: UIViewController {
         self.activityIndicator.stopAnimating()
         self.activityIndicator.isHidden = true
     }
-    
-
-    
-    
 }

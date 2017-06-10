@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24DBEC237E8E7925A487FD03 /* Pods_Elixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B2AFE2F27FDCFB2490AD7E /* Pods_Elixr.framework */; };
+		2E14886F1EEBDE8900EAD6CC /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14886E1EEBDE8900EAD6CC /* CustomTextFields.swift */; };
 		2E2A6CE91E48425E00660F4A /* AppMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A6CE81E48425E00660F4A /* AppMain.storyboard */; };
 		2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */; };
 		2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */; };
@@ -22,6 +23,7 @@
 		2E43A9EF1DEBD762006D1B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */; };
 		2E43A9F61DEBD762006D1B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E43A9F51DEBD762006D1B4D /* Assets.xcassets */; };
 		2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */; };
+		2E4F7FC71EEBD23C00E1D883 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F7FC61EEBD23C00E1D883 /* CustomButton.swift */; };
 		2E501E311ED9CE1E003F5F2A /* Pastel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E501E301ED9CE1E003F5F2A /* Pastel.framework */; };
 		2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69E1CE1E51235500334450 /* ElixrTests.swift */; };
 		2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */; };
@@ -78,6 +80,7 @@
 		2E0783F61E921FD00091C1D0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/FacebookSDKs-iOS-4-2/Bolts.framework"; sourceTree = "<group>"; };
 		2E0783F81E921FF70091C1D0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4-2/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		2E0783F91E921FF70091C1D0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4-2/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		2E14886E1EEBDE8900EAD6CC /* CustomTextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
 		2E2A6CE81E48425E00660F4A /* AppMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppMain.storyboard; sourceTree = "<group>"; };
 		2E3726291DEE915B0044ACF6 /* UserPoolSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpViewController.swift; sourceTree = "<group>"; };
 		2E37262F1DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoolSignUpConfirmationViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 		2E43AA581DEBD8BE006D1B4D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2E43AA5A1DEBD8CB006D1B4D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSConfiguration.swift; sourceTree = "<group>"; };
+		2E4F7FC61EEBD23C00E1D883 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2E501E301ED9CE1E003F5F2A /* Pastel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pastel.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/Pastel/Pastel.framework"; sourceTree = "<group>"; };
 		2E69E1CC1E51235500334450 /* ElixrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElixrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E69E1CE1E51235500334450 /* ElixrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixrTests.swift; sourceTree = "<group>"; };
@@ -162,6 +166,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E1488701EEBDE9600EAD6CC /* CustomUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F7FC61EEBD23C00E1D883 /* CustomButton.swift */,
+				2E14886E1EEBDE8900EAD6CC /* CustomTextFields.swift */,
+			);
+			name = CustomUIElements;
+			sourceTree = "<group>";
+		};
 		2E4271AA1DEBE46100738557 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +219,7 @@
 				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
+				2E1488701EEBDE9600EAD6CC /* CustomUIElements */,
 				2E43A9F51DEBD762006D1B4D /* Assets.xcassets */,
 				2E43A9FA1DEBD762006D1B4D /* Info.plist */,
 				2E6CA32C1DF3E2BA00056897 /* Elixr.Entitlements */,
@@ -476,7 +490,9 @@
 				2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */,
 				2E39E2CC1E56F89200C456B1 /* JeevesChatViewController.swift in Sources */,
 				2EC3AAD31E6838B4001DB983 /* HotPlacesViewController.swift in Sources */,
+				2E14886F1EEBDE8900EAD6CC /* CustomTextFields.swift in Sources */,
 				2EBE46A91DED3DB600D6A476 /* SignInViewControllerExtensions.swift in Sources */,
+				2E4F7FC71EEBD23C00E1D883 /* CustomButton.swift in Sources */,
 				2E41AF491DEC045D0043C021 /* MainViewController.swift in Sources */,
 				2EC277481E4AC1D600F6328E /* AppMainViewController.swift in Sources */,
 				2EBE46AF1DED6F9000D6A476 /* UserPoolNewPasswordViewController.swift in Sources */,
