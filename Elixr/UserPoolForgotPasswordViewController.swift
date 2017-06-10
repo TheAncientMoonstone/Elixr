@@ -53,6 +53,9 @@ class UserPoolForgotPasswordViewController: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
         toolBar.setItems([flexibleSpace, doneButton], animated: false)
         usernameField.inputAccessoryView = toolBar
+        
+        // Creates a custom effect on the username field.
+        usernameField.backgroundColor = UIColor.clear
     }
     
     override func viewDidAppear(_ animated: Bool) {

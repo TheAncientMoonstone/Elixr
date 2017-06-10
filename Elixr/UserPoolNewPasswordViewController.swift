@@ -30,6 +30,9 @@ class UserPoolNewPasswordViewController: UIViewController {
         toolBar.setItems([flexibleSpace, doneButton], animated: false)
         
         updatedPassword.inputAccessoryView = toolBar
+        
+        // Creates a custom effect on the new password field.
+        updatedPassword.backgroundColor = UIColor.clear
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -40,6 +40,11 @@ class UserPoolSignUpViewController: UIViewController {
         Email.inputAccessoryView = toolBar
         Password.inputAccessoryView = toolBar
         
+        
+        // Creates a custom effect on the text boxes on screen.
+        Username.backgroundColor = UIColor.clear
+        Email.backgroundColor = UIColor.clear
+        Password.backgroundColor = UIColor.clear
     }
     
     override func viewDidAppear(_ animated: Bool) {

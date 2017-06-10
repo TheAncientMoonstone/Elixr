@@ -35,6 +35,9 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
         
         toolBar.setItems([flexibleSpace, doneButton], animated: false)
+        
+        // Creates a custom effect on the username field.
+        Username.backgroundColor = UIColor.clear
     }
     
     override func viewDidAppear(_ animated: Bool) {
