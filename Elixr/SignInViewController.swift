@@ -29,7 +29,11 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var facebookLoginButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-
+    // Hides the top status part.
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()

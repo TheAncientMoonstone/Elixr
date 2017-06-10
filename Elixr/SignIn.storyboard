@@ -138,6 +138,7 @@
                             <constraint firstItem="tyC-Sn-JhS" firstAttribute="centerY" secondItem="ryw-RO-7dh" secondAttribute="centerY" constant="55" id="kwv-nj-gQj"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="tyC-Sn-JhS" id="HgX-6Y-sJ1"/>
                         <outlet property="customCreateNewAccountButton" destination="48l-Fr-Y40" id="25I-fp-ckj"/>
