@@ -32,4 +32,12 @@ class CustomTextFields: UITextField {
             self.layer.borderColor = borderColor.cgColor
         }
     }
+    
+    @IBInspectable var placeHolderColor: UIColor? {
+        didSet {
+            let rawString = attributedPlaceholder?.string != nil ? attributedPlaceholder!.string : ""
+            let str = NSAttributedString(string: rawString, attributes: [NSForegroundColorAttributeName: placeHolderColor!])
+            attributedPlaceholder = str
+        }
+    }
 }
