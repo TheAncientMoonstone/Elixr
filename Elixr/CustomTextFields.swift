@@ -33,4 +33,18 @@ class CustomTextFields: UITextField {
         }
     }
     
+    override var placeholder: String? {
+        didSet {
+            guard let tmpText = placeholder else {
+                self.attributedPlaceholder = NSAttributedString(string: "")
+                return
+            }
+            
+            let textRange = NSMakeRange(0, tmpText.characters.count)
+            let attributedText = NSMutableAttributedString(string: tmpText)
+            attributedText.addAttribute(NSForegroundColorAttributeName , value:UIColor(white:147.0/255.0, alpha:1.0), range: textRange)
+            
+            self.attributedPlaceholder = attributedText
+        }
+    }
 }
