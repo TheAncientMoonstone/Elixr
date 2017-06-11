@@ -10,7 +10,7 @@ import Foundation
 import AWSCognitoIdentityProvider
 import Pastel
 
-class UserPoolNewPasswordViewController: UIViewController {
+class UserPoolNewPasswordViewController: UIViewController, UITextFieldDelegate {
     
     var user: AWSCognitoIdentityUser?
     @IBOutlet weak var updatedPassword: UITextField!
@@ -19,6 +19,7 @@ class UserPoolNewPasswordViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        /*
         // This adds a done button to dismiss the Keyobard.
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -30,6 +31,10 @@ class UserPoolNewPasswordViewController: UIViewController {
         toolBar.setItems([flexibleSpace, doneButton], animated: false)
         
         updatedPassword.inputAccessoryView = toolBar
+        */
+        
+        // Initial declaration of the new delegate implemented in this class.
+        updatedPassword.delegate = self
         
         // Creates a custom effect on the new password field.
         updatedPassword.backgroundColor = UIColor.clear
@@ -96,7 +101,15 @@ class UserPoolNewPasswordViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    /*
     func doneClicked() {
         view.endEditing(true)
+    }
+    */
+    
+    // Use of the resignation of the first responder.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        updatedPassword.resignFirstResponder()
+        return true
     }
 }

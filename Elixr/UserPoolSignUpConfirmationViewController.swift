@@ -12,7 +12,7 @@ import AWSCognitoIdentityProvider
 import Pastel
 
 
-class UserPoolSignUpConfirmationViewController: UIViewController {
+class UserPoolSignUpConfirmationViewController: UIViewController, UITextFieldDelegate {
 
     var sentTo: String?
     var user: AWSCognitoIdentityUser?
@@ -26,6 +26,7 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.Username.text = self.user!.username;
         
+        /*
         // This adds a done button to dismiss the Keyboard.
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -35,6 +36,12 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
         
         toolBar.setItems([flexibleSpace, doneButton], animated: false)
+         */
+        
+        // Initial declaration of the new delegate implemented in this class.
+        Username.delegate = self
+        confirmationCode.delegate = self
+        
         
         // Creates a custom effect on the username field.
         Username.backgroundColor = UIColor.clear
@@ -120,7 +127,16 @@ class UserPoolSignUpConfirmationViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    /*
     func doneClicked() {
         view.endEditing(true)
+    }
+    */
+    
+    // Use of the resignation of the first reciever.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        Username.resignFirstResponder()
+        confirmationCode.resignFirstResponder()
+        return true
     }
 }

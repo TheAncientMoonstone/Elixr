@@ -12,7 +12,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Pastel
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UITextFieldDelegate {
     
         var didSignInObserver: AnyObject!
         var passwordAuthenticationCompletion: AWSTaskCompletionSource<AnyObject>?
@@ -63,7 +63,7 @@ class SignInViewController: UIViewController {
         // This allows the user to sign up for their own custom account.
         customCreateNewAccountButton.addTarget(self, action: #selector(handleUserPoolSignUp), for: .touchUpInside)
         
-        
+        /*
         // This adds a done button to dismiss the Keyboard.
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -72,12 +72,16 @@ class SignInViewController: UIViewController {
         toolBar.setItems([flexibleSpace, doneButton], animated: false)
         customUserIdField.inputAccessoryView = toolBar
         customPasswordField.inputAccessoryView = toolBar
-        
+        */
 
         // Creates a custom effect on the text boxes on screen.
         customUserIdField.backgroundColor = UIColor.clear
         customPasswordField.backgroundColor = UIColor.clear
 
+        
+        // Inital declaration of the new delegate implemented in this class.
+        customUserIdField.delegate = self
+        customPasswordField.delegate = self
  
     }
     
@@ -165,15 +169,26 @@ class SignInViewController: UIViewController {
         print("User has logged out...")
     }
     
+    /*
     // Allows the user to return to the previous view controller.
     func dismissViewController() {
         self.dismiss(animated: true, completion: nil)
     }
+    */
     
+    /*
     // Adds function to the 'Done' button.
     func doneClicked() {
         view.endEditing(true)
     
+    }
+    */
+    
+    // Use of the resignation of the first receiver.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        customUserIdField.resignFirstResponder()
+        customPasswordField.resignFirstResponder()
+        return true
     }
     
     

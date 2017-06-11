@@ -12,7 +12,7 @@ import AWSCognitoIdentityProvider
 import AWSMobileHubHelper
 import Pastel
 
-class UserPoolForgotPasswordViewController: UIViewController {
+class UserPoolForgotPasswordViewController: UIViewController, UITextFieldDelegate {
     
     var pool: AWSCognitoIdentityUserPool?
     var user: AWSCognitoIdentityUser?
@@ -46,6 +46,7 @@ class UserPoolForgotPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.pool = AWSCognitoIdentityUserPool.init(forKey: AWSCognitoUserPoolsSignInProviderKey)
+        /*
         // This adds a done button to dismiss the Keyboard.
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -53,9 +54,13 @@ class UserPoolForgotPasswordViewController: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
         toolBar.setItems([flexibleSpace, doneButton], animated: false)
         usernameField.inputAccessoryView = toolBar
+        */
         
         // Creates a custom effect on the username field.
         usernameField.backgroundColor = UIColor.clear
+        
+        // Inital declaration of the new delegate implemented in this class.
+        usernameField.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -95,7 +100,15 @@ class UserPoolForgotPasswordViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    /*
     func doneClicked() {
         view.endEditing(true)
+    }
+    */
+    
+    // Use of the resignation of the first responder.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        usernameField.resignFirstResponder()
+        return true
     }
 }

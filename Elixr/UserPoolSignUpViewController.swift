@@ -12,7 +12,7 @@ import AWSMobileHubHelper
 import AWSCognitoIdentityProvider
 import Pastel
 
-class UserPoolSignUpViewController: UIViewController {
+class UserPoolSignUpViewController: UIViewController, UITextFieldDelegate {
     
     var pool: AWSCognitoIdentityUserPool?
     var sentTo: String?
@@ -26,6 +26,7 @@ class UserPoolSignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.pool = AWSCognitoIdentityUserPool.init(forKey: AWSCognitoUserPoolsSignInProviderKey)
         
+        /*
         // This adds a done button to dismiss the Keyboard.
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -39,12 +40,17 @@ class UserPoolSignUpViewController: UIViewController {
         Username.inputAccessoryView = toolBar
         Email.inputAccessoryView = toolBar
         Password.inputAccessoryView = toolBar
-        
+        */
         
         // Creates a custom effect on the text boxes on screen.
         Username.backgroundColor = UIColor.clear
         Email.backgroundColor = UIColor.clear
         Password.backgroundColor = UIColor.clear
+        
+        // Inital declaration of the new delegate implemented in this class.
+        Username.delegate = self
+        Email.delegate = self
+        Password.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -149,7 +155,17 @@ class UserPoolSignUpViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    /*
     func doneClicked() {
         view.endEditing(true)
+    }
+    */
+    
+    // Use of the resignation of the first receiver.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        Username.resignFirstResponder()
+        Password.resignFirstResponder()
+        Email.resignFirstResponder()
+        return true
     }
 }
