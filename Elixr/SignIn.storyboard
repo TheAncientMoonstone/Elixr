@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,9 +22,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mxg-PA-Qgj" customClass="CustomTextFields" customModule="Elixr" customModuleProvider="target">
-                                <rect key="frame" x="16" y="254" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mxg-PA-Qgj" customClass="CustomTextFields" customModule="Elixr" customModuleProvider="target">
+                                <rect key="frame" x="1023" y="254" width="88" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LuY-xl-mSM"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
@@ -43,9 +46,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="51m-FB-66h" customClass="CustomTextFields" customModule="Elixr" customModuleProvider="target">
+                            <textField clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="51m-FB-66h" customClass="CustomTextFields" customModule="Elixr" customModuleProvider="target">
                                 <rect key="frame" x="16" y="302" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e60-P9-ys9"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
@@ -64,9 +69,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48l-Fr-Y40" customClass="CustomButton" customModule="Elixr" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48l-Fr-Y40" customClass="CustomButton" customModule="Elixr" customModuleProvider="target">
                                 <rect key="frame" x="16" y="394" width="159" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="tyk-sy-joy"/>
+                                </constraints>
                                 <state key="normal" title="Create new account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -79,9 +86,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4A-IH-bQM" customClass="CustomButton" customModule="Elixr" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4A-IH-bQM" customClass="CustomButton" customModule="Elixr" customModuleProvider="target">
                                 <rect key="frame" x="183" y="394" width="176" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot your password?">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -94,9 +100,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ui9-iy-ted" customClass="CustomButton" customModule="Elixr" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ui9-iy-ted" customClass="CustomButton" customModule="Elixr" customModuleProvider="target">
                                 <rect key="frame" x="147" y="356" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="5Ub-zq-imw"/>
+                                </constraints>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -109,9 +117,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or you can" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdQ-fE-SI0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or you can" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdQ-fE-SI0">
                                 <rect key="frame" x="16" y="432" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="myP-q5-ied"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -120,14 +130,15 @@
                                 <rect key="frame" x="169" y="370" width="37" height="37"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TitleImage" translatesAutoresizingMaskIntoConstraints="NO" id="PqQ-Ia-7ah">
-                                <rect key="frame" x="67" y="131" width="240" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleImage" translatesAutoresizingMaskIntoConstraints="NO" id="PqQ-Ia-7ah">
+                                <rect key="frame" x="67" y="131" width="2000" height="92"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDb-ZW-rLD" customClass="CustomButton" customModule="Elixr" customModuleProvider="target">
-                                <rect key="frame" x="80" y="461" width="214" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDb-ZW-rLD" customClass="CustomButton" customModule="Elixr" customModuleProvider="target">
+                                <rect key="frame" x="16" y="461" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.25882352941176467" green="0.40392156862745099" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="j49-ad-TpZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="Continue with Facebook"/>
                                 <userDefinedRuntimeAttributes>
@@ -139,8 +150,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tyC-Sn-JhS" firstAttribute="centerX" secondItem="ryw-RO-7dh" secondAttribute="centerX" id="LyR-fD-9x3"/>
-                            <constraint firstItem="tyC-Sn-JhS" firstAttribute="centerY" secondItem="ryw-RO-7dh" secondAttribute="centerY" constant="55" id="kwv-nj-gQj"/>
+                            <constraint firstItem="Ui9-iy-ted" firstAttribute="centerX" secondItem="tyC-Sn-JhS" secondAttribute="centerX" id="1su-TR-L71"/>
+                            <constraint firstItem="LhW-SP-IAo" firstAttribute="top" secondItem="lDb-ZW-rLD" secondAttribute="bottom" constant="176" id="2CJ-Mu-Gof"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="trailing" secondItem="hdQ-fE-SI0" secondAttribute="trailing" id="4Om-LI-dmr"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="leading" secondItem="hdQ-fE-SI0" secondAttribute="leading" id="7D1-km-YM6"/>
+                            <constraint firstItem="PqQ-Ia-7ah" firstAttribute="leading" secondItem="ryw-RO-7dh" secondAttribute="leadingMargin" constant="51" id="BL9-Ao-3HQ"/>
+                            <constraint firstItem="Mxg-PA-Qgj" firstAttribute="top" secondItem="PqQ-Ia-7ah" secondAttribute="bottom" constant="31" id="FUy-9m-k8i"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="trailing" secondItem="F4A-IH-bQM" secondAttribute="trailing" id="HUe-WH-mKX"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="leading" secondItem="51m-FB-66h" secondAttribute="leading" id="Jm1-UH-6ia"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="leading" secondItem="ryw-RO-7dh" secondAttribute="leadingMargin" id="Kbb-dp-Soq"/>
+                            <constraint firstItem="Ui9-iy-ted" firstAttribute="top" secondItem="51m-FB-66h" secondAttribute="bottom" constant="24" id="L2R-co-DRG"/>
+                            <constraint firstItem="48l-Fr-Y40" firstAttribute="baseline" secondItem="F4A-IH-bQM" secondAttribute="baseline" id="Tbf-id-P2k"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="leading" secondItem="48l-Fr-Y40" secondAttribute="leading" id="Un7-Hb-NnC"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="top" secondItem="hdQ-fE-SI0" secondAttribute="bottom" constant="8" symbolic="YES" id="VxE-o0-blh"/>
+                            <constraint firstItem="hdQ-fE-SI0" firstAttribute="top" secondItem="tyC-Sn-JhS" secondAttribute="bottom" constant="25" id="asa-pi-PdQ"/>
+                            <constraint firstItem="PqQ-Ia-7ah" firstAttribute="top" secondItem="7Gs-e0-sa2" secondAttribute="bottom" constant="131" id="d0x-Re-mnc"/>
+                            <constraint firstItem="hdQ-fE-SI0" firstAttribute="top" secondItem="48l-Fr-Y40" secondAttribute="bottom" constant="8" symbolic="YES" id="de4-r0-sD3"/>
+                            <constraint firstItem="48l-Fr-Y40" firstAttribute="top" secondItem="Ui9-iy-ted" secondAttribute="bottom" constant="8" symbolic="YES" id="giI-vF-G6F"/>
+                            <constraint firstItem="tyC-Sn-JhS" firstAttribute="centerX" secondItem="hdQ-fE-SI0" secondAttribute="centerX" id="k6g-82-RTI"/>
+                            <constraint firstItem="51m-FB-66h" firstAttribute="top" secondItem="Mxg-PA-Qgj" secondAttribute="bottom" constant="18" id="kKA-JB-khM"/>
+                            <constraint firstItem="F4A-IH-bQM" firstAttribute="leading" secondItem="48l-Fr-Y40" secondAttribute="trailing" constant="8" symbolic="YES" id="qnt-UX-Lfw"/>
+                            <constraint firstItem="tyC-Sn-JhS" firstAttribute="top" secondItem="51m-FB-66h" secondAttribute="bottom" constant="38" id="rkf-mM-bdn"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="trailing" secondItem="51m-FB-66h" secondAttribute="trailing" id="sVX-01-9Fa"/>
+                            <constraint firstItem="PqQ-Ia-7ah" firstAttribute="centerX" secondItem="Mxg-PA-Qgj" secondAttribute="centerX" id="tqW-pc-cVN"/>
+                            <constraint firstItem="lDb-ZW-rLD" firstAttribute="trailing" secondItem="ryw-RO-7dh" secondAttribute="trailingMargin" id="zVb-4d-NZT"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
