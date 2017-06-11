@@ -26,18 +26,6 @@ class UserPoolSignUpConfirmationViewController: UIViewController, UITextFieldDel
         // Do any additional setup after loading the view.
         self.Username.text = self.user!.username;
         
-        /*
-        // This adds a done button to dismiss the Keyboard.
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
-        
-        toolBar.setItems([flexibleSpace, doneButton], animated: false)
-         */
-        
         // Initial declaration of the new delegate implemented in this class.
         Username.delegate = self
         confirmationCode.delegate = self
@@ -127,12 +115,7 @@ class UserPoolSignUpConfirmationViewController: UIViewController, UITextFieldDel
         self.present(alert, animated: true, completion: nil)
     }
     
-    /*
-    func doneClicked() {
-        view.endEditing(true)
-    }
-    */
-    
+
     // Use of the resignation of the first reciever.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         Username.resignFirstResponder()

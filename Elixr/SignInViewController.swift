@@ -63,17 +63,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         // This allows the user to sign up for their own custom account.
         customCreateNewAccountButton.addTarget(self, action: #selector(handleUserPoolSignUp), for: .touchUpInside)
         
-        /*
-        // This adds a done button to dismiss the Keyboard.
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
-        toolBar.setItems([flexibleSpace, doneButton], animated: false)
-        customUserIdField.inputAccessoryView = toolBar
-        customPasswordField.inputAccessoryView = toolBar
-        */
-
+        
         // Creates a custom effect on the text boxes on screen.
         customUserIdField.backgroundColor = UIColor.clear
         customPasswordField.backgroundColor = UIColor.clear
@@ -122,18 +112,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
  
     // MARK: - Utility Methods
     func handleLoginWithSignInProvider(signInProvider: AWSSignInProvider) {
-        /*
-        AWSIdentityManager.defaultIdentityManager().loginWithSign(signInProvider, completionHandler:
-            {(result, error) -> Void in
-                if error == nil {
-                    /* If no error reported by the Sign in Provider, discard the sign in view controller */
-                    DispatchQueue.main.async(execute: {
-                        self.presentingViewController?.dismiss(animated: true, completion: nil)
-                    })
-                }
-                print("Login with signin provider result = \(result), error = \(error)")
-        })
-         */
         
         activityIndicatorStart()
         
@@ -144,7 +122,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             if error == nil {
                 /* If no error reported by the Sign in provider, discard the sign in view controller */
                 DispatchQueue.main.async(execute: {
-//                    self.presentingViewController?.dismiss(animated: true, completion: nil)
   
                     // Set the key isLoggedIn to true so when the user opens the app,
                     // they are directly redirected to AppMain Storyboard
@@ -168,21 +145,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     func handleFacebookLogOut() {
         print("User has logged out...")
     }
-    
-    /*
-    // Allows the user to return to the previous view controller.
-    func dismissViewController() {
-        self.dismiss(animated: true, completion: nil)
-    }
-    */
-    
-    /*
-    // Adds function to the 'Done' button.
-    func doneClicked() {
-        view.endEditing(true)
-    
-    }
-    */
     
     // Use of the resignation of the first receiver.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

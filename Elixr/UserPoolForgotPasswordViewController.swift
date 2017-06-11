@@ -46,15 +46,6 @@ class UserPoolForgotPasswordViewController: UIViewController, UITextFieldDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.pool = AWSCognitoIdentityUserPool.init(forKey: AWSCognitoUserPoolsSignInProviderKey)
-        /*
-        // This adds a done button to dismiss the Keyboard.
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
-        toolBar.setItems([flexibleSpace, doneButton], animated: false)
-        usernameField.inputAccessoryView = toolBar
-        */
         
         // Creates a custom effect on the username field.
         usernameField.backgroundColor = UIColor.clear
@@ -99,12 +90,6 @@ class UserPoolForgotPasswordViewController: UIViewController, UITextFieldDelegat
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
-    /*
-    func doneClicked() {
-        view.endEditing(true)
-    }
-    */
     
     // Use of the resignation of the first responder.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

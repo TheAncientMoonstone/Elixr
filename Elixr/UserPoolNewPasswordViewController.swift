@@ -19,20 +19,6 @@ class UserPoolNewPasswordViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        /*
-        // This adds a done button to dismiss the Keyobard.
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
-        
-        toolBar.setItems([flexibleSpace, doneButton], animated: false)
-        
-        updatedPassword.inputAccessoryView = toolBar
-        */
-        
         // Initial declaration of the new delegate implemented in this class.
         updatedPassword.delegate = self
         
@@ -100,12 +86,6 @@ class UserPoolNewPasswordViewController: UIViewController, UITextFieldDelegate {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
-    /*
-    func doneClicked() {
-        view.endEditing(true)
-    }
-    */
     
     // Use of the resignation of the first responder.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

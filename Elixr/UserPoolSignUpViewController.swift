@@ -26,22 +26,6 @@ class UserPoolSignUpViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
         self.pool = AWSCognitoIdentityUserPool.init(forKey: AWSCognitoUserPoolsSignInProviderKey)
         
-        /*
-        // This adds a done button to dismiss the Keyboard.
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
-        
-        toolBar.setItems([flexibleSpace, doneButton], animated: false)
-        
-        Username.inputAccessoryView = toolBar
-        Email.inputAccessoryView = toolBar
-        Password.inputAccessoryView = toolBar
-        */
-        
         // Creates a custom effect on the text boxes on screen.
         Username.backgroundColor = UIColor.clear
         Email.backgroundColor = UIColor.clear
@@ -154,12 +138,6 @@ class UserPoolSignUpViewController: UIViewController, UITextFieldDelegate {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
-    /*
-    func doneClicked() {
-        view.endEditing(true)
-    }
-    */
     
     // Use of the resignation of the first receiver.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
