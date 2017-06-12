@@ -29,7 +29,7 @@ class UserPoolForgotPasswordViewController: UIViewController, UITextFieldDelegat
             guard let strongSelf = self else {return nil}
             DispatchQueue.main.async(execute: {
                 if let error  = task.error {
-                    // 12/6/17 - Tapping forgot password button causes app to throw THREAD 1 - SIGABRT
+                    // ERROR: 12/6/17 - Tapping forgot password button causes app to throw THREAD 1 - SIGABRT and crash.
                     self?.showAlert(title: "Error", message: error as! String)
                 } else {
                     strongSelf.shouldPerformSegue(withIdentifier: "NewPasswordSegue", sender: sender)
