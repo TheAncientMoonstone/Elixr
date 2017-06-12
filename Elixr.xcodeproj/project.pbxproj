@@ -210,16 +210,15 @@
 			children = (
 				2E4271AA1DEBE46100738557 /* Sign In */,
 				2E43AA5C1DEBD9C4006D1B4D /* AmazonAWS */,
+				2EE14BEA1EEE7261009D4E7F /* Chatbot Files */,
+				2E1488701EEBDE9600EAD6CC /* CustomUIElements */,
 				2E43A9EE1DEBD762006D1B4D /* AppDelegate.swift */,
 				2E41AF461DEC04470043C021 /* Main.storyboard */,
 				2E2A6CE81E48425E00660F4A /* AppMain.storyboard */,
 				2EC3AAD21E6838B4001DB983 /* HotPlacesViewController.swift */,
-				2E39E2CB1E56F89200C456B1 /* JeevesChatViewController.swift */,
-				2E7CEB0C1EA36E900032AD57 /* Message.swift */,
 				2EA1D2F91E4EF22400A1024E /* RandomiseChoseViewController.swift */,
 				2EC277471E4AC1D600F6328E /* AppMainViewController.swift */,
 				2E41AF481DEC045D0043C021 /* MainViewController.swift */,
-				2E1488701EEBDE9600EAD6CC /* CustomUIElements */,
 				2E43A9F51DEBD762006D1B4D /* Assets.xcassets */,
 				2E43A9FA1DEBD762006D1B4D /* Info.plist */,
 				2E6CA32C1DF3E2BA00056897 /* Elixr.Entitlements */,
@@ -293,6 +292,15 @@
 				2EBE46AC1DED53B400D6A476 /* UserPools.storyboard */,
 			);
 			name = UserPools;
+			sourceTree = "<group>";
+		};
+		2EE14BEA1EEE7261009D4E7F /* Chatbot Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E39E2CB1E56F89200C456B1 /* JeevesChatViewController.swift */,
+				2E7CEB0C1EA36E900032AD57 /* Message.swift */,
+			);
+			name = "Chatbot Files";
 			sourceTree = "<group>";
 		};
 		86C5D68547D0468AC11BB6AC /* Pods */ = {
