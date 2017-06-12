@@ -161,5 +161,4 @@ class JeevesChatViewController: JSQMessagesViewController {
         return 15
     }
     
-    // MARK:- Starscream communication methods and protocols.
 }
