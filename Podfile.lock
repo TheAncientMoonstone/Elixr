@@ -12,9 +12,9 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - FBSDKCoreKit (4.23.0):
+  - FBSDKCoreKit (4.24.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.23.0):
+  - FBSDKLoginKit (4.24.0):
     - FBSDKCoreKit
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
@@ -37,8 +37,8 @@ SPEC CHECKSUMS:
   AWSCore: cf101c44d2cc5da32abc27d5529cddc63c010415
   AWSLex: d8b18608c1076be34034e52f69052a16acce9172
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  FBSDKCoreKit: d7829f5a69901cd7296105328e4c3c3fc7da6518
-  FBSDKLoginKit: 6b92bd65f319d669d2b0730e49db495ef1660566
+  FBSDKCoreKit: f8c9eb0dd34a9cd277c7b60da4b32226d142502d
+  FBSDKLoginKit: 1214c6d5a1c4995b694d8db8a9ba6910c6028acf
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
