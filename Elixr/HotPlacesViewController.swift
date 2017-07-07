@@ -13,6 +13,7 @@ import CoreLocation
 class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    var isFirstTime = true
     
     var locationManager = CLLocationManager()
     let newPin = MKPointAnnotation()
@@ -57,10 +58,13 @@ class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMa
         
         let location = locations.last! as CLLocation
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        if(self.isFirstTime) {
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         
         // Set the region on the map.
         mapView.setRegion(region, animated: true)
+        self.isFirstTime = false
+        }
         
         newPin.coordinate = location.coordinate
         mapView.addAnnotation(newPin)
