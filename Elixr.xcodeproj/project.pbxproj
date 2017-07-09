@@ -25,6 +25,10 @@
 		2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */; };
 		2E4F7FC71EEBD23C00E1D883 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F7FC61EEBD23C00E1D883 /* CustomButton.swift */; };
 		2E501E311ED9CE1E003F5F2A /* Pastel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E501E301ED9CE1E003F5F2A /* Pastel.framework */; };
+		2E5304251F11021800792379 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5304241F11021800792379 /* HomeModel.swift */; };
+		2E5304261F11021800792379 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5304241F11021800792379 /* HomeModel.swift */; };
+		2E5304281F1107CC00792379 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5304271F1107CC00792379 /* LocationModel.swift */; };
+		2E5304291F1107CC00792379 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5304271F1107CC00792379 /* LocationModel.swift */; };
 		2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69E1CE1E51235500334450 /* ElixrTests.swift */; };
 		2E6CA3291DF3C4C100056897 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA3281DF3C4C100056897 /* AWSMobileClient.swift */; };
 		2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7336931DFE28BD00DA33A7 /* Utility.swift */; };
@@ -105,6 +109,8 @@
 		2E43AA5D1DEBD9DA006D1B4D /* AWSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSConfiguration.swift; sourceTree = "<group>"; };
 		2E4F7FC61EEBD23C00E1D883 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2E501E301ED9CE1E003F5F2A /* Pastel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pastel.framework; path = "../../../Library/Developer/Xcode/DerivedData/Elixr-fgrdtbusleibkoffnrzangmcmena/Build/Products/Debug-iphonesimulator/Pastel/Pastel.framework"; sourceTree = "<group>"; };
+		2E5304241F11021800792379 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		2E5304271F1107CC00792379 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		2E69E1CC1E51235500334450 /* ElixrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElixrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E69E1CE1E51235500334450 /* ElixrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixrTests.swift; sourceTree = "<group>"; };
 		2E69E1D01E51235500334450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -277,6 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				2E7336931DFE28BD00DA33A7 /* Utility.swift */,
+				2E5304241F11021800792379 /* HomeModel.swift */,
+				2E5304271F1107CC00792379 /* LocationModel.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -490,9 +498,11 @@
 				2E43AA5E1DEBD9DA006D1B4D /* AWSConfiguration.swift in Sources */,
 				2EA1D2FA1E4EF22400A1024E /* RandomiseChoseViewController.swift in Sources */,
 				2E7CEB0D1EA36E900032AD57 /* Message.swift in Sources */,
+				2E5304251F11021800792379 /* HomeModel.swift in Sources */,
 				2E43A9EF1DEBD762006D1B4D /* AppDelegate.swift in Sources */,
 				2E7336941DFE28BD00DA33A7 /* Utility.swift in Sources */,
 				2EBE46AB1DED528700D6A476 /* UserPoolForgotPasswordViewController.swift in Sources */,
+				2E5304281F1107CC00792379 /* LocationModel.swift in Sources */,
 				2E3726301DEEA7B00044ACF6 /* UserPoolSignUpConfirmationViewController.swift in Sources */,
 				2E37262A1DEE915B0044ACF6 /* UserPoolSignUpViewController.swift in Sources */,
 				2E4271A91DEBE45A00738557 /* SignInViewController.swift in Sources */,
@@ -511,8 +521,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5304291F1107CC00792379 /* LocationModel.swift in Sources */,
 				2EC3AAD41E6838B4001DB983 /* HotPlacesViewController.swift in Sources */,
 				2E69E1CF1E51235500334450 /* ElixrTests.swift in Sources */,
+				2E5304261F11021800792379 /* HomeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

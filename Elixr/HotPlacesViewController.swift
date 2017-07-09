@@ -18,6 +18,8 @@ class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMa
     var locationManager = CLLocationManager()
     let newPin = MKPointAnnotation()
     
+    var selectedLocation:LocationModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -50,6 +52,27 @@ class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        // Create coordinates from the location latitude & longitude.
+        var poiCoordinates: CLLocationCoordinate2D = CLLocationCoordinate2D()
+        
+        poiCoordinates.latitude = CDouble(self.selectedLocation!.latitude!)!
+        poiCoordinates.longitude = CDouble(self.selectedLocation!.longitude!)!
+        
+        // Zoom to the region
+        let viewRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(poiCoordinates, 750, 750)
+        self.mapView.setRegion(viewRegion, animated: true)
+        
+        // Plot pin
+        let pin: MKPointAnnotation = MKPointAnnotation()
+        pin.coordinate = poiCoordinates
+        self.mapView.addAnnotation(pin)
+        
+        // Add title to the pin.
+        pin.title = selectedLocation!.name
     }
     
     // Drops the pin on the users current location.
