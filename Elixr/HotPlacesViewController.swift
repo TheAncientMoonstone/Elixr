@@ -20,6 +20,8 @@ class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMa
     
     var selectedLocation:LocationModel?
     
+    var locations = [LocationModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -42,6 +44,20 @@ class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMa
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
         
+        locations = NSMutableArray() as! [LocationModel]
+        for location in locations {
+           let annotation = MKPointAnnotation()
+            annotation.title = location.name
+            
+            // Convert the latitude and longitude values into Doubles.
+            let lat = Double((selectedLocation?.latitude)!)
+            let long = Double((selectedLocation?.longitude)!)
+            
+            annotation.title = location.name
+            annotation.coordinate = CLLocationCoordinate2D(latitude: lat!, longitude: long!)
+            mapView.addAnnotation(annotation)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,27 +68,6 @@ class HotPlacesViewController: UIViewController, CLLocationManagerDelegate, MKMa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-        // Create coordinates from the location latitude & longitude.
-        var poiCoordinates: CLLocationCoordinate2D = CLLocationCoordinate2D()
-        
-        poiCoordinates.latitude = CDouble(self.selectedLocation!.latitude!)!
-        poiCoordinates.longitude = CDouble(self.selectedLocation!.longitude!)!
-        
-        // Zoom to the region
-        let viewRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(poiCoordinates, 750, 750)
-        self.mapView.setRegion(viewRegion, animated: true)
-        
-        // Plot pin
-        let pin: MKPointAnnotation = MKPointAnnotation()
-        pin.coordinate = poiCoordinates
-        self.mapView.addAnnotation(pin)
-        
-        // Add title to the pin.
-        pin.title = selectedLocation!.name
     }
     
     // Drops the pin on the users current location.
